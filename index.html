@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" class="homepage">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Emanuele D'Osualdo - Homepage</title>
+  <meta name="description" content="The faboulous homepage of Emanuele D'Osualdo">
+  <meta name="author" content="Emanuele D'Osualdo">
+
+
+  <meta property="og:url" content="http://emanueledosualdo.com/index.html" />
+  <meta property="og:title" content="Emanuele D'Osualdo - Homepage" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description"
+    content="The faboulous homepage of Emanuele D'Osualdo" />
+  <meta property="og:determiner" content="the" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:site_name" content="Emanuele D'Osualdo" />
+  <meta property="og:image" content="http://emanueledosualdo.com/images/ritratto.png" />
+  <meta property="og:image:type" content="image/png" />
+
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link href='style/fonts.css' rel='stylesheet' type='text/css'> -->
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="style/normalize.css">
+  <link rel="stylesheet" href="style/skeleton.css">
+  <link rel="stylesheet" href="style/custom.css">
+
+  <link rel="stylesheet" href="style/picalc.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/cb833953a4.css">
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- Javascript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="lib/jquery.js"></script>
+  <!-- <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script> -->
+
+  <script src="js/homepage.js"></script>
+
+</head>
+<body>
+
+  <div id="homedrawing">
+      <div class="showoff"><img src="images/picalc.svg" /></div>
+      <img src="images/ed400.png" class="ED"></img>
+      <div class="explain">
+          <i class="fa fa-pause ctrl"></i>&nbsp;
+        <a href="blog.html">what is this? <i class="fa fa-level-up"></i></a>
+      </div>
+  </div>
+
+  <div class="container">
+    <header class="row">
+      <div class="two-thirds column">
+        <h1>Emanuele D'Osualdo</h1>
+        <h2>Researcher in Computer Science</h2>
+        <nav>
+          <div class="menu head">
+            home <i class="fa fa-bars fa-lg fa-pull-right"></i>
+          </div>
+          <span><a href="index.html" class="active">Home</a></span>
+          <span><a href="blog.html">Blog</a></span>
+          <span><a href="research.html">Research</a></span>
+          <span><a href="projects.html">Projects</a></span>
+          <span><a href="about.html">About</a></span>
+        </nav>
+      </div>
+      <!-- <div class="one-third column centered"> </div> -->
+    </header>
+  <div class="content row">
+    <div class="two-thirds column">
+
+      <p class="prominent">
+      Welcome to my homepage!<br/>
+      I am a postgraduate researcher in Theoretical Computer Science,
+      currently working at the <a href="http://concurrency.cs.uni-kl.de">Concurrency Theory Group</a>,
+      University of Kaiserslautern.
+      My research interests include
+         Semantics,
+         Models of Concurrency,
+         Static Analysis,
+         Process Algebra,
+         Abstract Interpretation,
+         Model Checking,
+         Programming Languages,
+         Declarative Programming.
+      </p>
+
+      <div id="news">
+      <h6>News</h6>
+      <p class="news date">Jul 2016</p>
+      <p class="news item">
+        I will be attending <a href="http://lics.rwth-aachen.de/lics16/">LICS'16 in NYC</a>.
+      </p>
+      <p class="news date">Apr-Jul 2016</p>
+      <p class="news item">
+        This semester I am teaching <a href="http://concurrency.cs.uni-kl.de/teaching/AutomataTheory_SS_2016.html">Advanced Automata Theory</a>, follow the link for more information.
+      </p>
+      </div>
+<!-- </div></div><div class="row"><div class="column"> -->
+      <p class="social">
+            <a class="social icon button" href="#mail" onclick="window.open('mailto:' + (['', 'manu', 'l', '.dos'].join('e')) + 'ualdo\x40gm' + (['com','ail'].reverse().join('.')))">
+              <i class="fa fa-envelope" aria-hidden="true"></i> E-mail</a>
+            <a class="social icon button" href="https://github.com/bordaigorl">
+              <i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+            <a class="social icon button" href="https://twitter.com/bordaigorl">
+              <i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+            <a class="social icon button" href="https://de.linkedin.com/pub/emanuele-d-osualdo/7/a36/440">
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
+            <a class="social icon button" href="http://dblp.org/pers/hd/d/D=Osualdo:Emanuele">
+              <img src="images/dblp.png"> DBLP</a>
+      </p>
+    </div>
+  </div>
+
+  </div>
+
+  <script type="text/javascript">
+  $(function() {
+    function resizeHeader() {
+      var $header = $("header"),
+          y = $header.offset().top + $header.outerHeight(false);
+      $("#homedrawing").css("top", y + "px");
+    }
+    $(window).resize(resizeHeader);
+    resizeHeader();
+  });
+
+  var $nav = $("nav");
+  $nav.on("click", function() {
+    $nav.toggleClass("open");
+  }).on("focusin", function() {
+      $nav.addClass("open");
+  }).on("focusout", function() {
+      $nav.removeClass("open");
+  });
+
+  </script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-80207647-1', 'auto'); ga('send', 'pageview');
+  </script>
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
