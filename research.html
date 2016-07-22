@@ -230,6 +230,7 @@
 
     function highlight(){
           if(window.location.hash) {
+           setTimeout(function() {
             var elem = $(window.location.hash + ".publication");
             setTimeout(function () {
               elem.css({backgroundColor: "#ffff99"});
@@ -243,6 +244,7 @@
             setTimeout(function () {
               elem.css({backgroundColor: "white"});
             }, 500)
+           }, 500);
           }
     }
     $(window).on('hashchange', highlight);
