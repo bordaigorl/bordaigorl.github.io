@@ -157,7 +157,7 @@ function init() {
   });
 
   marker = new google.maps.Marker( {
-    icon: 'images/pin.png',
+    icon: '/images/pin.png',
     position: new google.maps.LatLng( 49.4249421107917, 7.752746314819319 ),
     map: map
   } );
@@ -172,7 +172,7 @@ function init() {
   // google.maps.event.addDomListener(window, "resize", function() {
   //  var center = map.getCenter();
   //  google.maps.event.trigger(map, "resize");
-  //  map.setCenter(center); 
+  //  map.setCenter(center);
   // });
 }
 }

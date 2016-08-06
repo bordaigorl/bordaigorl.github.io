@@ -1,3 +1,13 @@
+function resizeHeader() {
+  var $header = $("header"),
+      y = $header.offset().top + $header.outerHeight(false);
+  $("#homedrawing").css("top", y + "px");
+}
+$(window).resize(resizeHeader);
+resizeHeader();
+
+
+
 function parse_query_string() {
   var param = {}, q = window.location.search.split(/[?&]/);
   for(var i in q){
@@ -15,3 +25,4 @@ if((!param["static"]) && screen.width >= 666){
   document.write('<script src="lib/d3.min.js"></script>');
   document.write('<script src="js/showoff.min.js"></script>');
 }
+
