@@ -6,9 +6,34 @@
 </description>
     <link>http://emanueledosualdo.com/</link>
     <atom:link href="http://emanueledosualdo.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 06 Aug 2016 20:37:58 +0200</pubDate>
-    <lastBuildDate>Sat, 06 Aug 2016 20:37:58 +0200</lastBuildDate>
+    <pubDate>Thu, 11 Aug 2016 18:36:39 +0200</pubDate>
+    <lastBuildDate>Thu, 11 Aug 2016 18:36:39 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>What is that weird animation on my homepage?</title>
+        <description>&lt;p&gt;So nice of you to ask! What you are looking at is an example of the systems we study in Concurrency Theory. In short, it is an example of a mathematical formalisation of a simple internet protocol; the aim of our research is to design algorithms that can prove properties of these kinds of models.&lt;/p&gt;
+
+&lt;blockquote class=&quot;note&quot;&gt;
+  &lt;p&gt;&lt;a href=&quot;/feed.xml&quot; class=&quot;button primary&quot;&gt;Subscribe&lt;/a&gt;
+If you’d like to know more, watch this space for an upcoming write-up about the π‑calculus&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;More precisely, the displayed animation is a visual simulation of the evolution of a &lt;a href=&quot;https://en.wikipedia.org/wiki/%CE%A0-calculus&quot;&gt;π‑calculus&lt;/a&gt; program. The boxes are sequential processes, i.e. threads, and the dots are names, i.e. channels.&lt;/p&gt;
+
+&lt;p&gt;The simulation on the homepage is running a fixed program modelling a server/client system. The orange boxes are the clients, the blue ones are servers.&lt;/p&gt;
+
+&lt;p&gt;I wrote the simulator in JavaScript and &lt;a href=&quot;https://d3js.org/&quot;&gt;D3.js&lt;/a&gt; to support my presentation on the contents of &lt;a href=&quot;/research/#thesis&quot;&gt;my Ph.D. thesis&lt;/a&gt;. The code evolved from a simple prototype and I am in the process of rewriting it completely. Once it is in usable state I’ll post it on GitHub, so stay tuned!&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 09 Aug 2016 00:00:00 +0200</pubDate>
+        <link>http://emanueledosualdo.com/explain-picalc.html</link>
+        <guid isPermaLink="true">http://emanueledosualdo.com/explain-picalc.html</guid>
+        
+        <category>picalculus</category>
+        
+        
+      </item>
     
   </channel>
 </rss>

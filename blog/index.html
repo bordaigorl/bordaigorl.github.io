@@ -46,7 +46,7 @@
 
 <header class="row">
   <div class="name column">
-    <h1><a href="/">Emanuele D'Osualdo</a></h1>
+    <h1><a href="/" title="Home">Emanuele D'Osualdo</a></h1>
     <h2>Researcher in Computer Science</h2>
     <nav>
       <div class="menu head">
@@ -68,50 +68,73 @@
   </div>
   
   <div class="logo column">
-    <a href="/">
+    <a href="/" title="Go to home">
     <svg class="logo" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 177.34 188.17" version="1.1"> <g stroke="#999" stroke-width="2"> <line y2="117.28" x2="72.081" y1="90.295" x1="115.04"/> <line y2="117.28" x2="72.081" y1="142.8" x1="121.65"/> <line y2="153.39" x2="171.74" y1="142.8" x1="121.65"/> <line y2="117.28" x2="72.081" y1="57.893" x1="75.387"/> <line y2="5.6" x2="79.838" y1="57.893" x1="75.387"/> <line y2="117.28" x2="72.081" y1="85.156" x1="31.827"/> <line y2="117.28" x2="72.081" y1="137.49" x1="20.961"/> <line y2="182.57" x2="5.6" y1="137.49" x1="20.961"/> <line y2="117.28" x2="72.081" y1="168.14" x1="52.729"/> <line y2="182.57" x2="5.6" y1="168.14" x1="52.729"/> </g> <g stroke="#fff" stroke-width="1.2px" fill="#5b7a8c"> <circle cy="117.28" cx="72.081" r="5"></circle> <circle cy="153.39" cx="171.74" r="5"></circle> <circle cy="5.6" cx="79.838" r="5"></circle> <circle cy="182.57" cx="5.6" r="5"></circle> </g> <rect transform="scale(-1,1)" height="12" width="18" y="136.8" x="-130.65" fill="#ff7f0e"></rect> <rect transform="scale(-1,1)" height="12" width="18" y="51.893" x="-84.387" fill="#ff7f0e"></rect> <rect transform="scale(-1,1)" height="12" width="18" y="84.295" x="-124.04" fill="#1f77b4"></rect> <rect transform="scale(-1,1)" height="12" width="18" y="79.156" x="-40.827" fill="#aec7e8"></rect> <rect transform="scale(-1,1)" height="12" width="18" y="131.49" x="-29.961" fill="#ffbb78"></rect> <rect transform="scale(-1,1)" height="12" width="18" y="162.14" x="-61.729" fill="#2ca02c"></rect> </svg>
 
     </a>
   </div>
   
-  <!-- /blog/ -->
 </header>
 
 
- <h4>Blog</h4>
-<div class="spaced content row">
+ <div class="spaced content row">
   <div class="two-thirds column">
+    <div class="float right"> <a href="#" class="ui button clear-filters">Clear filters <i class="fa fa-filter"></i></a></div>
+    <h4>Blog</h4>
+    <ul class="post-list">
+      
+      
+          
+          <li>
+            <span class="meta">
+              <time datetime="2016-08-09T00:00:00+02:00" itemprop="datePublished">Aug 9, 2016</time>
+              <span class="tags">
+                <i class="fa fa-tags"></i>
+                <span class="tag-list">
+                  picalculus
+                </span>
+              </span>
+            </span>
+            <h1>
+              <a class="post-link" href="/explain-picalc.html">What is that weird animation on my homepage?</a>
+            </h1>
+            <p class="excerpt">It is not as silly as it looks!</p>
+          </li>
+          
+      
+          
+          
+      
+          
+          
+      
+    </ul>
+  </div>
 
-    <article class="post">
-      <div class="date">30 June 2016</div>
-      <h5 class="title">
-        What is that weird animation on my homepage?
-      </h5>
-      <p>
-        So nice of you to ask!
-        What you are looking at is a visual simulation
-        of the evolution of a &pi;&#8209;calculus program.
-        The boxes are sequential processes,
-        i.e. threads,
-        and the dots are names,
-        i.e. channels.
-      </p>
-      <p>
-        The simulation on the homepage is running a fixed program
-        modelling a server/client system.
-        The orange boxes are the clients,
-        the blue ones are servers.
-      </p>
-      <p>
-        I wrote the simulator in JavaScript and <a href="https://d3js.org">D3.js</a>
-        to support my presentation on the contents of <a href="research.html#thesis">my Ph.D. thesis</a>.
-        The code evolved from a simple prototype
-        and I am in the process of rewriting it completely.
-        Once it is in usable state I'll post it on GitHub,
-        so stay tuned!
-      </p>
-   </article>
-
+  <div class="one-third column post-sidebar">
+      <aside class="search">
+  <div class="search-box">
+    <i class="fa fa-search"></i>
+    <input name="q" id="search-post" placeholder="Search post" type="search">
+  </div>
+  <div id="search-results"></div>
+  <script src="/js/search.js"></script>
+</aside>
+      <aside class="tags">
+  <h1>Tags</h1>
+  <ul class="tags">
+    
+      <li><a href="#" class="tag">picalculus</a></li>
+    
+  </ul>
+  <script src="/js/tags.js"></script>
+</aside>
+      <aside class="share">
+<a class="rss share button" href="/feed.xml" title="Subscribe via RSS" itemprop="RSS"><i class="fa fa-rss"></i></a>
+<a class="share button" href="https://twitter.com/intent/tweet?hashtags=&amp;text=&amp;url=http://emanueledosualdo.com/blog/" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i></a>
+<a class="share button" href="https://www.facebook.com/sharer/sharer.php?u=http://emanueledosualdo.com/blog/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i></a>
+<a class="share button" href="https://plus.google.com/share?url=http://emanueledosualdo.com/blog/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> </a>
+</aside>
   </div>
 </div>
 

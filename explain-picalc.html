@@ -3,9 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-<title>Emanuele D&#39;Osualdo - Homepage</title>
-<meta name="description" content="The faboulous homepage of Emanuele D'Osualdo
-">
+<title>What is that weird animation on my homepage?</title>
+<meta name="description" content="It is not as silly as it looks!">
 <meta name="author" content="Emanuele D'Osualdo">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +12,7 @@
 
 
 
-<link rel="canonical" href="http://emanueledosualdo.com/about/">
+<link rel="canonical" href="http://emanueledosualdo.com/explain-picalc.html">
 
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://use.fontawesome.com/cb833953a4.css">
@@ -50,7 +49,7 @@
     <h2>Researcher in Computer Science</h2>
     <nav>
       <div class="menu head">
-        About
+        
         <i class="fa fa-bars fa-lg fa-pull-right"></i>
       </div>
       
@@ -60,7 +59,7 @@
       
         <span><a href="/projects/">Projects</a></span>
       
-        <span><a href="/about/" class="active">About</a></span>
+        <span><a href="/about/">About</a></span>
       
         <span><a href="/contact/">Contact</a></span>
       
@@ -77,28 +76,69 @@
 </header>
 
 
- <div id="bio" class="row">
-  <div class="column">
-    <div class="float right">
-      <div>
-        <img class="ritratto" src="/images/ritratto.png">
+ <div class="spaced content row">
+  <div class="two-thirds column post-content">
+
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+      <header class="meta">
+        <time datetime="2016-08-09T00:00:00+02:00" itemprop="datePublished">Aug 9, 2016</time>
+        <h1 class="title" itemprop="name headline">What is that weird animation on my homepage?</h1>
+      </header>
+
+      <div class="content" itemprop="articleBody">
+        <p>So nice of you to ask! What you are looking at is an example of the systems we study in Concurrency Theory. In short, it is an example of a mathematical formalisation of a simple internet protocol; the aim of our research is to design algorithms that can prove properties of these kinds of models.</p>
+
+<blockquote class="note">
+  <p><a href="/feed.xml" class="button primary">Subscribe</a>
+If you’d like to know more, watch this space for an upcoming write-up about the π‑calculus</p>
+</blockquote>
+
+<p>More precisely, the displayed animation is a visual simulation of the evolution of a <a href="https://en.wikipedia.org/wiki/%CE%A0-calculus">π‑calculus</a> program. The boxes are sequential processes, i.e. threads, and the dots are names, i.e. channels.</p>
+
+<p>The simulation on the homepage is running a fixed program modelling a server/client system. The orange boxes are the clients, the blue ones are servers.</p>
+
+<p>I wrote the simulator in JavaScript and <a href="https://d3js.org/">D3.js</a> to support my presentation on the contents of <a href="/research/#thesis">my Ph.D. thesis</a>. The code evolved from a simple prototype and I am in the process of rewriting it completely. Once it is in usable state I’ll post it on GitHub, so stay tuned!</p>
+
+
       </div>
-      <a class="button primary" href="doc/cv.pdf" style="max-width:90%;">
-        <i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i>
-        Download full CV
-      </a>
-    </div>
 
-    <h2>Bio</h2>
+    </article>
 
-    <p>
-      I am currently a post-doctoral researcher in the Concurrency Theory Group at the University of Kaiserslautern, working under the supervision of Prof. <a href="http://concurrency.cs.uni-kl.de/group/meyer/home.html">Roland Meyer</a>.
-      In 2015 I received a PhD (DPhil) in Computer Science from the University of Oxford. My supervisor was Prof. <a href="https://www.cs.ox.ac.uk/luke.ong/">C.-H. Luke Ong</a>.
-      Previously, I did my undergraduate and master's studies at the University of Udine, Italy, graduating with honors.
-    </p>
+  </div>
+  <div class="one-third column post-sidebar">
+      <aside class="search">
+  <div class="search-box">
+    <i class="fa fa-search"></i>
+    <input name="q" id="search-post" placeholder="Search post" type="search">
+  </div>
+  <div id="search-results"></div>
+  <script src="/js/search.js"></script>
+</aside>
+      <aside class="tags">
+  <h1>Tags</h1>
+  <ul class="tags">
+    
+      <li><a href="/blog/#picalculus" class="tag">picalculus</a></li>
+    
+  </ul>
+</aside>
+      <aside class="share">
+<a class="rss share button" href="/feed.xml" title="Subscribe via RSS" itemprop="RSS"><i class="fa fa-rss"></i></a>
+<a class="share button" href="https://twitter.com/intent/tweet?hashtags=picalculus&amp;text=What%20is%20that%20weird%20animation%20on%20my%20homepage?&amp;url=http://emanueledosualdo.com/explain-picalc.html" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i></a>
+<a class="share button" href="https://www.facebook.com/sharer/sharer.php?u=http://emanueledosualdo.com/explain-picalc.html" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i></a>
+<a class="share button" href="https://plus.google.com/share?url=http://emanueledosualdo.com/explain-picalc.html" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> </a>
+</aside>
+      <aside class="recent">
+  <h1>Recent posts</h1>
+  <ul>
+    
+      <li><a href="/explain-picalc.html">What is that weird animation on my homepage?</a></li>
+    
+  </ul>
+</aside>
   </div>
 </div>
-
 
 
  <footer class="row">
