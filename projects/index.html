@@ -144,7 +144,7 @@
     Will be released soon.
   </p>
   <p class="buttons">
-    <a href="blog.html" class="button">
+    <a href="/explain-picalc.html" class="button">
       <i class="fa fa-info"></i> Info
     </a>
   </p>
@@ -310,10 +310,12 @@
   $(".demo .dimmer").click(function(event) {
     var img = $(this).parent().find("img").attr("src");
     $(".overlay-content").html('<img style="max-width: 80%;" src="' + img + '" />')
-    $(".overlay").toggle();
-    $(".overlay-content").css("top",
-        ($(window).height() - $(".overlay-content img").height()) / 2
-    );
+    $('.overlay-content img').on('load', function() {
+      $(".overlay").toggle();
+      $(".overlay-content").css("top",
+          (($(window).height() - $(".overlay-content img").height()) / 2) +'px'
+      );
+    })
   });
 
 </script>

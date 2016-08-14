@@ -3,9 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-<title>Emanuele D&#39;Osualdo - Homepage</title>
-<meta name="description" content="The fabulous homepage of Emanuele D'Osualdo
-">
+<title>First-order logic with reachability for infinite-state systems</title>
+<meta name="description" content="Abstract">
 <meta name="author" content="Emanuele D'Osualdo">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +12,7 @@
 
 
 
-<link rel="canonical" href="http://emanueledosualdo.com/blog/">
+<link rel="canonical" href="http://emanueledosualdo.com/research/papers/2016/lics-for-valence.html">
 
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://use.fontawesome.com/cb833953a4.css">
@@ -50,13 +49,13 @@
     <h2>Researcher in Computer Science</h2>
     <nav>
       <div class="menu head">
-        Blog
+        Research
         <i class="fa fa-bars fa-lg fa-pull-right"></i>
       </div>
       
-        <span><a href="/blog/" class="active">Blog</a></span>
+        <span><a href="/blog/">Blog</a></span>
       
-        <span><a href="/research/">Research</a></span>
+        <span><a href="/research/" class="active">Research</a></span>
       
         <span><a href="/projects/">Projects</a></span>
       
@@ -78,67 +77,110 @@
 
 
  <div class="spaced content row">
-  <div class="two-thirds column">
-    <div class="float right"> <a href="#" class="ui button clear-filters">Clear filters <i class="fa fa-filter"></i></a></div>
-    <h4>Blog</h4>
-    <ul class="post-list">
-      
-        <li>
-          <span class="meta">
-  <time datetime="2016-08-09T00:00:00+02:00" itemprop="datePublished">Aug 9, 2016</time>
-  <span class="tags">
-    <i class="fa fa-tags"></i>
-    <span class="tag-list">
-      picalculus
-    </span>
-  </span>
-  <span class="comments">
-    <a href="http://emanueledosualdo.com/explain-picalc.html#disqus_thread">0</a>
-    <i class="fa fa-comments"></i>
-  </span>
-</span>
-<h1>
-  <a class="post-link" href="/explain-picalc.html">What is that weird animation on my homepage?</a>
-</h1>
-<p class="excerpt">It is not as silly as it looks!</p>
-        </li>
-      
-    </ul>
-  </div>
+  <div class="two-thirds column post-content">
 
-  <div class="one-third column post-sidebar">
-      <aside class="search">
-  <div class="search-box">
-    <i class="fa fa-search"></i>
-    <input name="q" id="search-post" placeholder="Search post" type="search">
-  </div>
-  <div id="search-results"></div>
-  <script src="/js/search.js"></script>
-</aside>
+    <article class="post">
+
+      <header class="meta">
+        
+        <div class="venue"><span title="Logics in Computer Science">LICS</span> 2016</div>
+        <h1 class="title" itemprop="name headline">First-order logic with reachability for infinite-state systems</h1>
+        <ul class="authors">
+        
+          
+          
+            <li class="author me">E. D'Osualdo</li>
+          
+        
+          
+          
+            <li class="author">
+              <a href="http://concurrency.cs.uni-kl.de/group/meyer/home.html" title="Roland Meyer">R. Meyer</a>
+            </li>
+          
+        
+          
+          
+            <li class="author">
+              <a href="http://zetzsche.xyz/" title="George Zetzsche">G. Zetzsche</a>
+            </li>
+          
+        
+        </ul>
+        <div class="paper links">
+          
+            <a href="http://concurrency.cs.uni-kl.de/group/zetzsche/doc/DOsualdoMeyerZetzsche2016a.pdf" class="button primary"><i class="fa fa-download"></i>Pdf</a>
+          
+          
+          
+          
+          
+        </div>
+      </header>
+
+      <div class="content" itemprop="articleBody">
+        <h1 id="abstract">Abstract</h1>
+
+<p>First-order logic with the reachability predicate (FO(Reach)) is an important means of specification in system analysis. Its decidability status is known for some individual types of infinite-state systems such as pushdown (decidable) and vector addition systems (undecidable).</p>
+
+<p>This work aims at a general understanding of which types of systems admit decidability. As a unifying model, we employ valence systems over graph monoids, which feature a finite-state control and are parameterized by a monoid to represent their storage mechanism. As special cases, this includes pushdown systems, various types of counter systems (such as vector addition systems) and combinations thereof. Our main result is a complete characterization of those graph monoids where FO(Reach) is decidable for the resulting transition systems.</p>
+
+      </div>
+
       
-<aside class="tags">
+      
+      
+      
+
+
+    </article>
+    <div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+    this.page.url = "http://emanueledosualdo.com/research/papers/2016/lics-for-valence.html";
+    this.page.identifier = "/research/papers/2016/lics-for-valence";
+};
+
+(function() {
+    var d = document, s = d.createElement('script');
+    s.src = '//emanueledosualdo.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  </div>
+  <div class="one-third column post-sidebar">
+      <aside class="tags">
   <h1>Tags</h1>
   <ul class="tags">
     
-      <li><a href="#" class="tag">picalculus</a></li>
+    
+      <li><a href="/research/papers/#valence" class="tag">valence</a></li>
+    
+      <li><a href="/research/papers/#automata" class="tag">automata</a></li>
+    
+      <li><a href="/research/papers/#logics" class="tag">logics</a></li>
+    
+      <li><a href="/research/papers/#decidability" class="tag">decidability</a></li>
     
   </ul>
-  <script src="/js/tags.js"></script>
 </aside>
       <aside class="share">
     <h1>Share</h1>
     <div class="buttons">
         <a class="rss share button" href="/feed.xml" title="Subscribe via RSS" itemprop="RSS"><i class="fa fa-rss"></i></a>
-        <a class="share button" href="https://twitter.com/intent/tweet?hashtags=&amp;text=&amp;url=http://emanueledosualdo.com/blog/" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i></a>
-        <a class="share button" href="https://www.facebook.com/sharer/sharer.php?u=http://emanueledosualdo.com/blog/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i></a>
-        <a class="share button" href="https://plus.google.com/share?url=http://emanueledosualdo.com/blog/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> </a>
+        <a class="share button" href="https://twitter.com/intent/tweet?hashtags=valence,automata,logics,decidability&amp;text=First-order%20logic%20with%20reachability%20for%20infinite-state%20systems&amp;url=http://emanueledosualdo.com/research/papers/2016/lics-for-valence.html" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i></a>
+        <a class="share button" href="https://www.facebook.com/sharer/sharer.php?u=http://emanueledosualdo.com/research/papers/2016/lics-for-valence.html" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i></a>
+        <a class="share button" href="https://plus.google.com/share?url=http://emanueledosualdo.com/research/papers/2016/lics-for-valence.html" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> </a>
     </div>
 </aside>
+      
   </div>
-
-  <script id="dsq-count-scr" src="//emanueledosualdo.disqus.com/count.js" async></script>
-
 </div>
+
 
  <footer class="row">
   <div class="column">

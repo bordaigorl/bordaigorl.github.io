@@ -3,9 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-<title>Emanuele D&#39;Osualdo - Homepage</title>
-<meta name="description" content="The fabulous homepage of Emanuele D'Osualdo
-">
+<title>On Hierarchical Communication Topologies in the π-calculus</title>
+<meta name="description" content="Abstract">
 <meta name="author" content="Emanuele D'Osualdo">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +12,7 @@
 
 
 
-<link rel="canonical" href="http://emanueledosualdo.com/blog/">
+<link rel="canonical" href="http://emanueledosualdo.com/research/papers/2016/esop-hierarchical.html">
 
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://use.fontawesome.com/cb833953a4.css">
@@ -50,13 +49,13 @@
     <h2>Researcher in Computer Science</h2>
     <nav>
       <div class="menu head">
-        Blog
+        Research
         <i class="fa fa-bars fa-lg fa-pull-right"></i>
       </div>
       
-        <span><a href="/blog/" class="active">Blog</a></span>
+        <span><a href="/blog/">Blog</a></span>
       
-        <span><a href="/research/">Research</a></span>
+        <span><a href="/research/" class="active">Research</a></span>
       
         <span><a href="/projects/">Projects</a></span>
       
@@ -78,13 +77,61 @@
 
 
  <div class="spaced content row">
-  <div class="two-thirds column">
-    <div class="float right"> <a href="#" class="ui button clear-filters">Clear filters <i class="fa fa-filter"></i></a></div>
-    <h4>Blog</h4>
-    <ul class="post-list">
+  <div class="two-thirds column post-content">
+
+    <article class="post">
+
+      <header class="meta">
+        
+        <div class="venue"><span title="European Symposium on Programming">ESOP</span> 2016</div>
+        <h1 class="title" itemprop="name headline">On Hierarchical Communication Topologies in the π-calculus</h1>
+        <ul class="authors">
+        
+          
+          
+            <li class="author me">E. D'Osualdo</li>
+          
+        
+          
+          
+            <li class="author">
+              <a href="https://www.cs.ox.ac.uk/luke.ong/" title="C.-H. Luke Ong">C.-H. L. Ong</a>
+            </li>
+          
+        
+        </ul>
+        <div class="paper links">
+          
+            <a href="https://arxiv.org/pdf/1601.01725.pdf" class="button primary"><i class="fa fa-download"></i>Pdf</a>
+          
+          
+            <a href="1601.01725" class="button"><i class="fa fa-database"></i>ArXiv</a>
+          
+          
+          
+            <a href="https://github.com/bordaigorl/jamesbound" class="button"><i class="fa fa-code"></i>Tool</a>
+          
+          
+        </div>
+      </header>
+
+      <div class="content" itemprop="articleBody">
+        <h1 id="abstract">Abstract</h1>
+
+<p>This paper is concerned with the shape invariants satisfied by the communication topology of π-term, and the automatic inference of these invariants. A π-term P is hierarchical if there is a finite forest T such that the communication topology of every term reachable from P satisfies a T-shaped invariant. We design a static analysis to prove a term hierarchical by means of a novel type system that enjoys decidable inference. The soundness proof of the type system employs a non-standard view of π-calculus reactions. The coverability problem for hierarchical terms is decidable. This is proved by showing that every hierarchical term is depth-bounded, an undecidable property known in the literature. We thus obtain an expressive static fragment of the π-calculus with decidable safety verification problems.</p>
+
+      </div>
+
       
-        <li>
-          <span class="meta">
+      
+      
+      
+      <div id="related-posts">
+        <h4>Related posts</h4>
+        <ul class="related post-list">
+        
+          <li>
+            <span class="meta">
   <time datetime="2016-08-09T00:00:00+02:00" itemprop="datePublished">Aug 9, 2016</time>
   <span class="tags">
     <i class="fa fa-tags"></i>
@@ -101,44 +148,60 @@
   <a class="post-link" href="/explain-picalc.html">What is that weird animation on my homepage?</a>
 </h1>
 <p class="excerpt">It is not as silly as it looks!</p>
-        </li>
+          </li>
+        
+        </ul>
+      </div>
+      <script id="dsq-count-scr" src="//emanueledosualdo.disqus.com/count.js" async></script>
       
-    </ul>
-  </div>
 
-  <div class="one-third column post-sidebar">
-      <aside class="search">
-  <div class="search-box">
-    <i class="fa fa-search"></i>
-    <input name="q" id="search-post" placeholder="Search post" type="search">
+
+    </article>
+    <div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+    this.page.url = "http://emanueledosualdo.com/research/papers/2016/esop-hierarchical.html";
+    this.page.identifier = "/research/papers/2016/esop-hierarchical";
+};
+
+(function() {
+    var d = document, s = d.createElement('script');
+    s.src = '//emanueledosualdo.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
   </div>
-  <div id="search-results"></div>
-  <script src="/js/search.js"></script>
-</aside>
-      
-<aside class="tags">
+  <div class="one-third column post-sidebar">
+      <aside class="tags">
   <h1>Tags</h1>
   <ul class="tags">
     
-      <li><a href="#" class="tag">picalculus</a></li>
+    
+      <li><a href="/research/papers/#picalculus" class="tag">picalculus</a></li>
+    
+      <li><a href="/research/papers/#type systems" class="tag">type systems</a></li>
+    
+      <li><a href="/research/papers/#concurrency" class="tag">concurrency</a></li>
     
   </ul>
-  <script src="/js/tags.js"></script>
 </aside>
       <aside class="share">
     <h1>Share</h1>
     <div class="buttons">
         <a class="rss share button" href="/feed.xml" title="Subscribe via RSS" itemprop="RSS"><i class="fa fa-rss"></i></a>
-        <a class="share button" href="https://twitter.com/intent/tweet?hashtags=&amp;text=&amp;url=http://emanueledosualdo.com/blog/" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i></a>
-        <a class="share button" href="https://www.facebook.com/sharer/sharer.php?u=http://emanueledosualdo.com/blog/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i></a>
-        <a class="share button" href="https://plus.google.com/share?url=http://emanueledosualdo.com/blog/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> </a>
+        <a class="share button" href="https://twitter.com/intent/tweet?hashtags=picalculus,typesystems,concurrency&amp;text=On%20Hierarchical%20Communication%20Topologies%20in%20the%20π-calculus&amp;url=http://emanueledosualdo.com/research/papers/2016/esop-hierarchical.html" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i></a>
+        <a class="share button" href="https://www.facebook.com/sharer/sharer.php?u=http://emanueledosualdo.com/research/papers/2016/esop-hierarchical.html" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i></a>
+        <a class="share button" href="https://plus.google.com/share?url=http://emanueledosualdo.com/research/papers/2016/esop-hierarchical.html" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> </a>
     </div>
 </aside>
+      
   </div>
-
-  <script id="dsq-count-scr" src="//emanueledosualdo.disqus.com/count.js" async></script>
-
 </div>
+
 
  <footer class="row">
   <div class="column">
