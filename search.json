@@ -11,7 +11,55 @@
 
 
   
+    {
+      "title"            : "About",
+      "link"            : "http://emanueledosualdo.com/about/",
+      "excerpt"        : ""
+    }
+  
 
+  
+    ,{
+      "title"            : "Blog",
+      "link"            : "http://emanueledosualdo.com/blog/",
+      "excerpt"        : ""
+    }
+  
+
+  
+    ,{
+      "title"            : "Contact",
+      "link"            : "http://emanueledosualdo.com/contact/",
+      "excerpt"        : ""
+    }
+  
+
+  
+
+  
+    ,{
+      "title"            : "Homepage",
+      "link"            : "http://emanueledosualdo.com/",
+      "excerpt"        : ""
+    }
+  
+
+  
+
+  
+    ,{
+      "title"            : "News",
+      "link"            : "http://emanueledosualdo.com/news/",
+      "excerpt"        : ""
+    }
+  
+
+  
+    ,{
+      "title"            : "Publications",
+      "link"            : "http://emanueledosualdo.com/research/papers/",
+      "excerpt"        : ""
+    }
   
 
   
@@ -19,17 +67,11 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
+    ,{
+      "title"            : "Research",
+      "link"            : "http://emanueledosualdo.com/research/",
+      "excerpt"        : ""
+    }
   
 
   
