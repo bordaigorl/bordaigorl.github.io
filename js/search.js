@@ -11,7 +11,6 @@ function do_search_post() {
     $.getJSON("/search.json", function(data) {
       $.each(data, function(index, item) {
         if (item.excerpt.toLowerCase().indexOf(q.toLowerCase()) > -1 || item.title.toLowerCase().indexOf(q.toLowerCase()) > -1) {
-          console.log(item);
           $list.append('<li class="search-result"><a href="'+item.link+'">'+item.title+'</a></li>')
           res_count++;
         }

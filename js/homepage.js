@@ -1,6 +1,7 @@
 function resizeHeader() {
   var $header = $("header"),
       y = $header.offset().top + $header.outerHeight(false);
+  y = Math.floor(y);
   $("#homedrawing").css("top", y + "px");
 }
 $(window).resize(resizeHeader);

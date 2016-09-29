@@ -6,8 +6,8 @@
 </description>
     <link>http://emanueledosualdo.com/</link>
     <atom:link href="http://emanueledosualdo.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 28 Aug 2016 01:34:38 +0800</pubDate>
-    <lastBuildDate>Sun, 28 Aug 2016 01:34:38 +0800</lastBuildDate>
+    <pubDate>Thu, 29 Sep 2016 23:42:03 +0200</pubDate>
+    <lastBuildDate>Thu, 29 Sep 2016 23:42:03 +0200</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -26,7 +26,7 @@ If you’d like to know more, watch this space for an upcoming write-up about th
 &lt;p&gt;I wrote the simulator in JavaScript and &lt;a href=&quot;https://d3js.org/&quot;&gt;D3.js&lt;/a&gt; to support my presentation on the contents of &lt;a href=&quot;/research/#thesis&quot;&gt;my Ph.D. thesis&lt;/a&gt;. The code evolved from a simple prototype and I am in the process of rewriting it completely. Once it is in usable state I’ll post it on GitHub, so stay tuned!&lt;/p&gt;
 
 </description>
-        <pubDate>Tue, 09 Aug 2016 00:00:00 +0800</pubDate>
+        <pubDate>Tue, 09 Aug 2016 00:00:00 +0200</pubDate>
         <link>http://emanueledosualdo.com/explain-picalc.html</link>
         <guid isPermaLink="true">http://emanueledosualdo.com/explain-picalc.html</guid>
         

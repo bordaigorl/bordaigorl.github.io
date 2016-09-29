@@ -2,16 +2,6 @@
 
   
     {
-      "title"            : "What is that weird animation on my homepage?",
-      "link"            : "http://emanueledosualdo.com/explain-picalc.html",
-      "excerpt"        : "It is not as silly as it looks!"
-    }
-  
-
-
-
-  
-    {
       "title"            : "About",
       "link"            : "http://emanueledosualdo.com/about/",
       "excerpt"        : ""
@@ -74,6 +64,16 @@
     }
   
 
+  
+
+
+
+  
+    ,{
+      "title"            : "What is that weird animation on my homepage?",
+      "link"            : "http://emanueledosualdo.com/explain-picalc.html",
+      "excerpt"        : "It is not as silly as it looks!"
+    }
   
 
 ]

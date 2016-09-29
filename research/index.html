@@ -81,7 +81,7 @@
 </header>
 
 
- <div class="spaced content row">
+ <div class="main content row">
   <article class="two-thirds column">
     <h4 id="topics">Topics</h4>
     <p>
@@ -97,7 +97,7 @@
   </aside>
   </div>
 </div>
-<div class="spaced content row">
+<div class="spaced main content row">
   <article class="column">
     <h4 class="clear" id="thesis">PhD Thesis</h4>
     <div class="float right" style="width: 30%;">
@@ -134,6 +134,13 @@
       implemented in the tool <a href="http://github.com/bordaigorl/jamesbound" title="Open demo of tool">James Bound</a>,
       able to capture and check properties of the evolution of communication topology
       of a &pi;&#8209;term.
+    <blockquote class="prize" style="line-height:2em">
+      <i class="fa golden fa-trophy fa-2x fa-pull-left"></i>
+      Winner of the 2016
+        <a href="http://academy.bcs.org/content/distinguished-dissertations">
+          CPHC/BCS Distinguished Dissertation award
+        </a>
+    </blockquote>
     </p>
     <p>
     <a href="http://mjolnir.cs.ox.ac.uk/soter/" title="Open demo of tool" class="button">
@@ -159,7 +166,8 @@
      
      
        
-<div class="paper-card" id="esop2016">
+
+<div class="paper-card" id="lics2016">
     
       <div class="links">
         
@@ -171,7 +179,6 @@
       </div>
     
       <div class="venue">
-        
         <span class="venue">LICS</span>
         <span class="year">2016</span>
       </div>
@@ -203,6 +210,7 @@
 </div>
      
        
+
 <div class="paper-card" id="esop2016">
     
       <div class="links">
@@ -219,7 +227,6 @@
       </div>
     
       <div class="venue">
-        
         <span class="venue">ESOP</span>
         <span class="year">2016</span>
       </div>
@@ -244,7 +251,8 @@
 </div>
      
        
-<div class="paper-card" id="esop2016">
+
+<div class="paper-card" id="sas2013">
     
       <div class="links">
         
@@ -260,7 +268,6 @@
       </div>
     
       <div class="venue">
-        
         <span class="venue">SAS</span>
         <span class="year">2013</span>
       </div>
@@ -312,7 +319,7 @@
      function highlight(){
            if(window.location.hash) {
             setTimeout(function() {
-             var elem = $(window.location.hash + ".publication");
+             var elem = $(window.location.hash + ".paper-card");
              setTimeout(function () {
                elem.css({backgroundColor: "#ffff99"});
              }, 200)
