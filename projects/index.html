@@ -15,10 +15,12 @@
 
 <link rel="canonical" href="http://emanueledosualdo.com/projects/">
 
-<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600|Kreon:300,400' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://use.fontawesome.com/cb833953a4.css">
 
 <link rel="stylesheet" href="/style/main.css">
+
+<link rel="stylesheet" href="/style/lightbox.css">
 
 
 
@@ -91,7 +93,7 @@
       <h6>Soter</h6>
     </div>
     <div class="demo">
-      <div class="dimmer"><i class="fa fa-expand fa-2x"></i></div>
+    <a href="/images/projects/soter.png" data-title="Soter" data-lightbox="research">  <div class="dimmer"><i class="fa fa-expand fa-2x"></i></div></a>
       <img src="/images/projects/soter.png">
     </div>
     <p class="description">
@@ -116,7 +118,7 @@
     <h6>James Bound</h6>
   </div>
   <div class="demo">
-    <div class="dimmer"><i class="fa fa-expand fa-2x"></i></div>
+  <a href="/images/projects/jamesbound.png" data-title="James Bound" data-lightbox="research">  <div class="dimmer"><i class="fa fa-expand fa-2x"></i></div></a>
     <img src="/images/projects/jamesbound.png">
   </div>
   <p class="description">
@@ -140,7 +142,7 @@
     <h6>Stargazer</h6>
   </div>
   <div class="demo">
-    <div class="dimmer"><i class="fa fa-expand fa-2x"></i></div>
+  <a href="/images/projects/stargazer.png" data-title="Stargazer" data-lightbox="research">  <div class="dimmer"><i class="fa fa-expand fa-2x"></i></div></a>
     <img src="/images/projects/stargazer.png">
   </div>
   <p class="description">
@@ -165,7 +167,8 @@
       <h6>LaborSim</h6>
     </div>
     <div class="demo">
-    <div class="dimmer"><i class="fa fa-expand fa-2x"></i></div>
+      <a href="/images/projects/laborsim.png" data-title="LaborSim" data-lightbox="other">
+        <div class="dimmer"><i class="fa fa-expand fa-2x"></i></div></a>
       <img src="/images/projects/laborsim.png">
     </div>
     <p class="description">
@@ -187,7 +190,8 @@
       <h6>Evernote for ST3</h6>
     </div>
     <div class="demo">
-    <div class="dimmer"><i class="fa fa-expand fa-2x"></i></div>
+      <a href="/images/projects/st3evernote.png" data-title="Evernote for ST3" data-lightbox="other">
+        <div class="dimmer"><i class="fa fa-expand fa-2x"></i></div></a>
       <img src="/images/projects/st3evernote.png">
     </div>
     <p class="description">
@@ -209,7 +213,8 @@
       <h6>DBLP for ST3</h6>
     </div>
     <div class="demo">
-    <div class="dimmer"><i class="fa fa-expand fa-2x"></i></div>
+      <a href="/images/projects/st3dblp.png" data-title="DBLP for ST3" data-lightbox="other">
+        <div class="dimmer"><i class="fa fa-expand fa-2x"></i></div></a>
       <img src="/images/projects/st3dblp.png">
     </div>
     <p class="description">
@@ -270,61 +275,49 @@
 <script type="text/javascript">
   equalheight = function(container){
 
-  var currentTallest = 0,
-       currentRowStart = 0,
-       rowDivs = new Array(),
-       $el,
-       topPosition = 0;
-   $(container).each(function() {
+    var currentTallest = 0,
+    currentRowStart = 0,
+    rowDivs = new Array(),
+    $el,
+    topPosition = 0;
 
-     $el = $(this);
-     $($el).height('auto')
-     topPostion = $el.position().top;
+    $(container).each(function() {
+      $el = $(this);
+      $($el).height('auto')
+      topPostion = $el.position().top;
 
-     if (currentRowStart != topPostion) {
-       for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
-         rowDivs[currentDiv].height(currentTallest);
-       }
-       rowDivs.length = 0; // empty the array
-       currentRowStart = topPostion;
-       currentTallest = $el.height();
-       rowDivs.push($el);
-     } else {
-       rowDivs.push($el);
-       currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
-    }
-     for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
-       rowDivs[currentDiv].height(currentTallest);
-     }
-   });
+      if (currentRowStart != topPostion) {
+        for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+          rowDivs[currentDiv].height(currentTallest);
+        }
+        rowDivs.length = 0; // empty the array
+        currentRowStart = topPostion;
+        currentTallest = $el.height();
+        rowDivs.push($el);
+      } else {
+        rowDivs.push($el);
+        currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+      }
+      for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+        rowDivs[currentDiv].height(currentTallest);
+      }
+    });
+
   }
 
   $(window).load(function() {
-    equalheight('.portfolio .card');
     equalheight('.portfolio p.description');
+    equalheight('.portfolio .card');
   });
 
 
   $(window).resize(function(){
-    equalheight('.portfolio .card');
     equalheight('.portfolio p.description');
-  });
-
-  $(".overlay").click(function(event) {
-    $(this).hide();
-  });
-  $(".demo .dimmer").click(function(event) {
-    var img = $(this).parent().find("img").attr("src");
-    $(".overlay-content").html('<img style="max-width: 80%;" src="' + img + '" />')
-    $('.overlay-content img').on('load', function() {
-      $(".overlay").toggle();
-      $(".overlay-content").css("top",
-          (($(window).height() - $(".overlay-content img").height()) / 2) +'px'
-      );
-    })
+    equalheight('.portfolio .card');
   });
 
 </script>
+
 
  <footer class="row">
   <div class="column">
@@ -372,6 +365,8 @@ $nav.on("click", function() {
 <script async defer type="text/javascript" src="/js/cookies-consent.js"></script>
 
 
+  
+  <script type="text/javascript" src="/lib/lightbox.min.js"></script>
   
 
 </body>

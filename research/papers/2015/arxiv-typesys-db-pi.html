@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-<title>Automatic Verification of Erlang-Style Concurrency - Emanuele D&#39;Osualdo</title>
+<title>A Type System for proving Depth Boundedness in the π-calculus - Emanuele D&#39;Osualdo</title>
 <meta name="description" content="Abstract">
 <meta name="author" content="Emanuele D'Osualdo">
 
@@ -12,7 +12,7 @@
 
 
 
-<link rel="canonical" href="http://emanueledosualdo.com/research/papers/2013/sas-soter.html">
+<link rel="canonical" href="http://emanueledosualdo.com/research/papers/2015/arxiv-typesys-db-pi.html">
 
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600|Kreon:300,400' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://use.fontawesome.com/cb833953a4.css">
@@ -87,20 +87,13 @@
 
       <header class="meta">
         
-        <div class="venue"><span title="Static Analysis">SAS</span> 2013</div>
-        <h1 class="title" itemprop="name headline">Automatic Verification of Erlang-Style Concurrency</h1>
+        <div class="venue"><span title="Computing Research Repository (arXiv)">CoRR</span> 2015</div>
+        <h1 class="title" itemprop="name headline">A Type System for proving Depth Boundedness in the π-calculus</h1>
         <ul class="authors">
         
           
           
             <li class="author me">E. D'Osualdo</li>
-          
-        
-          
-          
-            <li class="author">
-              <a href="#" title="Jonathan Kochems">J. Kochems</a>
-            </li>
           
         
           
@@ -113,15 +106,13 @@
         </ul>
         <div class="paper links">
           
-            <a href="http://mjolnir.cs.ox.ac.uk/soter/papers/sas13.pdf" class="button primary"><i class="fa fa-download"></i>Pdf</a>
+            <a href="https://arxiv.org/pdf/1502.00944.pdf" class="button primary"><i class="fa fa-download"></i>Pdf</a>
           
           
-            <a href="http://arxiv.org/abs/1303.2201" class="button"><i class="fa fa-database"></i>ArXiv</a>
+            <a href="http://arxiv.org/abs/1502.00944" class="button"><i class="fa fa-database"></i>ArXiv</a>
           
           
           
-          
-            <a href="http://mjolnir.cs.ox.ac.uk/soter/" class="button"><i class="fa fa-rocket"></i>Demo</a>
           
           
         </div>
@@ -130,8 +121,8 @@
       <div class="content" itemprop="articleBody">
         <h1 id="abstract">Abstract</h1>
 
-<p>This paper presents an approach to verify safety properties of Erlang-style, higher-order concurrent programs automatically. Inspired by Core Erlang, we introduce λActor, a prototypical functional language with pattern-matching algebraic data types, augmented with process creation and asynchronous message-passing primitives. We formalise an abstract model of λActor programs called Actor Communicating System (ACS) which has a natural interpretation as a vector addition system, for which some verification problems are decidable. We give a parametric abstract interpretation framework for λActor and use it to build a polytime computable, flow-based, abstract semantics of λActor programs, which we then use to bootstrap the ACS construction, thus deriving a more accurate abstract model of the input program.
-We evaluate the method which we implemented in the prototype Soter. We find that in practice our abstraction technique is accurate enough to verify an interesting range of safety properties. Though the ACS coverability problem is Expspace-complete, Soter can analyse non-trivial programs in a matter of seconds.</p>
+<p>The depth-bounded fragment of the π-calculus is an expressive class of systems enjoying decidability of some important verification problems. Unfortunately membership of the fragment is undecidable. We propose a novel type system, parameterised over a finite forest, that formalises name usage by π-terms in a manner that respects the forest. Type checking is decidable and type inference is computable; furthermore typable π-terms are guaranteed to be depth bounded. 
+The second contribution of the paper is a proof of equivalence between the semantics of typable terms and nested data class memory automata, a class of automata over data words. We believe this connection can help to establish new links between the rich theory of infinite-alphabet automata and nominal calculi.</p>
 
       </div>
 
@@ -145,8 +136,8 @@ We evaluate the method which we implemented in the prototype Soter. We find that
     <div id="disqus_thread"></div>
 <script>
 var disqus_config = function () {
-    this.page.url = "http://emanueledosualdo.com/research/papers/2013/sas-soter.html";
-    this.page.identifier = "/research/papers/2013/sas-soter";
+    this.page.url = "http://emanueledosualdo.com/research/papers/2015/arxiv-typesys-db-pi.html";
+    this.page.identifier = "/research/papers/2015/arxiv-typesys-db-pi";
 };
 
 (function() {
@@ -170,15 +161,11 @@ var disqus_config = function () {
   <ul class="tags">
     
     
-      <li><a href="/research/papers/#erlang" class="tag">erlang</a></li>
+      <li><a href="/research/papers/#picalculus" class="tag">picalculus</a></li>
     
-      <li><a href="/research/papers/#static analysis" class="tag">static analysis</a></li>
+      <li><a href="/research/papers/#type systems" class="tag">type systems</a></li>
     
-      <li><a href="/research/papers/#verification" class="tag">verification</a></li>
-    
-      <li><a href="/research/papers/#petri nets" class="tag">petri nets</a></li>
-    
-      <li><a href="/research/papers/#concurrency" class="tag">concurrency</a></li>
+      <li><a href="/research/papers/#automata" class="tag">automata</a></li>
     
   </ul>
 </aside>
@@ -186,15 +173,19 @@ var disqus_config = function () {
     <h1>Share</h1>
     <div class="buttons">
         <a class="rss share button" href="/feed.xml" title="Subscribe via RSS" itemprop="RSS"><i class="fa fa-rss"></i></a>
-        <a class="share button" href="https://twitter.com/intent/tweet?hashtags=erlang,staticanalysis,verification,petrinets,concurrency&amp;text=Automatic%20Verification%20of%20Erlang-Style%20Concurrency&amp;url=http://emanueledosualdo.com/research/papers/2013/sas-soter.html" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i></a>
-        <a class="share button" href="https://www.facebook.com/sharer/sharer.php?u=http://emanueledosualdo.com/research/papers/2013/sas-soter.html" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i></a>
-        <a class="share button" href="https://plus.google.com/share?url=http://emanueledosualdo.com/research/papers/2013/sas-soter.html" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> </a>
+        <a class="share button" href="https://twitter.com/intent/tweet?hashtags=picalculus,typesystems,automata&amp;text=A%20Type%20System%20for%20proving%20Depth%20Boundedness%20in%20the%20π-calculus&amp;url=http://emanueledosualdo.com/research/papers/2015/arxiv-typesys-db-pi.html" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i></a>
+        <a class="share button" href="https://www.facebook.com/sharer/sharer.php?u=http://emanueledosualdo.com/research/papers/2015/arxiv-typesys-db-pi.html" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i></a>
+        <a class="share button" href="https://plus.google.com/share?url=http://emanueledosualdo.com/research/papers/2015/arxiv-typesys-db-pi.html" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> </a>
     </div>
 </aside>
       
 <aside class="related">
   <h1>Related Papers</h1>
   <ul class="post-links">
+    
+      
+      
+      <li><a href="/research/papers/2016/esop-hierarchical.html">On Hierarchical Communication Topologies in the π-calculus</a></li>
     
       
       

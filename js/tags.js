@@ -21,6 +21,8 @@ function clear_filters() {
 
 function filter_tags() {
     var sel_tags = [];
+    var tot = 0;
+    $("#no-matches").hide();
     $("ul.tags li a").each(function(index, el) {
       var $tag = $(el);
       if($tag.hasClass('active')){
@@ -43,11 +45,15 @@ function filter_tags() {
       }
       if(matches == sel_tags.length){
         $post.fadeIn();
+        tot++;
       } else {
         $post.fadeOut();
       }
 
     });
+    if(tot === 0) {
+      $("#no-matches").fadeIn();
+    }
 }
 $(window).on('hashchange', select_tag);
 $(select_tag);
