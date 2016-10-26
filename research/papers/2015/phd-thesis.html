@@ -109,9 +109,7 @@
             
               <a href="http://ora.ox.ac.uk/objects/uuid:f669b95b-f760-4de9-a62a-374d41172879" class="button"><i class="fa fa-institution"></i>ORA</a>
             
-              <a href="http://mjolnir.cs.ox.ac.uk/soter/" class="button"><i class="fa fa-rocket"></i>soter</a>
-            
-              <a href="http://github.com/bordaigorl/jamesbound" class="button"><i class="fa fa-code"></i>jamesbound</a>
+              <a href="#tools" class="button"><i class="fa fa-rocket"></i>tools</a>
             
           
         </div>
@@ -132,11 +130,21 @@ This dissertation is concerned with the development of fully-automatic
 methods of verification, for message-passing based concurrent systems.</p>
 
 <p>First, we define a sound parametric analysis for Erlang, an industrial strength programming language.
-Thanks to a combination of abstraction and infinite-state model checking, our prototype implementation, called Soter, is able to prove properties of Erlang programs such as unreachability of error states, mutual exclusion, or bounds on
+Thanks to a combination of abstraction and infinite-state model checking, our prototype implementation, called <a href="http://soter.emanueledosualdo.com" title="Open tool demo">Soter</a>, is able to prove properties of Erlang programs such as unreachability of error states, mutual exclusion, or bounds on
 mailboxes.</p>
 
 <p>The resulting analysis, however, has a blind spot: it is not able to precisely represent reconfigurable systems, i.e. systems where the communication network changes over time.
 To fix this, the second part of the thesis develops a novel type system for the analysis of the communication topology of pi-calculus processes.</p>
+
+<h2 id="tools">Tools</h2>
+
+<p>I developed two tools as a result of my research:</p>
+
+<p class="centered"><a class="primary button" href="http://soter.emanueledosualdo.com" title="Open web interface" style="margin-right:1em;min-width:7em"><i class="fa fa-rocket"></i>Soter (Web)</a>
+<a class="primary button" href="https://github.com/bordaigorl/jamesbound" title="Open code repository"><i class="fa fa-github"></i> James Bound</a></p>
+
+<p>The first is <strong>Soter</strong>, a static analyser for Erlang written in collaboration with Jonathan Kochems.
+The second is <strong>James Bound</strong>, an Haskell library to manipulate π-calculus programs and which implements my type system for Hierarchical systems.</p>
 
 <h1 id="summary">Summary</h1>
 
@@ -146,7 +154,7 @@ To fix this, the second part of the thesis develops a novel type system for the 
 
 <p>We focus on the core features of Erlang, which we formalise by defining the LambdaActor language. We give semantics to LambdaActor in a form that supports the application of abstract interpretation and systematically derive a provably sound parametric control-flow analysis. The analysis is then used to bootstrap the construction of an abstract model of the semantics that we call <em>Actor Communicating System</em> (ACS). ACS are given semantics by means of <em>Vector Addition System</em> (VAS), also known as Petri nets, which have rich decidable properties. We exploit a class of properties called <em>coverability queries</em> to prove properties of Erlang programs such as unreachability of error states, mutual exclusion, or bounds on mailboxes. After showing how the ACS model is extracted from the analysis and establishing the relation between the program’s and the ACS’ semantics, we discuss limitations and possible extensions of the analysis.</p>
 
-<p>To assess the empirical effectiveness of the approach, we constructed Soter, a tool implementation of the verification method, thereby obtaining the first fully-automatic, infinite-state model checker for a core concurrent fragment of Erlang.</p>
+<p>To assess the empirical effectiveness of the approach, we constructed <a href="http://soter.emanueledosualdo.com" title="Open tool demo">Soter</a>, a tool implementation of the verification method, thereby obtaining the first fully-automatic, infinite-state model checker for a core concurrent fragment of Erlang.</p>
 
 <p>Then, in the second part of the thesis, we analyse one of the major shortcomings of the proposed abstraction: the representation of the identity of unboundedly many processes participating in interactions is too imprecise. To remedy this problem, we formalise the issue using the pi-calculus, a well-known process algebra which directly and succinctly models name-passing features. In contrast to those of simpler process calculi such as CCS, the <em>communication topology</em> of a pi-calculus system, i.e., the graph linking processes that share channels, is dynamically evolving. From a verification point of view, proving properties of pi-calculus terms is challenging: the full pi-calculus is Turing-complete. As a consequence, a lot of research effort has been devoted to defining fragments of pi-calculus that could be verified automatically while retaining as much expressivity as possible. To date, the most expressive fragment that has decidable verification problems is the <em>depth-bounded pi-calculus</em>, introduced by Roland Meyer. Roughly speaking, the depth of a pi-calculus term can be understood as the maximum length of the simple (i.e. non looping) paths in the communication topology of the term. A term is depth-bounded if there exists a natural number k such that the maximal nested depth of restriction of each reachable term is bounded by k.</p>
 
