@@ -6,9 +6,120 @@
 </description>
     <link>http://emanueledosualdo.com/</link>
     <atom:link href="http://emanueledosualdo.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 26 Oct 2016 14:22:57 +0200</pubDate>
-    <lastBuildDate>Wed, 26 Oct 2016 14:22:57 +0200</lastBuildDate>
+    <pubDate>Wed, 02 Nov 2016 19:51:56 +0100</pubDate>
+    <lastBuildDate>Wed, 02 Nov 2016 19:51:56 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>The art of the misspelling</title>
+        <description>&lt;p&gt;My name is Emanuele D’Osualdo.
+I know what you are thinking, and I do not blame you.
+Actually, let me get this straight from the start:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I hereby forgive you, fully and pre-emptively,
+for misspelling or mispronouncing my name or surname.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Yes, my name is long and complicated (although it has been pointed out to me that Polish names can be orders of magnitude more complicated),
+but in fact I am always amused from the strange misspellings I collected during the years.&lt;/p&gt;
+
+&lt;p&gt;Before going into that, if you are wondering about the pronunciation,
+here is my name pronounced correctly:&lt;/p&gt;
+
+&lt;audio src=&quot;/doc/name.mp3&quot; controls=&quot;controls&quot;&gt;
+  &lt;a href=&quot;/doc/name.mp3&quot; class=&quot;button&quot;&gt;
+      Click here to play
+      &lt;i class=&quot;fa fa-play&quot;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/audio&gt;
+
+&lt;h1 id=&quot;misspellings-of-dosualdo&quot;&gt;Misspellings of D’Osualdo&lt;/h1&gt;
+
+&lt;p&gt;My surname is weird even to Italian ears. Common misspellings include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;D’Osvaldo&lt;/strong&gt; (Osvaldo is an old-fashioned Italian name)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;D’Osvualdo&lt;/strong&gt; (if you are not sure, put both)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;D’Osvivaldo&lt;/strong&gt; (strangely reminiscent of Vivaldi)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Gesualdo&lt;/strong&gt; (another Italian composer!)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;D’Osulado&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;d’odusldo&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Dosualvo&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Dosvalbo&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Dosvlaudo&lt;/strong&gt; — or something like this where it is clear that the one who typed it simply gave up after three letters&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;d’Osualdo&lt;/strong&gt; or just &lt;strong&gt;Osualdo&lt;/strong&gt; — I get this a lot in Germany, where they seem to interpret the “D’” as an optional decoration. Main drawback: I may be listed under “O” in alphabetic order!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;the-apostrophe&quot;&gt;The apostrophe&lt;/h1&gt;
+
+&lt;p&gt;A separate category of misspellings concerns the apostrophe:
+we are in 2016 and still computer systems systematically stumble when dealing with my surname.
+The apostrophe is to an online form
+what a mouse is to an elephant.&lt;/p&gt;
+
+&lt;p class=&quot;centered&quot;&gt;&lt;img src=&quot;/images/posts/2016-11-02-the-art-of-the-misspelling/cyberman.gif&quot; /&gt; 
+  &lt;img src=&quot;/images/posts/2016-11-02-the-art-of-the-misspelling/apostrophe.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sometimes it is simply rejected, sometimes the apostrophe gets removed with arbitrary fixes such as replacing it with a space or removing the character altogether.
+And these are the good cases. In others it simply makes the system fail because of improper handling of user-provided data.
+Yes I am &lt;a href=&quot;http://xkcd.com/327/&quot;&gt;Little Bobby Tables&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p class=&quot;wide-image&quot;&gt;&lt;a href=&quot;http://xkcd.com/327/&quot;&gt;&lt;img src=&quot;http://imgs.xkcd.com/comics/exploits_of_a_mom.png&quot; alt=&quot;Exploits of a mom (xkcd.com)&quot; title=&quot;Exploits of a mom (xkcd.com)&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In fact it is the apostrophe in my surname that made me independently come up with my first SQL-injection exploit. Good times.&lt;/p&gt;
+
+&lt;p&gt;In Germany the problem is aggravated by the fact that the German language uses the apostrophe very rarely, so people just use the acute accent symbol ` instead, which is more easily found on keyboards!&lt;/p&gt;
+
+&lt;p&gt;And then there’s my first name.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-curse-of-emmanuelle&quot;&gt;The curse of Emmanuelle&lt;/h1&gt;
+
+&lt;p&gt;To make things worse, my first name, &lt;em&gt;Emanuele&lt;/em&gt;, lends itself to all sorts of ambiguities and misspellings.
+The list of similar, but distinct, names is long:
+Emmanuele, Emmanuelle, Emanuelle, Manuel, Manuele, Manuelle…
+To those you have to add the misspellings (once I got Emanuale).
+Pronunciation is a further issue: at best I get something that resembles &lt;em&gt;manual&lt;/em&gt;, at worst I get some irrecognisable mash of &lt;em&gt;m&lt;/em&gt;s, &lt;em&gt;n&lt;/em&gt;s and &lt;em&gt;l&lt;/em&gt;s.&lt;/p&gt;
+
+&lt;p&gt;The funniest story around my first name comes from my Erasmus in Turkey.
+I arrive in Istanbul and go to my hostel.
+They ask for my ID, start transcribing the data…when they stop at the name and start giggling.
+Ok, fine, it’s a strange name, whatever, just give me the keys of the room.
+After some rest, I go back to the reception and the guy starts giggling again after seeing me. Uh, ok, weird. I explore the surroundings, go back to the hostel. Now the receptionist is with a friend and as soon as I show up he says my name in a very refined attempt to signal to his friend that “This is the guy I told you about”. Ok, guy from the reception, I confront you: what’s so funny?!?
+«Well…you know…when I was little…there was this, uhm, “movie”, you know the ones that they play late at night…it was called &lt;em&gt;Emmanuelle&lt;/em&gt;. Every Turk knows it!»
+This is true, apparently “Emmanuelle” was a popular &lt;a href=&quot;https://en.wikipedia.org/wiki/Emmanuelle_(film)&quot;&gt;erotic movie from the seventies&lt;/a&gt;.
+Except:&lt;/p&gt;
+
+&lt;p class=&quot;centered&quot;&gt;THE MALE ITALIAN NAME EMANUELE&lt;br /&gt;
+IS &lt;strong&gt;NOT&lt;/strong&gt;&lt;br /&gt;
+THE FEMALE FRENCH NAME EMMANUELLE&lt;/p&gt;
+
+&lt;p&gt;Beside the spelling and the different language,
+the pronunciation is completely different.
+Of course to Turkish ears the two are indistinguishable.
+With obvious repercussions on my introductions:&lt;/p&gt;
+
+&lt;p&gt;- «Hello I am Murat»&lt;br /&gt;
+- «Nice to meet you, I am…MANU»&lt;br /&gt;
+[Friend who knew me from before]&lt;br /&gt;
+- «“Manu”? No…tell him your full name!»&lt;/p&gt;
+
+&lt;p&gt;Yes, every time I introduced myself to a &lt;em&gt;male&lt;/em&gt; Turkish guy I got the giggles back!&lt;/p&gt;
+
+&lt;!-- ## The worst list of nicknames on earth
+
+Although people used many nicknames for me in the past---Ema, Emanu, Lele, Dosu---the one that I commonly use is Manu.
+Feel free to use it! --&gt;
+
+</description>
+        <pubDate>Wed, 02 Nov 2016 00:00:00 +0100</pubDate>
+        <link>http://emanueledosualdo.com/blog/2016/the-art-of-the-misspelling.html</link>
+        <guid isPermaLink="true">http://emanueledosualdo.com/blog/2016/the-art-of-the-misspelling.html</guid>
+        
+        <category>fun</category>
+        
+        
+      </item>
     
       <item>
         <title>What is that weird animation on my homepage?</title>
