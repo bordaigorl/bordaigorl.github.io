@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+  <meta charset="utf-8">
+<title>Why Computer Science is a Science - Emanuele D&#39;Osualdo</title>
+<meta name="description" content="The Winter semester just ended here in Kaiserslautern and I gave the last lecture of the Concurrency Theory course I taught.We covered Petri nets, WSTS and P...">
+<meta name="author" content="Emanuele D'Osualdo">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+<link rel="canonical" href="http://emanueledosualdo.com/blog/2017/why-computer-science-is-a-science.html">
+
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600|Kreon:300,400' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://use.fontawesome.com/cb833953a4.css">
+
+<link rel="stylesheet" href="/style/main.css">
+
+
+
+<link rel="icon" type="image/png" href="http://emanueledosualdo.com/images/favicon.png">
+
+<link rel="alternate" type="application/rss+xml" title="Emanuele D'Osualdo" href="http://emanueledosualdo.com/feed.xml">
+
+
+
+<script type="text/javascript" src="/lib/jquery.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-80207647-1', 'auto'); ga('send', 'pageview');
+</script>
+
+
+
+</head>
+
+<body>
+
+   <div class="container">
+
+ 
+
+
+<header class="row">
+  <div class="name column">
+    <h1><a href="/" title="Home">Emanuele D'Osualdo</a></h1>
+    <h2>Researcher in Computer Science</h2>
+    <nav>
+      <div class="menu head">
+        Blog
+        <i class="fa fa-bars fa-lg fa-pull-right"></i>
+      </div>
+      
+        <span class="nav-home"><a href="/">Home</a></span>
+      
+      
+        <span class="nav-item"><a href="/blog/" class="active">Blog</a></span>
+      
+        <span class="nav-item"><a href="/research/">Research</a></span>
+      
+        <span class="nav-item"><a href="/projects/">Projects</a></span>
+      
+        <span class="nav-item"><a href="/about/">About</a></span>
+      
+        <span class="nav-item"><a href="/contact/">Contact</a></span>
+      
+    </nav>
+  </div>
+  
+  <div class="logo column">
+    <a href="/" title="Go to home">
+    <svg class="logo" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 177.34 188.17" version="1.1"> <g stroke="#999" stroke-width="2"> <line y2="117.28" x2="72.081" y1="90.295" x1="115.04"/> <line y2="117.28" x2="72.081" y1="142.8" x1="121.65"/> <line y2="153.39" x2="171.74" y1="142.8" x1="121.65"/> <line y2="117.28" x2="72.081" y1="57.893" x1="75.387"/> <line y2="5.6" x2="79.838" y1="57.893" x1="75.387"/> <line y2="117.28" x2="72.081" y1="85.156" x1="31.827"/> <line y2="117.28" x2="72.081" y1="137.49" x1="20.961"/> <line y2="182.57" x2="5.6" y1="137.49" x1="20.961"/> <line y2="117.28" x2="72.081" y1="168.14" x1="52.729"/> <line y2="182.57" x2="5.6" y1="168.14" x1="52.729"/> </g> <g stroke="#fff" stroke-width="1.2px" fill="#5b7a8c"> <circle cy="117.28" cx="72.081" r="5"></circle> <circle cy="153.39" cx="171.74" r="5"></circle> <circle cy="5.6" cx="79.838" r="5"></circle> <circle cy="182.57" cx="5.6" r="5"></circle> </g> <rect transform="scale(-1,1)" height="12" width="18" y="136.8" x="-130.65" fill="#ff7f0e"></rect> <rect transform="scale(-1,1)" height="12" width="18" y="51.893" x="-84.387" fill="#ff7f0e"></rect> <rect transform="scale(-1,1)" height="12" width="18" y="84.295" x="-124.04" fill="#1f77b4"></rect> <rect transform="scale(-1,1)" height="12" width="18" y="79.156" x="-40.827" fill="#aec7e8"></rect> <rect transform="scale(-1,1)" height="12" width="18" y="131.49" x="-29.961" fill="#ffbb78"></rect> <rect transform="scale(-1,1)" height="12" width="18" y="162.14" x="-61.729" fill="#2ca02c"></rect> </svg>
+
+    </a>
+  </div>
+  
+</header>
+
+
+ <div class="spaced content row">
+  <div class="two-thirds main column post-content">
+
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+      <header class="meta">
+        <time datetime="2017-02-14T00:00:00+01:00" itemprop="datePublished">Feb 14, 2017</time>
+        <h1 class="title" itemprop="name headline">Why Computer Science is a Science</h1>
+      </header>
+
+      <div class="content" itemprop="articleBody">
+        <p>The Winter semester just ended here in Kaiserslautern and I gave the last lecture of the <a href="http://concurrency.cs.uni-kl.de/teaching/ConcurrencyTheory_WS_2016_2017.html">Concurrency Theory course</a> I taught.
+We covered Petri nets, WSTS and Process Algebra, exploring their theory with the underlying goal of automatic verification.</p>
+
+<p>In the middle of the course, I realised that there were times where the students were slightly disoriented by the change of register when changing topic. To help them follow better, I came up with a simple notion that helped guiding them to pay attention to the right details.
+What I believe was causing the disorientation was what I called a switch from <strong>problem solving mode</strong> to <strong>conceptual mode</strong>.
+I think making this difference explicit and declaring when I was making the switch helped my student follow the line of reasoning more tightly.
+But I believe these two modes of thinking also help understand why Computer Science is rightfully considered to be part of the Natural Sciences.</p>
+
+<h1 id="problem-solving-mode-the-art-of-the-lemma">Problem Solving mode: the Art of the Lemma</h1>
+
+<p>A lot of results in Theoretical Computer Science rely on hard combinatorial insights. As a consequence, the depth of a result in TCS is often related to the difficulty of this combinatorial core of the argument. Some researchers refer to this core as the “meat” of a result.</p>
+
+<p>When trying to come up with this kind of results,
+or trying to understand them,
+the mindset one adopts is what I call the <strong>problem solving mode</strong>,
+that is, your attention is directed to details of the mechanics of a formally well-defined problem, a “puzzle”.
+An instance of a puzzle could be
+    “How long can the minimal covering paths in a Petri net be?”.<sup id="fnref:rackoff"><a href="#fn:rackoff" class="footnote">1</a></sup></p>
+
+<p>This mode of thinking is the main one used in engineering work:
+you are presented with a complicated but circumscribed problem and apply some mathematical insight to provide a solution.
+In CS, the puzzles we face range from the very practical
+(“How do you sort an array as quickly as possible?”) 
+to the very abstract
+(“How do you reduce the halting problem to a problem in arithmetic?”).
+But at the core, they require a similar mindset to find a solution.
+I would call problem-solving the “Art of the Lemma”.</p>
+
+<p>Worthwhile puzzles are however never formulated in a vacuum:
+they arise as milestones in a wider conceptual framework that motivates their relevance and allows them to be defined in the first place.
+The activity of coming up with such a framework requires the use of what I call <strong>conceptual mode</strong>.</p>
+
+<h1 id="conceptual-mode-the-art-of-the-definition">Conceptual mode: the Art of the Definition</h1>
+
+<p>Problem solving mode is what makes many put CS and Engineering together in the same category.
+I would argue that CS as a whole, sets itself aside from pure Engineering because of its substantial use of what I call <strong>conceptual mode</strong>.
+This mode of thinking is characterised by the exploratory experimentation with some basic phenomenon that we are trying to understand. The conceptualisation process works by formulating rigorous models of the phenomenon at hand and putting these models to test.
+It heavily involves abstraction, formalisation and generalisation abilities. 
+The outcome of the process is a set of basic assumptions and definitions that would form the basis for a <em>language</em> to express facts and properties regarding the phenomenon under study.
+I would call conceptualisation the “Art of the Definition”.</p>
+
+<p>Problems that are solved by employing the conceptual mindset are typically not well-defined and ambiguous. Examples could be “What is behaviour?”<sup id="fnref:beh"><a href="#fn:beh" class="footnote">2</a></sup> or “What does it mean for an analysis to be sound?”.<sup id="fnref:absint"><a href="#fn:absint" class="footnote">3</a></sup></p>
+
+<p>Big tech companies like Google or Facebook have interview processes set up to test the purely problem-solving abilities of candidates. Their reputation then does the rest: the problem solving aspect of CS is often over-emphasised and CS may be reduced to puzzle-solving from the perspective of an outsider.
+This makes sense if you consider that these companies are looking, most of the times, for Software Engineers. But in a University we aim at forming professionals that are prepared both technically <em>and</em> culturally. Only a balance between the conceptual and problem solving aspects of our discipline can achieve this.</p>
+
+<h1 id="zen-in-the-art-of-research">Zen in the Art of Research</h1>
+
+<p>The two modes are both absolutely essential in solving typical CS problems.
+They are not competing but simply complementary.
+I find that making the switch between the two modes a conscious process,
+helps focusing on the important aspects of the problem and coming to a solution in a more enlightened way.</p>
+
+<p>Conceptualisation provides direction and a strong relation with the phenomenon of study, producing puzzles that are not meaningless tricks.
+Problem solving gives depth to conceptualisation, allowing non-obvious consequences to be drawn from the premises.</p>
+
+<p>If I think of the state of mind when doing conceptual work, I am reminded of the very nice description of the process of shooting an arrow in the book “Zen in the art of archery”, by the philosopher Eugen Herrigel. Although the book has many limitations, I still appreciate the attempt of the author to communicate to a Western audience ideas grounded in assumptions so distant from ours. Anyway, the description of the state of mind when shooting an arrow resonates, I think, with what one frequently experiences when doing research. The almost obsessive search for the right shot done in the training, striving for a liberation from preconceived assumptions, or emotional attachments to a dead-end. Then the moment of enlightenment: The Definition flows finally in a shape that feels right. And lemmas start to fall into place.
+The arrow leaves the bow and hits the target.
+Once The Definition has been produced, it may result completely obvious to the authors and even obvious to the readers. But this should not fool them: the path leading to its formulation was not obvious at all and to really appreciate its depth the reader must often go through the same path him/herself.</p>
+
+<h1 id="computer-science-is-a-science">Computer Science is a Science</h1>
+
+<p>One may argue that Theoretical Computer Science is actually a branch of Mathematics and as such is not related to the Natural world in the same way as Biology or Physics are. I disagree with this position: the subject matter of CS is <em>information</em> and <em>computation</em>. Both are essential aspects of natural phenomena: every time we witness a computation in the physical world we are putting the theories of CS to the test.
+In fact this can be traced back to the beginning of CS as a discipline, which was marked by two complementary discoveries: the conceptual framework of computable functions and the technical possibility of testing this framework with computers.</p>
+
+<p>Pure problem solving is essentially Engineering.
+Pure conceptual mode is Philosophy.
+Computer Science hits that sweet spot in between the two: it is the combination of the two modes that gives the discipline the relevance and depth of a Science.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:rackoff">
+      <p>The answer is doubly-exponential in the size of the input, as proved in Rackoff’s lower-bound for Petri net coverability. <a href="#fnref:rackoff" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:beh">
+      <p>In the course we answer this question by introducing Bisimulations. The general question of “What is the meaning of a program” led to the development of the field of Semantics. <a href="#fnref:beh" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:absint">
+      <p>A compelling answer can be found in the Abstract Interpretation framework. <a href="#fnref:absint" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      </div>
+
+    </article>
+    <div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+    this.page.url = "http://emanueledosualdo.com/blog/2017/why-computer-science-is-a-science.html";
+    this.page.identifier = "/blog/2017/why-computer-science-is-a-science";
+};
+
+(function() {
+    var d = document, s = d.createElement('script');
+    s.src = '//emanueledosualdo.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  </div>
+  <div class="one-third column post-sidebar">
+      <div class="navigation">
+        <a class="full-width secondary button" href="/blog/">
+          &lt; Back to all Posts</a>
+      </div>
+      
+<div id="post-toc-anchor"></div>
+<aside id="post-toc">
+  <h1>Contents</h1>
+  <ul class="post-links">
+  </ul>
+</aside>
+<script src="/js/toc.js"></script>
+
+      <aside class="search">
+  <div class="search-box">
+    <i class="fa fa-search"></i>
+    <input name="q" id="search-post" placeholder="Search post" type="search">
+  </div>
+  <div id="search-results"></div>
+  <script src="/js/search.js"></script>
+</aside>
+      <aside class="tags">
+  <h1>Tags</h1>
+  <ul class="tags">
+    
+    
+      <li><a href="/blog/#science" class="tag">science</a></li>
+    
+  </ul>
+</aside>
+      <aside class="share">
+    <h1>Share</h1>
+    <div class="buttons">
+        <a class="rss share button" href="/feed.xml" title="Subscribe via RSS" itemprop="RSS"><i class="fa fa-rss"></i></a>
+        <a class="share button" href="https://twitter.com/intent/tweet?hashtags=science&amp;text=Why%20Computer%20Science%20is%20a%20Science&amp;url=http://emanueledosualdo.com/blog/2017/why-computer-science-is-a-science.html" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i></a>
+        <a class="share button" href="https://www.facebook.com/sharer/sharer.php?u=http://emanueledosualdo.com/blog/2017/why-computer-science-is-a-science.html" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i></a>
+        <a class="share button" href="https://plus.google.com/share?url=http://emanueledosualdo.com/blog/2017/why-computer-science-is-a-science.html" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> </a>
+    </div>
+</aside>
+      
+      <aside class="recent">
+  <h1>Recent posts</h1>
+  <ul class="post-links">
+    
+      <li><a href="/blog/2017/why-computer-science-is-a-science.html">Why Computer Science is a Science</a></li>
+    
+      <li><a href="/blog/2016/the-art-of-the-misspelling.html">The art of the misspelling</a></li>
+    
+      <li><a href="/explain-picalc.html">What is that weird animation on my homepage?</a></li>
+    
+  </ul>
+</aside>
+  </div>
+</div>
+
+
+ <footer class="row">
+  <div class="column">
+    Copyright &copy; Emanuele D'Osualdo
+  </div>
+  <div class="column">
+    <span>
+      <a class="social icon button" title="GitHub" href="https://github.com/bordaigorl">
+        <i class="fa fa-github" aria-hidden="true"></i></a>
+      <a class="social icon button" title="Twitter" href="https://twitter.com/bordaigorl">
+        <i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a class="social icon button" title="LinkedIn" href="http://www.linkedin.com/in/bordaigorl">
+        <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+      <a class="social icon button" title="DBLP" href="http://dblp.org/pers/hd/d/D=Osualdo:Emanuele">
+        <img src="/images/dblp.png"></a>
+    </span>
+  </div>
+  <div class="column">
+    <a href="/policy.html">Policy</a>
+    &bull;
+    <a href="/contact/">Contact</a>
+  </div>
+</footer>
+
+</div>
+
+  <script type="text/javascript">
+    var $nav = $("nav");
+$nav.on("click", function() {
+  $nav.toggleClass("open");
+}).on("focusin", function() {
+    $nav.addClass("open");
+}).on("focusout", function() {
+    $nav.removeClass("open");
+});
+  </script>
+
+  <div id="cookies" style="display: none;">
+  <span class="disclaimer">
+    By using our website you consent to all cookies in accordance with our <a href="/policy.html">Cookie Policy</a>.
+  </span>
+  <a class="small primary button" href="#" id="cookies-ok">Ok</a>
+</div>
+
+<script async defer type="text/javascript" src="/js/cookies-consent.js"></script>
+
+
+  
+
+</body>
+</html>

@@ -6,9 +6,103 @@
 </description>
     <link>http://emanueledosualdo.com/</link>
     <atom:link href="http://emanueledosualdo.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 02 Nov 2016 19:51:56 +0100</pubDate>
-    <lastBuildDate>Wed, 02 Nov 2016 19:51:56 +0100</lastBuildDate>
+    <pubDate>Tue, 14 Feb 2017 09:18:50 +0100</pubDate>
+    <lastBuildDate>Tue, 14 Feb 2017 09:18:50 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Why Computer Science is a Science</title>
+        <description>&lt;p&gt;The Winter semester just ended here in Kaiserslautern and I gave the last lecture of the &lt;a href=&quot;http://concurrency.cs.uni-kl.de/teaching/ConcurrencyTheory_WS_2016_2017.html&quot;&gt;Concurrency Theory course&lt;/a&gt; I taught.
+We covered Petri nets, WSTS and Process Algebra, exploring their theory with the underlying goal of automatic verification.&lt;/p&gt;
+
+&lt;p&gt;In the middle of the course, I realised that there were times where the students were slightly disoriented by the change of register when changing topic. To help them follow better, I came up with a simple notion that helped guiding them to pay attention to the right details.
+What I believe was causing the disorientation was what I called a switch from &lt;strong&gt;problem solving mode&lt;/strong&gt; to &lt;strong&gt;conceptual mode&lt;/strong&gt;.
+I think making this difference explicit and declaring when I was making the switch helped my student follow the line of reasoning more tightly.
+But I believe these two modes of thinking also help understand why Computer Science is rightfully considered to be part of the Natural Sciences.&lt;/p&gt;
+
+&lt;h1 id=&quot;problem-solving-mode-the-art-of-the-lemma&quot;&gt;Problem Solving mode: the Art of the Lemma&lt;/h1&gt;
+
+&lt;p&gt;A lot of results in Theoretical Computer Science rely on hard combinatorial insights. As a consequence, the depth of a result in TCS is often related to the difficulty of this combinatorial core of the argument. Some researchers refer to this core as the “meat” of a result.&lt;/p&gt;
+
+&lt;p&gt;When trying to come up with this kind of results,
+or trying to understand them,
+the mindset one adopts is what I call the &lt;strong&gt;problem solving mode&lt;/strong&gt;,
+that is, your attention is directed to details of the mechanics of a formally well-defined problem, a “puzzle”.
+An instance of a puzzle could be
+    “How long can the minimal covering paths in a Petri net be?”.&lt;sup id=&quot;fnref:rackoff&quot;&gt;&lt;a href=&quot;#fn:rackoff&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;This mode of thinking is the main one used in engineering work:
+you are presented with a complicated but circumscribed problem and apply some mathematical insight to provide a solution.
+In CS, the puzzles we face range from the very practical
+(“How do you sort an array as quickly as possible?”) 
+to the very abstract
+(“How do you reduce the halting problem to a problem in arithmetic?”).
+But at the core, they require a similar mindset to find a solution.
+I would call problem-solving the “Art of the Lemma”.&lt;/p&gt;
+
+&lt;p&gt;Worthwhile puzzles are however never formulated in a vacuum:
+they arise as milestones in a wider conceptual framework that motivates their relevance and allows them to be defined in the first place.
+The activity of coming up with such a framework requires the use of what I call &lt;strong&gt;conceptual mode&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;conceptual-mode-the-art-of-the-definition&quot;&gt;Conceptual mode: the Art of the Definition&lt;/h1&gt;
+
+&lt;p&gt;Problem solving mode is what makes many put CS and Engineering together in the same category.
+I would argue that CS as a whole, sets itself aside from pure Engineering because of its substantial use of what I call &lt;strong&gt;conceptual mode&lt;/strong&gt;.
+This mode of thinking is characterised by the exploratory experimentation with some basic phenomenon that we are trying to understand. The conceptualisation process works by formulating rigorous models of the phenomenon at hand and putting these models to test.
+It heavily involves abstraction, formalisation and generalisation abilities. 
+The outcome of the process is a set of basic assumptions and definitions that would form the basis for a &lt;em&gt;language&lt;/em&gt; to express facts and properties regarding the phenomenon under study.
+I would call conceptualisation the “Art of the Definition”.&lt;/p&gt;
+
+&lt;p&gt;Problems that are solved by employing the conceptual mindset are typically not well-defined and ambiguous. Examples could be “What is behaviour?”&lt;sup id=&quot;fnref:beh&quot;&gt;&lt;a href=&quot;#fn:beh&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; or “What does it mean for an analysis to be sound?”.&lt;sup id=&quot;fnref:absint&quot;&gt;&lt;a href=&quot;#fn:absint&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;Big tech companies like Google or Facebook have interview processes set up to test the purely problem-solving abilities of candidates. Their reputation then does the rest: the problem solving aspect of CS is often over-emphasised and CS may be reduced to puzzle-solving from the perspective of an outsider.
+This makes sense if you consider that these companies are looking, most of the times, for Software Engineers. But in a University we aim at forming professionals that are prepared both technically &lt;em&gt;and&lt;/em&gt; culturally. Only a balance between the conceptual and problem solving aspects of our discipline can achieve this.&lt;/p&gt;
+
+&lt;h1 id=&quot;zen-in-the-art-of-research&quot;&gt;Zen in the Art of Research&lt;/h1&gt;
+
+&lt;p&gt;The two modes are both absolutely essential in solving typical CS problems.
+They are not competing but simply complementary.
+I find that making the switch between the two modes a conscious process,
+helps focusing on the important aspects of the problem and coming to a solution in a more enlightened way.&lt;/p&gt;
+
+&lt;p&gt;Conceptualisation provides direction and a strong relation with the phenomenon of study, producing puzzles that are not meaningless tricks.
+Problem solving gives depth to conceptualisation, allowing non-obvious consequences to be drawn from the premises.&lt;/p&gt;
+
+&lt;p&gt;If I think of the state of mind when doing conceptual work, I am reminded of the very nice description of the process of shooting an arrow in the book “Zen in the art of archery”, by the philosopher Eugen Herrigel. Although the book has many limitations, I still appreciate the attempt of the author to communicate to a Western audience ideas grounded in assumptions so distant from ours. Anyway, the description of the state of mind when shooting an arrow resonates, I think, with what one frequently experiences when doing research. The almost obsessive search for the right shot done in the training, striving for a liberation from preconceived assumptions, or emotional attachments to a dead-end. Then the moment of enlightenment: The Definition flows finally in a shape that feels right. And lemmas start to fall into place.
+The arrow leaves the bow and hits the target.
+Once The Definition has been produced, it may result completely obvious to the authors and even obvious to the readers. But this should not fool them: the path leading to its formulation was not obvious at all and to really appreciate its depth the reader must often go through the same path him/herself.&lt;/p&gt;
+
+&lt;h1 id=&quot;computer-science-is-a-science&quot;&gt;Computer Science is a Science&lt;/h1&gt;
+
+&lt;p&gt;One may argue that Theoretical Computer Science is actually a branch of Mathematics and as such is not related to the Natural world in the same way as Biology or Physics are. I disagree with this position: the subject matter of CS is &lt;em&gt;information&lt;/em&gt; and &lt;em&gt;computation&lt;/em&gt;. Both are essential aspects of natural phenomena: every time we witness a computation in the physical world we are putting the theories of CS to the test.
+In fact this can be traced back to the beginning of CS as a discipline, which was marked by two complementary discoveries: the conceptual framework of computable functions and the technical possibility of testing this framework with computers.&lt;/p&gt;
+
+&lt;p&gt;Pure problem solving is essentially Engineering.
+Pure conceptual mode is Philosophy.
+Computer Science hits that sweet spot in between the two: it is the combination of the two modes that gives the discipline the relevance and depth of a Science.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:rackoff&quot;&gt;
+      &lt;p&gt;The answer is doubly-exponential in the size of the input, as proved in Rackoff’s lower-bound for Petri net coverability. &lt;a href=&quot;#fnref:rackoff&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:beh&quot;&gt;
+      &lt;p&gt;In the course we answer this question by introducing Bisimulations. The general question of “What is the meaning of a program” led to the development of the field of Semantics. &lt;a href=&quot;#fnref:beh&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:absint&quot;&gt;
+      &lt;p&gt;A compelling answer can be found in the Abstract Interpretation framework. &lt;a href=&quot;#fnref:absint&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 14 Feb 2017 00:00:00 +0100</pubDate>
+        <link>http://emanueledosualdo.com/blog/2017/why-computer-science-is-a-science.html</link>
+        <guid isPermaLink="true">http://emanueledosualdo.com/blog/2017/why-computer-science-is-a-science.html</guid>
+        
+        <category>science</category>
+        
+        
+      </item>
     
       <item>
         <title>The art of the misspelling</title>
