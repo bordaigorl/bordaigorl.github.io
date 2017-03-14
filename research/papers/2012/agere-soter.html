@@ -9,26 +9,25 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Twitter Cards -->
-<meta name="twitter:title" content="Soter: An Automatic Safety Verifier for Erlang">
+
+<meta property="og:type" content="website">
+<meta name="twitter:title" content="Emanuele D'Osualdo - Soter: An Automatic Safety Verifier for Erlang">
+<meta property="og:title" content="Emanuele D'Osualdo - Soter: An Automatic Safety Verifier for Erlang">
+
 <meta name="twitter:description" content="This paper presents Soter, a fully-automatic program analyser and verifier for Erlang modules. The fragment of Erlang accepted by Soter includes the higher-order functional constructs and all the key features of actor concurrency, namely, dynamic spawning of processes and asynchronous message passing. Soter uses a combination of static analysis and infinite-state model checking to verify safety properties specified by the user. Given an Erlang module and a set of properties, Soter first extracts an abstract (approximate, sound) model in the form of an actor communicating system (ACS), and then checks if the properties are satisfied using a Petri net coverability checker, BFC. To our knowledge, Soter is the first fully-automatic, infinite-state model checker for a large fragment of Erlang. We find that in practice our abstraction technique is accurate enough to verify an interesting range of safety properties such as mutual-exclusion or boundedness of mailboxes. Though the ACS coverability problem is Expspace-complete, Soter can analyse these problems surprisingly efficiently.
 ">
-
+<meta property="og:description" content="This paper presents Soter, a fully-automatic program analyser and verifier for Erlang modules. The fragment of Erlang accepted by Soter includes the higher-order functional constructs and all the key features of actor concurrency, namely, dynamic spawning of processes and asynchronous message passing. Soter uses a combination of static analysis and infinite-state model checking to verify safety properties specified by the user. Given an Erlang module and a set of properties, Soter first extracts an abstract (approximate, sound) model in the form of an actor communicating system (ACS), and then checks if the properties are satisfied using a Petri net coverability checker, BFC. To our knowledge, Soter is the first fully-automatic, infinite-state model checker for a large fragment of Erlang. We find that in practice our abstraction technique is accurate enough to verify an interesting range of safety properties such as mutual-exclusion or boundedness of mailboxes. Though the ACS coverability problem is Expspace-complete, Soter can analyse these problems surprisingly efficiently.
+">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:image" content="http://emanueledosualdo.com/images/logo.png">
+  <meta name="og:image" content="http://emanueledosualdo.com/images/logo.png">
 
-<!-- Open Graph -->
-
-<meta property="og:type" content="website">
-
-<meta property="og:title" content="Soter: An Automatic Safety Verifier for Erlang">
-<meta property="og:description" content="This paper presents Soter, a fully-automatic program analyser and verifier for Erlang modules. The fragment of Erlang accepted by Soter includes the higher-order functional constructs and all the key features of actor concurrency, namely, dynamic spawning of processes and asynchronous message passing. Soter uses a combination of static analysis and infinite-state model checking to verify safety properties specified by the user. Given an Erlang module and a set of properties, Soter first extracts an abstract (approximate, sound) model in the form of an actor communicating system (ACS), and then checks if the properties are satisfied using a Petri net coverability checker, BFC. To our knowledge, Soter is the first fully-automatic, infinite-state model checker for a large fragment of Erlang. We find that in practice our abstraction technique is accurate enough to verify an interesting range of safety properties such as mutual-exclusion or boundedness of mailboxes. Though the ACS coverability problem is Expspace-complete, Soter can analyse these problems surprisingly efficiently.
-">
 <meta property="og:url" content="http://emanueledosualdo.com/research/papers/2012/agere-soter.html">
 <meta property="og:site_name" content="Emanuele D'Osualdo">
 
-  <meta name="og:image" content="http://emanueledosualdo.com/images/logo.png">
+  <meta name="twitter:site" content="@bordaigorl">
+
 
 
 <link rel="canonical" href="http://emanueledosualdo.com/research/papers/2012/agere-soter.html">
