@@ -5,7 +5,8 @@ var map;
 
 function init() {
   var mapOptions = {
-    center: new google.maps.LatLng( 49.830134, 7.170165 ),
+    center: new google.maps.LatLng( 51.4987855, -0.1795678 ),
+    // 51.4987855,-0.1795678,18.62
     zoom: 5,
     zoomControl: false,
     disableDoubleClickZoom: true,
@@ -146,9 +147,8 @@ function init() {
   var mapElement = document.getElementById( 'contact-map' );
   var map = new google.maps.Map( mapElement, mapOptions );
 
-  var contentString = '<strong>TU Kaiserslautern</strong>'+
-        '<p>Office 438, Building 34<br />4th floor</p>'+
-        '<p>+49 (0)631 205 30 71</p>';
+  var contentString = '<strong>Imperial College London</strong>'+
+        '<p>Huxley Building<br />Office 433</p>';
 
 
   var infowindow = new google.maps.InfoWindow({
@@ -158,7 +158,7 @@ function init() {
 
   marker = new google.maps.Marker( {
     icon: '/images/pin.png',
-    position: new google.maps.LatLng( 49.4249421107917, 7.752746314819319 ),
+    position: new google.maps.LatLng( 51.4987855, -0.1795678 ),
     map: map
   } );
 
