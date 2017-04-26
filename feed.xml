@@ -5,8 +5,8 @@
     <description>My research, projects and blog</description>
     <link>http://emanueledosualdo.com/</link>
     <atom:link href="http://emanueledosualdo.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 14 Mar 2017 22:58:34 +0100</pubDate>
-    <lastBuildDate>Tue, 14 Mar 2017 22:58:34 +0100</lastBuildDate>
+    <pubDate>Wed, 26 Apr 2017 23:13:45 +0100</pubDate>
+    <lastBuildDate>Wed, 26 Apr 2017 23:13:45 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -94,7 +94,7 @@ Computer Science hits that sweet spot in between the two: it is the combination 
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Tue, 14 Feb 2017 00:00:00 +0100</pubDate>
+        <pubDate>Tue, 14 Feb 2017 00:00:00 +0000</pubDate>
         <link>http://emanueledosualdo.com/blog/2017/why-computer-science-is-a-science.html</link>
         <guid isPermaLink="true">http://emanueledosualdo.com/blog/2017/why-computer-science-is-a-science.html</guid>
         
@@ -206,7 +206,7 @@ Although people used many nicknames for me in the past---Ema, Emanu, Lele, Dosu-
 Feel free to use it! --&gt;
 
 </description>
-        <pubDate>Wed, 02 Nov 2016 00:00:00 +0100</pubDate>
+        <pubDate>Wed, 02 Nov 2016 00:00:00 +0000</pubDate>
         <link>http://emanueledosualdo.com/blog/2016/the-art-of-the-misspelling.html</link>
         <guid isPermaLink="true">http://emanueledosualdo.com/blog/2016/the-art-of-the-misspelling.html</guid>
         
@@ -231,7 +231,7 @@ If you’d like to know more, watch this space for an upcoming write-up about th
 &lt;p&gt;I wrote the simulator in JavaScript and &lt;a href=&quot;https://d3js.org/&quot;&gt;D3.js&lt;/a&gt; to support my presentation on the contents of &lt;a href=&quot;/research/#thesis&quot;&gt;my Ph.D. thesis&lt;/a&gt;. The code evolved from a simple prototype and I am in the process of rewriting it completely. Once it is in usable state I’ll post it on GitHub, so stay tuned!&lt;/p&gt;
 
 </description>
-        <pubDate>Tue, 09 Aug 2016 00:00:00 +0200</pubDate>
+        <pubDate>Tue, 09 Aug 2016 00:00:00 +0100</pubDate>
         <link>http://emanueledosualdo.com/explain-picalc.html</link>
         <guid isPermaLink="true">http://emanueledosualdo.com/explain-picalc.html</guid>
         
