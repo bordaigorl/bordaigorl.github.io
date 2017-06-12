@@ -3,34 +3,36 @@
 
 <head>
   <meta charset="utf-8">
-<title>Soter: An Automatic Safety Verifier for Erlang - Emanuele D&#39;Osualdo</title>
-<meta name="description" content="This paper presents Soter, a fully-automatic program analyser and verifier for Erlang modules. The fragment of Erlang accepted by Soter includes the higher-o...">
+<title>Deciding Secrecy of Security Protocols for an Unbounded Number of Sessions: The Case of Depth-bounded Processes - Emanuele D&#39;Osualdo</title>
+<meta name="description" content="Abstract">
 <meta name="author" content="Emanuele D'Osualdo">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 <meta property="og:type" content="website">
-<meta name="twitter:title" content="Emanuele D'Osualdo - Soter: An Automatic Safety Verifier for Erlang">
-<meta property="og:title" content="Emanuele D'Osualdo - Soter: An Automatic Safety Verifier for Erlang">
+<meta name="twitter:title" content="Emanuele D'Osualdo - Deciding Secrecy of Security Protocols for an Unbounded Number of Sessions: The Case of Depth-bounded Processes">
+<meta property="og:title" content="Emanuele D'Osualdo - Deciding Secrecy of Security Protocols for an Unbounded Number of Sessions: The Case of Depth-bounded Processes">
 
-<meta name="twitter:description" content="This paper presents Soter, a fully-automatic program analyser and verifier for Erlang modules. The fragment of Erlang accepted by Soter includes the higher-order functional constructs and all the key features of actor concurrency, namely, dynamic spawning of processes and asynchronous message passing. Soter uses a combination of static analysis and infinite-state model checking to verify safety properties specified by the user. Given an Erlang module and a set of properties, Soter first extracts an abstract (approximate, sound) model in the form of an actor communicating system (ACS), and then checks if the properties are satisfied using a Petri net coverability checker, BFC. To our knowledge, Soter is the first fully-automatic, infinite-state model checker for a large fragment of Erlang. We find that in practice our abstraction technique is accurate enough to verify an interesting range of safety properties such as mutual-exclusion or boundedness of mailboxes. Though the ACS coverability problem is Expspace-complete, Soter can analyse these problems surprisingly efficiently.
+<meta name="twitter:description" content="Abstract
+
 ">
-<meta property="og:description" content="This paper presents Soter, a fully-automatic program analyser and verifier for Erlang modules. The fragment of Erlang accepted by Soter includes the higher-order functional constructs and all the key features of actor concurrency, namely, dynamic spawning of processes and asynchronous message passing. Soter uses a combination of static analysis and infinite-state model checking to verify safety properties specified by the user. Given an Erlang module and a set of properties, Soter first extracts an abstract (approximate, sound) model in the form of an actor communicating system (ACS), and then checks if the properties are satisfied using a Petri net coverability checker, BFC. To our knowledge, Soter is the first fully-automatic, infinite-state model checker for a large fragment of Erlang. We find that in practice our abstraction technique is accurate enough to verify an interesting range of safety properties such as mutual-exclusion or boundedness of mailboxes. Though the ACS coverability problem is Expspace-complete, Soter can analyse these problems surprisingly efficiently.
+<meta property="og:description" content="Abstract
+
 ">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:image" content="http://emanueledosualdo.com/images/logo.png">
   <meta property="og:image" content="http://emanueledosualdo.com/images/logo.png">
 
-<meta property="og:url" content="http://emanueledosualdo.com/research/papers/2012/agere-soter.html">
+<meta property="og:url" content="http://emanueledosualdo.com/research/papers/2017/csf-decidable-secrecy.html">
 <meta property="og:site_name" content="Emanuele D'Osualdo">
 
   <meta name="twitter:site" content="@bordaigorl">
 
 
 
-<link rel="canonical" href="http://emanueledosualdo.com/research/papers/2012/agere-soter.html">
+<link rel="canonical" href="http://emanueledosualdo.com/research/papers/2017/csf-decidable-secrecy.html">
 
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600|Kreon:300,400' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://use.fontawesome.com/cb833953a4.css">
@@ -105,8 +107,8 @@
 
       <header class="meta">
         
-        <div class="venue"><span title="Programming systems, languages and applications based on actors, agents, and decentralized control abstractions">AGERE</span> 2012</div>
-        <h1 class="title" itemprop="name headline">Soter: An Automatic Safety Verifier for Erlang</h1>
+        <div class="venue"><span title="Computer Security Foundations Symposium">CSF</span> 2017</div>
+        <h1 class="title" itemprop="name headline">Deciding Secrecy of Security Protocols for an Unbounded Number of Sessions: The Case of Depth-bounded Processes</h1>
         <ul class="authors">
         
           
@@ -117,25 +119,25 @@
           
           
             <li class="author">
-              <a href="#" title="Jonathan Kochems">J. Kochems</a>
+              <a href="https://www.cs.ox.ac.uk/luke.ong/" title="C.-H. Luke Ong - University of Oxford, UK">C.-H. L. Ong</a>
             </li>
           
         
           
           
             <li class="author">
-              <a href="https://www.cs.ox.ac.uk/luke.ong/" title="C.-H. Luke Ong - University of Oxford, UK">C.-H. L. Ong</a>
+              <a href="#" title="Alwen Tiu - Nanyang Technological University, Singapore">A. Tiu</a>
             </li>
           
         
         </ul>
         <div class="paper links">
           
-            <a href="http://mjolnir.cs.ox.ac.uk/soter/papers/agere12.pdf" class="button primary"><i class="fa fa-download"></i>Pdf</a>
+            <a href="/doc/papers/csf17-decidable-secrecy.pdf" class="button primary"><i class="fa fa-download"></i>Pdf</a>
           
           
           
-              <a href="http://dl.acm.org/authorize?N26738" class="button" title="ACM Author-Izer Link"><i class="fa fa-file green"></i>ACM DL</a>
+            
           
           
           
@@ -144,7 +146,19 @@
       </header>
 
       <div class="content" itemprop="articleBody">
-        <p>This paper presents Soter, a fully-automatic program analyser and verifier for Erlang modules. The fragment of Erlang accepted by Soter includes the higher-order functional constructs and all the key features of actor concurrency, namely, dynamic spawning of processes and asynchronous message passing. Soter uses a combination of static analysis and infinite-state model checking to verify safety properties specified by the user. Given an Erlang module and a set of properties, Soter first extracts an abstract (approximate, sound) model in the form of an actor communicating system (ACS), and then checks if the properties are satisfied using a Petri net coverability checker, BFC. To our knowledge, Soter is the first fully-automatic, infinite-state model checker for a large fragment of Erlang. We find that in practice our abstraction technique is accurate enough to verify an interesting range of safety properties such as mutual-exclusion or boundedness of mailboxes. Though the ACS coverability problem is Expspace-complete, Soter can analyse these problems surprisingly efficiently.</p>
+        <h1 id="abstract">Abstract</h1>
+
+<p>We introduce a new class of security protocols
+with an unbounded number of sessions and unlimited fresh data
+for which the problem of secrecy is decidable.
+The only constraint we place on the class
+is a notion of <em>depth-boundedness</em>.
+Precisely we prove that,
+restricted to messages of up to a given size,
+secrecy is decidable for all depth-bounded processes.
+This decidable fragment of security protocols
+captures many real-world symmetric key protocols,
+including Needham-Schroeder Symmetric Key, Otway-Rees, and Yahalom.</p>
 
       </div>
 
@@ -158,8 +172,8 @@
     <div id="disqus_thread"></div>
 <script>
 var disqus_config = function () {
-    this.page.url = "http://emanueledosualdo.com/research/papers/2012/agere-soter.html";
-    this.page.identifier = "/research/papers/2012/agere-soter";
+    this.page.url = "http://emanueledosualdo.com/research/papers/2017/csf-decidable-secrecy.html";
+    this.page.identifier = "/research/papers/2017/csf-decidable-secrecy";
 };
 
 (function() {
@@ -183,11 +197,13 @@ var disqus_config = function () {
   <ul class="tags">
     
     
-      <li><a href="/research/papers/#tool" class="tag">tool</a></li>
+      <li><a href="/research/papers/#secrecy" class="tag">secrecy</a></li>
     
-      <li><a href="/research/papers/#static analysis" class="tag">static analysis</a></li>
+      <li><a href="/research/papers/#cryptographic protocol" class="tag">cryptographic protocol</a></li>
     
-      <li><a href="/research/papers/#erlang" class="tag">erlang</a></li>
+      <li><a href="/research/papers/#wsts" class="tag">wsts</a></li>
+    
+      <li><a href="/research/papers/#decidability" class="tag">decidability</a></li>
     
   </ul>
 </aside>
@@ -195,23 +211,12 @@ var disqus_config = function () {
     <h1>Share</h1>
     <div class="buttons">
         <a class="rss share button" href="/feed.xml" title="Subscribe via RSS" itemprop="RSS"><i class="fa fa-rss"></i></a>
-        <a class="share button" href="https://twitter.com/intent/tweet?hashtags=tool,staticanalysis,erlang&amp;text=Soter:%20An%20Automatic%20Safety%20Verifier%20for%20Erlang&amp;url=http://emanueledosualdo.com/research/papers/2012/agere-soter.html" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i></a>
-        <a class="share button" href="https://www.facebook.com/sharer/sharer.php?u=http://emanueledosualdo.com/research/papers/2012/agere-soter.html" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i></a>
-        <a class="share button" href="https://plus.google.com/share?url=http://emanueledosualdo.com/research/papers/2012/agere-soter.html" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> </a>
+        <a class="share button" href="https://twitter.com/intent/tweet?hashtags=secrecy,cryptographicprotocol,wsts,decidability&amp;text=Deciding%20Secrecy%20of%20Security%20Protocols%20for%20an%20Unbounded%20Number%20of%20Sessions:%20The%20Case%20of%20Depth-bounded%20Processes&amp;url=http://emanueledosualdo.com/research/papers/2017/csf-decidable-secrecy.html" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i></a>
+        <a class="share button" href="https://www.facebook.com/sharer/sharer.php?u=http://emanueledosualdo.com/research/papers/2017/csf-decidable-secrecy.html" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i></a>
+        <a class="share button" href="https://plus.google.com/share?url=http://emanueledosualdo.com/research/papers/2017/csf-decidable-secrecy.html" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> </a>
     </div>
 </aside>
       
-<aside class="related">
-  <h1>Related Papers</h1>
-  <ul class="post-links">
-    
-      
-      
-      <li><a href="/research/papers/2013/sas-soter.html">Automatic Verification of Erlang-Style Concurrency</a></li>
-    
-  </ul>
-</aside>
-
   </div>
 </div>
 
