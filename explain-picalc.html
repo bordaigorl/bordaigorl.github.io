@@ -35,6 +35,8 @@
 
 <link rel="stylesheet" href="/style/main.css">
 
+<link rel="stylesheet" href="http://www.emanueledosualdo.com/stargazer/stargazer.min.css">
+
 
 
 <link rel="icon" type="image/png" href="http://emanueledosualdo.com/images/favicon.png">
@@ -49,6 +51,10 @@
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-80207647-1', 'auto'); ga('send', 'pageview');
 </script>
 
+
+<script type="text/javascript" src="http://www.emanueledosualdo.com/stargazer/lib/d3.min.js"></script>
+
+<script type="text/javascript" src="http://www.emanueledosualdo.com/stargazer/stargazer.min.js"></script>
 
 
 </head>
@@ -109,16 +115,38 @@
       <div class="content" itemprop="articleBody">
         <p>So nice of you to ask! What you are looking at is an example of the systems we study in Concurrency Theory. In short, it is an example of a mathematical formalisation of a simple internet protocol; the aim of our research is to design algorithms that can prove properties of these kinds of models.</p>
 
+<p>The simulation on the homepage is running a fixed program modelling a server/client system. The orange boxes are the clients, the blue ones are servers;
+the green boxes are messages to the server (dark) or to the clients (light).</p>
+
+<div class="large stargazer with-controls" data-zoom=".5" data-gravity="true" data-play-on-load="true">
+    <script type="text/x-stargazer">
+          new s. (S[s] | new m.C[s,m] | new m.C[s,m] | new m.C[s,m])
+        | new s. (S[s] | new m.C[s,m] | new m.C[s,m])
+        | new s. (S[s] | new m.C[s,m] )
+        | new s. (S[s] | new m.C[s,m] | new m.C[s,m] | new m.C[s,m])
+
+        S[s] := s(x).νd.( A[x,d] | S[s] )
+        E := 0
+        C[s, m] := τ.( Q[s,m] | C1[s,m])
+        C1[s, m] := m(x).C[s, m]
+        Q[s,m] := s<m>
+        A[x,d] := x<d>
+    </script>
+</div>
+
+<p>More precisely, the displayed animation is a visual simulation of the evolution of a <a href="https://en.wikipedia.org/wiki/%CE%A0-calculus">π‑calculus</a> program. The boxes are sequential processes, i.e. threads, and the dots are names, i.e. channels.</p>
+
+<p>You can try the simulator and experiment with the π‑calculus by clicking here:</p>
+
+<p class="centered"><a href="http://stargazer.emanueledosualdo.com" class="button primary"><i class="fa fa-rocket"></i>Stargazer</a></p>
+
+<p>I wrote the simulator in JavaScript and <a href="https://d3js.org/">D3.js</a> to support my presentation on the contents of <a href="/research/#thesis">my Ph.D. thesis</a>. The code evolved from a simple prototype and I am in the process of rewriting it completely.
+I hope you will enjoy it even if it is unfinished!</p>
+
 <blockquote class="note">
   <p><a href="/feed.xml" class="button primary">Subscribe</a>
 If you’d like to know more, watch this space for an upcoming write-up about the π‑calculus</p>
 </blockquote>
-
-<p>More precisely, the displayed animation is a visual simulation of the evolution of a <a href="https://en.wikipedia.org/wiki/%CE%A0-calculus">π‑calculus</a> program. The boxes are sequential processes, i.e. threads, and the dots are names, i.e. channels.</p>
-
-<p>The simulation on the homepage is running a fixed program modelling a server/client system. The orange boxes are the clients, the blue ones are servers.</p>
-
-<p>I wrote the simulator in JavaScript and <a href="https://d3js.org/">D3.js</a> to support my presentation on the contents of <a href="/research/#thesis">my Ph.D. thesis</a>. The code evolved from a simple prototype and I am in the process of rewriting it completely. Once it is in usable state I’ll post it on GitHub, so stay tuned!</p>
 
 
       </div>

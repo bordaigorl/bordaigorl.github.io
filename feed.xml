@@ -5,8 +5,8 @@
     <description>My research, projects and blog</description>
     <link>http://emanueledosualdo.com/</link>
     <atom:link href="http://emanueledosualdo.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 27 Oct 2017 21:56:52 +0100</pubDate>
-    <lastBuildDate>Fri, 27 Oct 2017 21:56:52 +0100</lastBuildDate>
+    <pubDate>Tue, 31 Oct 2017 01:46:17 +0000</pubDate>
+    <lastBuildDate>Tue, 31 Oct 2017 01:46:17 +0000</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -219,16 +219,38 @@ Feel free to use it! --&gt;
         <title>What is that weird animation on my homepage?</title>
         <description>&lt;p&gt;So nice of you to ask! What you are looking at is an example of the systems we study in Concurrency Theory. In short, it is an example of a mathematical formalisation of a simple internet protocol; the aim of our research is to design algorithms that can prove properties of these kinds of models.&lt;/p&gt;
 
+&lt;p&gt;The simulation on the homepage is running a fixed program modelling a server/client system. The orange boxes are the clients, the blue ones are servers;
+the green boxes are messages to the server (dark) or to the clients (light).&lt;/p&gt;
+
+&lt;div class=&quot;large stargazer with-controls&quot; data-zoom=&quot;.5&quot; data-gravity=&quot;true&quot; data-play-on-load=&quot;true&quot;&gt;
+    &lt;script type=&quot;text/x-stargazer&quot;&gt;
+          new s. (S[s] | new m.C[s,m] | new m.C[s,m] | new m.C[s,m])
+        | new s. (S[s] | new m.C[s,m] | new m.C[s,m])
+        | new s. (S[s] | new m.C[s,m] )
+        | new s. (S[s] | new m.C[s,m] | new m.C[s,m] | new m.C[s,m])
+
+        S[s] := s(x).νd.( A[x,d] | S[s] )
+        E := 0
+        C[s, m] := τ.( Q[s,m] | C1[s,m])
+        C1[s, m] := m(x).C[s, m]
+        Q[s,m] := s&lt;m&gt;
+        A[x,d] := x&lt;d&gt;
+    &lt;/script&gt;
+&lt;/div&gt;
+
+&lt;p&gt;More precisely, the displayed animation is a visual simulation of the evolution of a &lt;a href=&quot;https://en.wikipedia.org/wiki/%CE%A0-calculus&quot;&gt;π‑calculus&lt;/a&gt; program. The boxes are sequential processes, i.e. threads, and the dots are names, i.e. channels.&lt;/p&gt;
+
+&lt;p&gt;You can try the simulator and experiment with the π‑calculus by clicking here:&lt;/p&gt;
+
+&lt;p class=&quot;centered&quot;&gt;&lt;a href=&quot;http://stargazer.emanueledosualdo.com&quot; class=&quot;button primary&quot;&gt;&lt;i class=&quot;fa fa-rocket&quot;&gt;&lt;/i&gt;Stargazer&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I wrote the simulator in JavaScript and &lt;a href=&quot;https://d3js.org/&quot;&gt;D3.js&lt;/a&gt; to support my presentation on the contents of &lt;a href=&quot;/research/#thesis&quot;&gt;my Ph.D. thesis&lt;/a&gt;. The code evolved from a simple prototype and I am in the process of rewriting it completely.
+I hope you will enjoy it even if it is unfinished!&lt;/p&gt;
+
 &lt;blockquote class=&quot;note&quot;&gt;
   &lt;p&gt;&lt;a href=&quot;/feed.xml&quot; class=&quot;button primary&quot;&gt;Subscribe&lt;/a&gt;
 If you’d like to know more, watch this space for an upcoming write-up about the π‑calculus&lt;/p&gt;
 &lt;/blockquote&gt;
-
-&lt;p&gt;More precisely, the displayed animation is a visual simulation of the evolution of a &lt;a href=&quot;https://en.wikipedia.org/wiki/%CE%A0-calculus&quot;&gt;π‑calculus&lt;/a&gt; program. The boxes are sequential processes, i.e. threads, and the dots are names, i.e. channels.&lt;/p&gt;
-
-&lt;p&gt;The simulation on the homepage is running a fixed program modelling a server/client system. The orange boxes are the clients, the blue ones are servers.&lt;/p&gt;
-
-&lt;p&gt;I wrote the simulator in JavaScript and &lt;a href=&quot;https://d3js.org/&quot;&gt;D3.js&lt;/a&gt; to support my presentation on the contents of &lt;a href=&quot;/research/#thesis&quot;&gt;my Ph.D. thesis&lt;/a&gt;. The code evolved from a simple prototype and I am in the process of rewriting it completely. Once it is in usable state I’ll post it on GitHub, so stay tuned!&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 09 Aug 2016 00:00:00 +0100</pubDate>
