@@ -5,9 +5,78 @@
     <description>My research, projects and blog</description>
     <link>http://emanueledosualdo.com/</link>
     <atom:link href="http://emanueledosualdo.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 31 Oct 2017 01:58:04 +0000</pubDate>
-    <lastBuildDate>Tue, 31 Oct 2017 01:58:04 +0000</lastBuildDate>
+    <pubDate>Tue, 31 Oct 2017 23:08:00 +0000</pubDate>
+    <lastBuildDate>Tue, 31 Oct 2017 23:08:00 +0000</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Stargazer: understanding the &amp;pi;-calculus, visually</title>
+        <description>&lt;p&gt;During my PhD I worked on analysis of concurrent programs,
+using the π-calculus as a model of concurrent computation.
+The π-calculus is like the λ-calculus of concurrency:
+a minimalistic calculus to represent concurrent computation (as opposed to sequential) that is universal (can compute any computable function).
+Although there is great beauty in its theory,
+people often find its syntax cryptic and is semantics too abstract.
+Another common complaint is that it seems too removed from actual programming languages, and is only a toy for theorists.&lt;/p&gt;
+
+&lt;p&gt;To the contrary, I believe the π-calculus has a lot to offer to the wider CS community, if only it was made more accessible.
+So, to be able to convey the core concepts and ideas to fellow researchers and students, I developed a simple visual simulator for the π-calculus, which I call &lt;em&gt;Stargazer&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; the current version grew out of an initial prototype that I enhanced at each presentation. It is now a bit of a Frankenstein monster inside, and could be made much more efficient. I planned a rewrite before releasing it, but it is clear now that this will never happen.
+So I decided to fight my perfectionist’s paralysis and just publish what I have got.&lt;/p&gt;
+
+&lt;h2 id=&quot;try-it-at-stargazeremanueledosualdocomstargazer&quot;&gt;Try it at &lt;a href=&quot;http://stargazer.emanueledosualdo.com&quot;&gt;stargazer.emanueledosualdo.com&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;You can try the simulator online, it runs entirely inside the browser.
+For best performance, use it with Chrome (although Firefox is also supported).&lt;/p&gt;
+
+&lt;p class=&quot;centered&quot;&gt;&lt;a href=&quot;http://stargazer.emanueledosualdo.com&quot; class=&quot;button primary&quot;&gt;&lt;i class=&quot;fa fa-rocket&quot;&gt;&lt;/i&gt; Try Stargazer&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I will publish posts on the π-calculus with examples and explanations exploiting the simulator.
+For now let me briefly explain the basic concepts.&lt;/p&gt;
+
+&lt;div class=&quot;stargazer with-controls labels&quot; data-gist=&quot;6e54093b297c0f9df01d0c82f65b89f6&quot; data-name=&quot;Server&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;In the graph above (which is an embedded instance of the simulator)
+you see the initial configuration of an example π-calculus program.
+In the π-calculus there is a notion of “thread” (called &lt;em&gt;sequential processes&lt;/em&gt;)
+and synchronisation is done by message passing over &lt;em&gt;channels&lt;/em&gt;.
+In the graph, each active thread is represented by a rectangle and each channel by a dot. Threads are connected to every channel they currently know.
+The colours of the threads reflect their current local state.
+This graph is commonly called the &lt;em&gt;communication topology&lt;/em&gt; of the system.
+If you press “play”, the simulator picks at random enabled transitions and fires them.
+The transitions are specified by the program, which in the above example is the following:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;new s. (S[s] | E[s])
+
+S[s] := s(x).νd.( A[x,d] | S[s] )
+E[s] := τ.new m.(C[s, m] | E[s]) + τ.νs'.(S[s'] | E[s'] | E[s])
+C[s, m] := τ.( Q[s,m] | C1[s,m])
+C1[s, m] := m(x).C[s, m]
+A[x,d] := x&amp;lt;d&amp;gt;
+Q[s,m] := s&amp;lt;m&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If you press “open” you will be able to play with the example in the full simulator. Open the “program” sidebar in &lt;em&gt;Stargazer&lt;/em&gt; by pressing the &lt;i class=&quot;fa fa-file-text&quot;&gt;&lt;/i&gt; button to see the program’s code which can be freely edited.&lt;/p&gt;
+
+&lt;h2 id=&quot;help-issues-and-feedback&quot;&gt;Help, issues and feedback&lt;/h2&gt;
+
+&lt;p&gt;For help on how to use it click on the &lt;i class=&quot;fa fa-help&quot;&gt;&lt;/i&gt; button in &lt;em&gt;Stargazer&lt;/em&gt;, where you will find a brief summary of the syntax.
+The project is hosted on &lt;a href=&quot;https://github.com/bordaigorl/stargazer&quot;&gt;GitHub&lt;/a&gt;.
+I am planning to put some basic information in the &lt;a href=&quot;https://github.com/bordaigorl/stargazer/wiki&quot;&gt;wiki&lt;/a&gt;.
+If you find bugs, have feature requests, ideas or comments
+you are most welcome to leave a message in the &lt;a href=&quot;https://github.com/bordaigorl/stargazer/issues&quot;&gt;issues&lt;/a&gt; page.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 31 Oct 2017 00:00:00 +0000</pubDate>
+        <link>http://emanueledosualdo.com/blog/2017/stargazer-release.html</link>
+        <guid isPermaLink="true">http://emanueledosualdo.com/blog/2017/stargazer-release.html</guid>
+        
+        <category>picalculus</category>
+        
+        
+      </item>
     
       <item>
         <title>Why Computer Science is a Science</title>
@@ -223,18 +292,17 @@ Feel free to use it! --&gt;
 the green boxes are messages to the server (dark) or to the clients (light).&lt;/p&gt;
 
 &lt;div class=&quot;large stargazer with-controls&quot; data-zoom=&quot;.5&quot; data-gravity=&quot;true&quot; data-play-on-load=&quot;true&quot;&gt;
-    &lt;script type=&quot;text/x-stargazer&quot;&gt;
-          new s. (S[s] | new m.C[s,m] | new m.C[s,m] | new m.C[s,m])
-        | new s. (S[s] | new m.C[s,m] | new m.C[s,m])
-        | new s. (S[s] | new m.C[s,m] )
-        | new s. (S[s] | new m.C[s,m] | new m.C[s,m] | new m.C[s,m])
+    &lt;script type=&quot;text/x-stargazer&quot;&gt;new s. (S[s] | new m.C[s,m] | new m.C[s,m] | new m.C[s,m])
+| new s. (S[s] | new m.C[s,m] | new m.C[s,m])
+| new s. (S[s] | new m.C[s,m] )
+| new s. (S[s] | new m.C[s,m] | new m.C[s,m] | new m.C[s,m])
 
-        S[s] := s(x).νd.( A[x,d] | S[s] )
-        E := 0
-        C[s, m] := τ.( Q[s,m] | C1[s,m])
-        C1[s, m] := m(x).C[s, m]
-        Q[s,m] := s&lt;m&gt;
-        A[x,d] := x&lt;d&gt;
+S[s] := s(x).νd.( A[x,d] | S[s] )
+E := 0
+C[s, m] := τ.( Q[s,m] | C1[s,m])
+C1[s, m] := m(x).C[s, m]
+Q[s,m] := s&lt;m&gt;
+A[x,d] := x&lt;d&gt;
     &lt;/script&gt;
 &lt;/div&gt;
 

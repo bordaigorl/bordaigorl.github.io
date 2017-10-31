@@ -3,37 +3,39 @@
 
 <head>
   <meta charset="utf-8">
-<title>The art of the misspelling - Emanuele D&#39;Osualdo</title>
-<meta name="description" content="101 ways of getting my name wrong">
+<title>Stargazer: understanding the &amp;pi;-calculus, visually - Emanuele D&#39;Osualdo</title>
+<meta name="description" content="A first public release of my simulator">
 <meta name="author" content="Emanuele D'Osualdo">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 <meta property="og:type" content="article">
-<meta name="twitter:title" content="The art of the misspelling">
-<meta property="og:title" content="The art of the misspelling">
+<meta name="twitter:title" content="Stargazer: understanding the &pi;-calculus, visually">
+<meta property="og:title" content="Stargazer: understanding the &pi;-calculus, visually">
 
-<meta name="twitter:description" content="101 ways of getting my name wrong">
-<meta property="og:description" content="101 ways of getting my name wrong">
+<meta name="twitter:description" content="A first public release of my simulator">
+<meta property="og:description" content="A first public release of my simulator">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:image" content="http://emanueledosualdo.com/images/logo.png">
   <meta property="og:image" content="http://emanueledosualdo.com/images/logo.png">
 
-<meta property="og:url" content="http://emanueledosualdo.com/blog/2016/the-art-of-the-misspelling.html">
+<meta property="og:url" content="http://emanueledosualdo.com/blog/2017/stargazer-release.html">
 <meta property="og:site_name" content="Emanuele D'Osualdo">
 
   <meta name="twitter:site" content="@bordaigorl">
 
 
 
-<link rel="canonical" href="http://emanueledosualdo.com/blog/2016/the-art-of-the-misspelling.html">
+<link rel="canonical" href="http://emanueledosualdo.com/blog/2017/stargazer-release.html">
 
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600|Kreon:300,400|Roboto+Mono:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://use.fontawesome.com/cb833953a4.css">
 
 <link rel="stylesheet" href="/style/main.css">
+
+<link rel="stylesheet" href="http://www.emanueledosualdo.com/stargazer/stargazer.min.css">
 
 
 
@@ -49,6 +51,10 @@
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-80207647-1', 'auto'); ga('send', 'pageview');
 </script>
 
+
+<script type="text/javascript" src="http://www.emanueledosualdo.com/stargazer/lib/d3.min.js"></script>
+
+<script type="text/javascript" src="http://www.emanueledosualdo.com/stargazer/stargazer.min.js"></script>
 
 
 </head>
@@ -102,110 +108,67 @@
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
       <header class="meta">
-        <time datetime="2016-11-02T00:00:00+00:00" itemprop="datePublished">Nov 2, 2016</time>
-        <h1 class="title" itemprop="name headline">The art of the misspelling</h1>
+        <time datetime="2017-10-31T00:00:00+00:00" itemprop="datePublished">Oct 31, 2017</time>
+        <h1 class="title" itemprop="name headline">Stargazer: understanding the &pi;-calculus, visually</h1>
       </header>
 
       <div class="content" itemprop="articleBody">
-        <p>My name is Emanuele D’Osualdo.
-I know what you are thinking, and I do not blame you.
-Actually, let me get this straight from the start:</p>
+        <p>During my PhD I worked on analysis of concurrent programs,
+using the π-calculus as a model of concurrent computation.
+The π-calculus is like the λ-calculus of concurrency:
+a minimalistic calculus to represent concurrent computation (as opposed to sequential) that is universal (can compute any computable function).
+Although there is great beauty in its theory,
+people often find its syntax cryptic and is semantics too abstract.
+Another common complaint is that it seems too removed from actual programming languages, and is only a toy for theorists.</p>
 
-<blockquote>
-  <p>I hereby forgive you, fully and pre-emptively,
-for misspelling or mispronouncing my name or surname.</p>
-</blockquote>
+<p>To the contrary, I believe the π-calculus has a lot to offer to the wider CS community, if only it was made more accessible.
+So, to be able to convey the core concepts and ideas to fellow researchers and students, I developed a simple visual simulator for the π-calculus, which I call <em>Stargazer</em>.</p>
 
-<p>Yes, my name is long and complicated (although it has been pointed out to me that Polish names can be orders of magnitude more complicated),
-but in fact I am always amused from the strange misspellings I collected during the years.</p>
+<p><strong>Disclaimer:</strong> the current version grew out of an initial prototype that I enhanced at each presentation. It is now a bit of a Frankenstein monster inside, and could be made much more efficient. I planned a rewrite before releasing it, but it is clear now that this will never happen.
+So I decided to fight my perfectionist’s paralysis and just publish what I have got.</p>
 
-<p>Before going into that, if you are wondering about the pronunciation,
-here is my name pronounced correctly:</p>
+<h2 id="try-it-at-stargazeremanueledosualdocomstargazer">Try it at <a href="http://stargazer.emanueledosualdo.com">stargazer.emanueledosualdo.com</a></h2>
 
-<audio src="/doc/name.mp3" controls="controls">
-  <a href="/doc/name.mp3" class="button">
-      Click here to play
-      <i class="fa fa-play"></i>
-  </a>
-</audio>
+<p>You can try the simulator online, it runs entirely inside the browser.
+For best performance, use it with Chrome (although Firefox is also supported).</p>
 
-<h1 id="misspellings-of-dosualdo">Misspellings of D’Osualdo</h1>
+<p class="centered"><a href="http://stargazer.emanueledosualdo.com" class="button primary"><i class="fa fa-rocket"></i> Try Stargazer</a></p>
 
-<p>My surname is weird even to Italian ears. Common misspellings include:</p>
+<p>I will publish posts on the π-calculus with examples and explanations exploiting the simulator.
+For now let me briefly explain the basic concepts.</p>
 
-<ul>
-  <li><strong>D’Osvaldo</strong> (Osvaldo is an old-fashioned Italian name)</li>
-  <li><strong>D’Osvualdo</strong> (if you are not sure, put both)</li>
-  <li><strong>D’Osvivaldo</strong> (strangely reminiscent of Vivaldi)</li>
-  <li><strong>Gesualdo</strong> (another Italian composer!)</li>
-  <li><strong>D’Osulado</strong></li>
-  <li><strong>d’odusldo</strong></li>
-  <li><strong>Dosualvo</strong></li>
-  <li><strong>Dosvalbo</strong></li>
-  <li><strong>Dosvlaudo</strong> — or something like this where it is clear that the one who typed it simply gave up after three letters</li>
-  <li><strong>d’Osualdo</strong> or just <strong>Osualdo</strong> — I get this a lot in Germany, where they seem to interpret the “D’” as an optional decoration. Main drawback: I may be listed under “O” in alphabetic order!</li>
-  <li>New entry: <strong>Dr. Oswaldo</strong> — that’s how Germans tend to pronounce it.</li>
-</ul>
+<div class="stargazer with-controls labels" data-gist="6e54093b297c0f9df01d0c82f65b89f6" data-name="Server"></div>
 
-<h1 id="the-apostrophe">The apostrophe</h1>
+<p>In the graph above (which is an embedded instance of the simulator)
+you see the initial configuration of an example π-calculus program.
+In the π-calculus there is a notion of “thread” (called <em>sequential processes</em>)
+and synchronisation is done by message passing over <em>channels</em>.
+In the graph, each active thread is represented by a rectangle and each channel by a dot. Threads are connected to every channel they currently know.
+The colours of the threads reflect their current local state.
+This graph is commonly called the <em>communication topology</em> of the system.
+If you press “play”, the simulator picks at random enabled transitions and fires them.
+The transitions are specified by the program, which in the above example is the following:</p>
 
-<p>A separate category of misspellings concerns the apostrophe:
-we are in 2016 and still computer systems systematically stumble when dealing with my surname.
-The apostrophe is to an online form
-what a mouse is to an elephant.</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>new s. (S[s] | E[s])
 
-<p class="centered"><img src="/images/posts/2016-11-02-the-art-of-the-misspelling/cyberman.gif" /> 
-  <img src="/images/posts/2016-11-02-the-art-of-the-misspelling/apostrophe.png" /></p>
+S[s] := s(x).νd.( A[x,d] | S[s] )
+E[s] := τ.new m.(C[s, m] | E[s]) + τ.νs'.(S[s'] | E[s'] | E[s])
+C[s, m] := τ.( Q[s,m] | C1[s,m])
+C1[s, m] := m(x).C[s, m]
+A[x,d] := x&lt;d&gt;
+Q[s,m] := s&lt;m&gt;
+</code></pre>
+</div>
 
-<p>Sometimes it is simply rejected, sometimes the apostrophe gets removed with arbitrary fixes such as replacing it with a space or removing the character altogether.
-And these are the good cases. In others it simply makes the system fail because of improper handling of user-provided data.
-Yes I am <a href="http://xkcd.com/327/">Little Bobby Tables</a>!</p>
+<p>If you press “open” you will be able to play with the example in the full simulator. Open the “program” sidebar in <em>Stargazer</em> by pressing the <i class="fa fa-file-text"></i> button to see the program’s code which can be freely edited.</p>
 
-<p class="wide-image"><a href="http://xkcd.com/327/"><img src="http://imgs.xkcd.com/comics/exploits_of_a_mom.png" alt="Exploits of a mom (xkcd.com)" title="Exploits of a mom (xkcd.com)" /></a></p>
+<h2 id="help-issues-and-feedback">Help, issues and feedback</h2>
 
-<p>In fact it is the apostrophe in my surname that made me independently come up with my first SQL-injection exploit. Good times.</p>
-
-<p>In Germany the problem is aggravated by the fact that the German language uses the apostrophe very rarely, so people just use the acute accent symbol ` instead, which is more easily found on keyboards!</p>
-
-<p>And then there’s my first name.</p>
-
-<h1 id="the-curse-of-emmanuelle">The curse of Emmanuelle</h1>
-
-<p>To make things worse, my first name, <em>Emanuele</em>, lends itself to all sorts of ambiguities and misspellings.
-The list of similar, but distinct, names is long:
-Emmanuele, Emmanuelle, Emanuelle, Manuel, Manuele, Manuelle…
-To those you have to add the misspellings (once I got Emanuale).
-Pronunciation is a further issue: at best I get something that resembles <em>manual</em>, at worst I get some irrecognisable mash of <em>m</em>s, <em>n</em>s and <em>l</em>s.</p>
-
-<p>The funniest story around my first name comes from my Erasmus in Turkey.
-I arrive in Istanbul and go to my hostel.
-They ask for my ID, start transcribing the data…when they stop at the name and start giggling.
-Ok, fine, it’s a strange name, whatever, just give me the keys of the room.
-After some rest, I go back to the reception and the guy starts giggling again after seeing me. Uh, ok, weird. I explore the surroundings, go back to the hostel. Now the receptionist is with a friend and as soon as I show up he says my name in a very refined attempt to signal to his friend that “This is the guy I told you about”. Ok, guy from the reception, I confront you: what’s so funny?!?
-«Well…you know…when I was little…there was this, uhm, “movie”, you know the ones that they play late at night…it was called <em>Emmanuelle</em>. Every Turk knows it!»
-This is true, apparently “Emmanuelle” was a popular <a href="https://en.wikipedia.org/wiki/Emmanuelle_(film)">erotic movie from the seventies</a>.
-Except:</p>
-
-<p class="centered">THE MALE ITALIAN NAME EMANUELE<br />
-IS <strong>NOT</strong><br />
-THE FEMALE FRENCH NAME EMMANUELLE</p>
-
-<p>Beside the spelling and the different language,
-the pronunciation is completely different.
-Of course to Turkish ears the two are indistinguishable.
-With obvious repercussions on my introductions:</p>
-
-<p>- «Hello I am Murat»<br />
-- «Nice to meet you, I am…MANU»<br />
-[Friend who knew me from before]<br />
-- «“Manu”? No…tell him your full name!»</p>
-
-<p>Yes, every time I introduced myself to a <em>male</em> Turkish guy I got the giggles back!</p>
-
-<!-- ## The worst list of nicknames on earth
-
-Although people used many nicknames for me in the past---Ema, Emanu, Lele, Dosu---the one that I commonly use is Manu.
-Feel free to use it! -->
+<p>For help on how to use it click on the <i class="fa fa-help"></i> button in <em>Stargazer</em>, where you will find a brief summary of the syntax.
+The project is hosted on <a href="https://github.com/bordaigorl/stargazer">GitHub</a>.
+I am planning to put some basic information in the <a href="https://github.com/bordaigorl/stargazer/wiki">wiki</a>.
+If you find bugs, have feature requests, ideas or comments
+you are most welcome to leave a message in the <a href="https://github.com/bordaigorl/stargazer/issues">issues</a> page.</p>
 
 
       </div>
@@ -214,8 +177,8 @@ Feel free to use it! -->
     <div id="disqus_thread"></div>
 <script>
 var disqus_config = function () {
-    this.page.url = "http://emanueledosualdo.com/blog/2016/the-art-of-the-misspelling.html";
-    this.page.identifier = "/blog/2016/the-art-of-the-misspelling";
+    this.page.url = "http://emanueledosualdo.com/blog/2017/stargazer-release.html";
+    this.page.identifier = "/blog/2017/stargazer-release";
 };
 
 (function() {
@@ -248,7 +211,7 @@ var disqus_config = function () {
   <ul class="tags">
     
     
-      <li><a href="/blog/#fun" class="tag">fun</a></li>
+      <li><a href="/blog/#picalculus" class="tag">picalculus</a></li>
     
   </ul>
 </aside>
@@ -256,9 +219,9 @@ var disqus_config = function () {
     <h1>Share</h1>
     <div class="buttons">
         <a class="rss share button" href="/feed.xml" title="Subscribe via RSS" itemprop="RSS"><i class="fa fa-rss"></i></a>
-        <a class="share button" href="https://twitter.com/intent/tweet?hashtags=fun&amp;text=The%20art%20of%20the%20misspelling&amp;url=http://emanueledosualdo.com/blog/2016/the-art-of-the-misspelling.html" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i></a>
-        <a class="share button" href="https://www.facebook.com/sharer/sharer.php?u=http://emanueledosualdo.com/blog/2016/the-art-of-the-misspelling.html" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i></a>
-        <a class="share button" href="https://plus.google.com/share?url=http://emanueledosualdo.com/blog/2016/the-art-of-the-misspelling.html" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> </a>
+        <a class="share button" href="https://twitter.com/intent/tweet?hashtags=picalculus&amp;text=Stargazer:%20understanding%20the%20&amp;pi;-calculus,%20visually&amp;url=http://emanueledosualdo.com/blog/2017/stargazer-release.html" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i></a>
+        <a class="share button" href="https://www.facebook.com/sharer/sharer.php?u=http://emanueledosualdo.com/blog/2017/stargazer-release.html" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i></a>
+        <a class="share button" href="https://plus.google.com/share?url=http://emanueledosualdo.com/blog/2017/stargazer-release.html" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> </a>
     </div>
 </aside>
       
