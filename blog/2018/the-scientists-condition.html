@@ -3,39 +3,37 @@
 
 <head>
   <meta charset="utf-8">
-<title>Stargazer: understanding the &amp;pi;-calculus, visually - Emanuele D&#39;Osualdo</title>
-<meta name="description" content="A first public release of my simulator">
+<title>Magritte, and the scientist&#39;s condition - Emanuele D&#39;Osualdo</title>
+<meta name="description" content="A reflection on two paintings">
 <meta name="author" content="Emanuele D'Osualdo">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 <meta property="og:type" content="article">
-<meta name="twitter:title" content="Stargazer: understanding the &pi;-calculus, visually">
-<meta property="og:title" content="Stargazer: understanding the &pi;-calculus, visually">
+<meta name="twitter:title" content="Magritte, and the scientist's condition">
+<meta property="og:title" content="Magritte, and the scientist's condition">
 
-<meta name="twitter:description" content="A first public release of my simulator">
-<meta property="og:description" content="A first public release of my simulator">
+<meta name="twitter:description" content="A reflection on two paintings">
+<meta property="og:description" content="A reflection on two paintings">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:image" content="http://emanueledosualdo.com/images/logo.png">
   <meta property="og:image" content="http://emanueledosualdo.com/images/logo.png">
 
-<meta property="og:url" content="http://emanueledosualdo.com/blog/2017/stargazer-release.html">
+<meta property="og:url" content="http://emanueledosualdo.com/blog/2018/the-scientists-condition.html">
 <meta property="og:site_name" content="Emanuele D'Osualdo">
 
   <meta name="twitter:site" content="@bordaigorl">
 
 
 
-<link rel="canonical" href="http://emanueledosualdo.com/blog/2017/stargazer-release.html">
+<link rel="canonical" href="http://emanueledosualdo.com/blog/2018/the-scientists-condition.html">
 
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600|Kreon:300,400|Roboto+Mono:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://use.fontawesome.com/cb833953a4.css">
 
 <link rel="stylesheet" href="/style/main.css">
-
-<link rel="stylesheet" href="http://www.emanueledosualdo.com/stargazer/stargazer.min.css">
 
 
 
@@ -51,10 +49,6 @@
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-80207647-1', 'auto'); ga('send', 'pageview');
 </script>
 
-
-<script type="text/javascript" src="http://www.emanueledosualdo.com/stargazer/lib/d3.min.js"></script>
-
-<script type="text/javascript" src="http://www.emanueledosualdo.com/stargazer/stargazer.min.js"></script>
 
 
 </head>
@@ -108,67 +102,47 @@
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
       <header class="meta">
-        <time datetime="2017-10-31T00:00:00+00:00" itemprop="datePublished">Oct 31, 2017</time>
-        <h1 class="title" itemprop="name headline">Stargazer: understanding the &pi;-calculus, visually</h1>
+        <time datetime="2018-02-20T00:00:00+00:00" itemprop="datePublished">Feb 20, 2018</time>
+        <h1 class="title" itemprop="name headline">Magritte, and the scientist's condition</h1>
       </header>
 
       <div class="content" itemprop="articleBody">
-        <p>During my PhD I worked on analysis of concurrent programs,
-using the π-calculus as a model of concurrent computation.
-The π-calculus is like the λ-calculus of concurrency:
-a minimalistic calculus to represent concurrent computation (as opposed to sequential) that is universal (can compute any computable function).
-Although there is great beauty in its theory,
-people often find its syntax cryptic and is semantics too abstract.
-Another common complaint is that it seems too removed from actual programming languages, and is only a toy for theorists.</p>
+        <p>I always liked Magritte, his witty enigmas on frame, the hard fundamental questions he explores with such clarity.
+I particularly resonate with the questions about language and meaning: these fundamental questions motivate both my interests in Computer Science and in Music.</p>
 
-<p>To the contrary, I believe the π-calculus has a lot to offer to the wider CS community, if only it was made more accessible.
-So, to be able to convey the core concepts and ideas to fellow researchers and students, I developed a simple visual simulator for the π-calculus, which I call <em>Stargazer</em>.</p>
+<p>About a year ago, I went with some friends to the Schirn museum in Frankfurt which hosted a temporary exposition entitled <em>“Magritte. The Treachery Of Images”</em>.
+Among many notable works, two of them suggested to me a metaphor that I want to share with you:
+<em>La condition humaine</em> (the human condition) and 
+<em>La belle captive</em> (the beautiful prisoner).</p>
 
-<p><strong>Disclaimer:</strong> the current version grew out of an initial prototype that I enhanced at each presentation. It is now a bit of a Frankenstein monster inside, and could be made much more efficient. I planned a rewrite before releasing it, but it is clear now that this will never happen.
-So I decided to fight my perfectionist’s paralysis and just publish what I have got.</p>
+<p><em>La condition humaine</em> plays with perception, representation, the concept of reality.</p>
 
-<h2 id="try-it-at-stargazeremanueledosualdocomstargazer">Try it at <a href="http://stargazer.emanueledosualdo.com">stargazer.emanueledosualdo.com</a></h2>
+<p class="wide-image"><img src="/images/posts/2018-02-20-the-scientists-condition/magritte-the-human-condition.jpg" /> 
+<strong>René Magritte</strong>, <em>La condition humaine</em> (1935)</p>
 
-<p>You can try the simulator online, it runs entirely inside the browser.
-For best performance, use it with Chrome (although Firefox is also supported).</p>
+<p>The theme of the painting frame containing an image indistinguishable from the background is reinterpreted with a strong reference to Plato’s <em>allegory of the cave</em>.
+The viewer is in the cavern, as all humanity, forced to look outside facing the dilemma of believing one’s own perception.
+Is the background real? Is the frame real? How can I know the difference between what’s on the frame and what’s behind it? What if the whole picture is a painting, including the cavern?
+The enigma is so poignantly expressed, the question underlined by the title so powerful.</p>
 
-<p class="centered"><a href="http://stargazer.emanueledosualdo.com" class="button primary"><i class="fa fa-rocket"></i> Try Stargazer</a></p>
+<p>Not far from it, another painting resonated with the first: <em>La belle captive</em>.
+This time the setting is a beach, another frame mocking the background in front of us.</p>
 
-<p>I will publish posts on the π-calculus with examples and explanations exploiting the simulator.
-For now let me briefly explain the basic concepts.</p>
+<p class="wide-image"><img src="/images/posts/2018-02-20-the-scientists-condition/magritte-la-belle-captive.jpg" /> 
+<strong>René Magritte</strong>, <em>La belle captive</em> (1950)</p>
 
-<div class="stargazer with-controls labels" data-gist="6e54093b297c0f9df01d0c82f65b89f6" data-name="Server"></div>
+<p>There is a crucial detail in this painting that, I think, really sets it apart from the first: the reflection of the fire on the frame.
+It is this detail that made me think: the perfect title for this would be <strong>“The scientist’s condition”</strong>.
+I like to read this painting as a metaphor for the scientist’s philosophical stance on reality.
+Yes, we are all tricked by our perceptions, and we are trapped in the enigma of what’s real; and Science cannot resolve this enigma for us.
+But Science has the crucial role of the fire in <em>La belle captive:</em> it constantly reminds us of the issue, and prevents us from indulging in a comforting self-delusion of knowing what is true.
+The reflection of the fire on the frame is there to warn us about the possible deception, and serves as a test for what is <em>not</em> true.</p>
 
-<p>In the graph above (which is an embedded instance of the simulator)
-you see the initial configuration of an example π-calculus program.
-In the π-calculus there is a notion of “thread” (called <em>sequential processes</em>)
-and synchronisation is done by message passing over <em>channels</em>.
-In the graph, each active thread is represented by a rectangle and each channel by a dot. Threads are connected to every channel they currently know.
-The colours of the threads reflect their current local state.
-This graph is commonly called the <em>communication topology</em> of the system.
-If you press “play”, the simulator picks at random enabled transitions and fires them.
-The transitions are specified by the program, which in the above example is the following:</p>
+<p>It always surprises me how the stereotype of the scientist is often portrayed in the media as almost the opposite of what I just proposed: that is, an arrogant hyper-rational know-it-all.
+I think this stems from a crucial misunderstanding: being certain (through evidence) of something being <strong>false</strong>, does not imply the arrogance of knowing what is <strong>true</strong>.
+To the contrary, a scientist cannot ignore what the fire’s reflection is revealing: all your knowledge is, given the facts, simply your best hypothesis of what reality is.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>new s. (S[s] | E[s])
-
-S[s] := s(x).νd.( A[x,d] | S[s] )
-E[s] := τ.new m.(C[s, m] | E[s]) + τ.νs'.(S[s'] | E[s'] | E[s])
-C[s, m] := τ.( Q[s,m] | C1[s,m])
-C1[s, m] := m(x).C[s, m]
-A[x,d] := x&lt;d&gt;
-Q[s,m] := s&lt;m&gt;
-</code></pre>
-</div>
-
-<p>If you press “open” you will be able to play with the example in the full simulator. Open the “program” sidebar in <em>Stargazer</em> by pressing the <i class="fa fa-file-text"></i> button to see the program’s code which can be freely edited.</p>
-
-<h2 id="help-issues-and-feedback">Help, issues and feedback</h2>
-
-<p>For help on how to use it click on the <i class="fa fa-question"></i> button in <em>Stargazer</em>, where you will find a brief summary of the syntax.
-The project is hosted on <a href="https://github.com/bordaigorl/stargazer">GitHub</a>.
-I am planning to put some basic information in the <a href="https://github.com/bordaigorl/stargazer/wiki">wiki</a>.
-If you find bugs, have feature requests, ideas or comments
-you are most welcome to leave a message in the <a href="https://github.com/bordaigorl/stargazer/issues">issues</a> page.</p>
+<p>The scientist’s condition is a difficult one, requiring the strength to constantly deal with ontological uncertainty and ambiguity. But if you want to be intellectually honest, it is the only tenable position.</p>
 
 
       </div>
@@ -177,8 +151,8 @@ you are most welcome to leave a message in the <a href="https://github.com/borda
     <div id="disqus_thread"></div>
 <script>
 var disqus_config = function () {
-    this.page.url = "http://emanueledosualdo.com/blog/2017/stargazer-release.html";
-    this.page.identifier = "/blog/2017/stargazer-release";
+    this.page.url = "http://emanueledosualdo.com/blog/2018/the-scientists-condition.html";
+    this.page.identifier = "/blog/2018/the-scientists-condition";
 };
 
 (function() {
@@ -211,7 +185,7 @@ var disqus_config = function () {
   <ul class="tags">
     
     
-      <li><a href="/blog/#picalculus" class="tag">picalculus</a></li>
+      <li><a href="/blog/#science" class="tag">science</a></li>
     
   </ul>
 </aside>
@@ -219,9 +193,9 @@ var disqus_config = function () {
     <h1>Share</h1>
     <div class="buttons">
         <a class="rss share button" href="/feed.xml" title="Subscribe via RSS" itemprop="RSS"><i class="fa fa-rss"></i></a>
-        <a class="share button" href="https://twitter.com/intent/tweet?hashtags=picalculus&amp;text=Stargazer:%20understanding%20the%20&amp;pi;-calculus,%20visually&amp;url=http://emanueledosualdo.com/blog/2017/stargazer-release.html" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i></a>
-        <a class="share button" href="https://www.facebook.com/sharer/sharer.php?u=http://emanueledosualdo.com/blog/2017/stargazer-release.html" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i></a>
-        <a class="share button" href="https://plus.google.com/share?url=http://emanueledosualdo.com/blog/2017/stargazer-release.html" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> </a>
+        <a class="share button" href="https://twitter.com/intent/tweet?hashtags=science&amp;text=Magritte,%20and%20the%20scientist&#39;s%20condition&amp;url=http://emanueledosualdo.com/blog/2018/the-scientists-condition.html" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i></a>
+        <a class="share button" href="https://www.facebook.com/sharer/sharer.php?u=http://emanueledosualdo.com/blog/2018/the-scientists-condition.html" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i></a>
+        <a class="share button" href="https://plus.google.com/share?url=http://emanueledosualdo.com/blog/2018/the-scientists-condition.html" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> </a>
     </div>
 </aside>
       

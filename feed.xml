@@ -5,9 +5,58 @@
     <description>My research, projects and blog</description>
     <link>http://emanueledosualdo.com/</link>
     <atom:link href="http://emanueledosualdo.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 12 Jan 2018 06:43:29 +0000</pubDate>
-    <lastBuildDate>Fri, 12 Jan 2018 06:43:29 +0000</lastBuildDate>
+    <pubDate>Tue, 20 Feb 2018 23:02:57 +0000</pubDate>
+    <lastBuildDate>Tue, 20 Feb 2018 23:02:57 +0000</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Magritte, and the scientist's condition</title>
+        <description>&lt;p&gt;I always liked Magritte, his witty enigmas on frame, the hard fundamental questions he explores with such clarity.
+I particularly resonate with the questions about language and meaning: these fundamental questions motivate both my interests in Computer Science and in Music.&lt;/p&gt;
+
+&lt;p&gt;About a year ago, I went with some friends to the Schirn museum in Frankfurt which hosted a temporary exposition entitled &lt;em&gt;“Magritte. The Treachery Of Images”&lt;/em&gt;.
+Among many notable works, two of them suggested to me a metaphor that I want to share with you:
+&lt;em&gt;La condition humaine&lt;/em&gt; (the human condition) and 
+&lt;em&gt;La belle captive&lt;/em&gt; (the beautiful prisoner).&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;La condition humaine&lt;/em&gt; plays with perception, representation, the concept of reality.&lt;/p&gt;
+
+&lt;p class=&quot;wide-image&quot;&gt;&lt;img src=&quot;/images/posts/2018-02-20-the-scientists-condition/magritte-the-human-condition.jpg&quot; /&gt; 
+&lt;strong&gt;René Magritte&lt;/strong&gt;, &lt;em&gt;La condition humaine&lt;/em&gt; (1935)&lt;/p&gt;
+
+&lt;p&gt;The theme of the painting frame containing an image indistinguishable from the background is reinterpreted with a strong reference to Plato’s &lt;em&gt;allegory of the cave&lt;/em&gt;.
+The viewer is in the cavern, as all humanity, forced to look outside facing the dilemma of believing one’s own perception.
+Is the background real? Is the frame real? How can I know the difference between what’s on the frame and what’s behind it? What if the whole picture is a painting, including the cavern?
+The enigma is so poignantly expressed, the question underlined by the title so powerful.&lt;/p&gt;
+
+&lt;p&gt;Not far from it, another painting resonated with the first: &lt;em&gt;La belle captive&lt;/em&gt;.
+This time the setting is a beach, another frame mocking the background in front of us.&lt;/p&gt;
+
+&lt;p class=&quot;wide-image&quot;&gt;&lt;img src=&quot;/images/posts/2018-02-20-the-scientists-condition/magritte-la-belle-captive.jpg&quot; /&gt; 
+&lt;strong&gt;René Magritte&lt;/strong&gt;, &lt;em&gt;La belle captive&lt;/em&gt; (1950)&lt;/p&gt;
+
+&lt;p&gt;There is a crucial detail in this painting that, I think, really sets it apart from the first: the reflection of the fire on the frame.
+It is this detail that made me think: the perfect title for this would be &lt;strong&gt;“The scientist’s condition”&lt;/strong&gt;.
+I like to read this painting as a metaphor for the scientist’s philosophical stance on reality.
+Yes, we are all tricked by our perceptions, and we are trapped in the enigma of what’s real; and Science cannot resolve this enigma for us.
+But Science has the crucial role of the fire in &lt;em&gt;La belle captive:&lt;/em&gt; it constantly reminds us of the issue, and prevents us from indulging in a comforting self-delusion of knowing what is true.
+The reflection of the fire on the frame is there to warn us about the possible deception, and serves as a test for what is &lt;em&gt;not&lt;/em&gt; true.&lt;/p&gt;
+
+&lt;p&gt;It always surprises me how the stereotype of the scientist is often portrayed in the media as almost the opposite of what I just proposed: that is, an arrogant hyper-rational know-it-all.
+I think this stems from a crucial misunderstanding: being certain (through evidence) of something being &lt;strong&gt;false&lt;/strong&gt;, does not imply the arrogance of knowing what is &lt;strong&gt;true&lt;/strong&gt;.
+To the contrary, a scientist cannot ignore what the fire’s reflection is revealing: all your knowledge is, given the facts, simply your best hypothesis of what reality is.&lt;/p&gt;
+
+&lt;p&gt;The scientist’s condition is a difficult one, requiring the strength to constantly deal with ontological uncertainty and ambiguity. But if you want to be intellectually honest, it is the only tenable position.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 20 Feb 2018 00:00:00 +0000</pubDate>
+        <link>http://emanueledosualdo.com/blog/2018/the-scientists-condition.html</link>
+        <guid isPermaLink="true">http://emanueledosualdo.com/blog/2018/the-scientists-condition.html</guid>
+        
+        <category>science</category>
+        
+        
+      </item>
     
       <item>
         <title>Stargazer: understanding the &amp;pi;-calculus, visually</title>
@@ -62,7 +111,7 @@ Q[s,m] := s&amp;lt;m&amp;gt;
 
 &lt;h2 id=&quot;help-issues-and-feedback&quot;&gt;Help, issues and feedback&lt;/h2&gt;
 
-&lt;p&gt;For help on how to use it click on the &lt;i class=&quot;fa fa-help&quot;&gt;&lt;/i&gt; button in &lt;em&gt;Stargazer&lt;/em&gt;, where you will find a brief summary of the syntax.
+&lt;p&gt;For help on how to use it click on the &lt;i class=&quot;fa fa-question&quot;&gt;&lt;/i&gt; button in &lt;em&gt;Stargazer&lt;/em&gt;, where you will find a brief summary of the syntax.
 The project is hosted on &lt;a href=&quot;https://github.com/bordaigorl/stargazer&quot;&gt;GitHub&lt;/a&gt;.
 I am planning to put some basic information in the &lt;a href=&quot;https://github.com/bordaigorl/stargazer/wiki&quot;&gt;wiki&lt;/a&gt;.
 If you find bugs, have feature requests, ideas or comments
