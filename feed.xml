@@ -5,9 +5,79 @@
     <description>My research, projects and blog</description>
     <link>http://emanueledosualdo.com/</link>
     <atom:link href="http://emanueledosualdo.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 May 2018 19:27:28 +0100</pubDate>
-    <lastBuildDate>Sun, 13 May 2018 19:27:28 +0100</lastBuildDate>
+    <pubDate>Sat, 01 Sep 2018 22:34:00 +0100</pubDate>
+    <lastBuildDate>Sat, 01 Sep 2018 22:34:00 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Announcement: Marie-Curie Fellowship</title>
+        <description>&lt;p&gt;I am very happy to announce that from September 2018 I will be a &lt;strong&gt;Marie-Curie Fellow&lt;/strong&gt; at Imperial College.
+My project “&lt;strong&gt;Ve&lt;/strong&gt;rification through &lt;strong&gt;S&lt;/strong&gt;ecurity and &lt;strong&gt;P&lt;/strong&gt;rogress &lt;strong&gt;A&lt;/strong&gt;bstractions” (VeSPA) was awarded a &lt;a href=&quot;https://ec.europa.eu/research/mariecurieactions/actions/individual-fellowships_en&quot;&gt;Marie-Curie Individual Fellowship&lt;/a&gt; for 2 years.
+I will be working with Philippa Gardner to explore new ways to effectively prove &lt;strong&gt;Progress&lt;/strong&gt; (aka liveness) and &lt;strong&gt;Security&lt;/strong&gt; (eg. secrecy) of concurrent programs.&lt;/p&gt;
+
+&lt;blockquote class=&quot;note&quot;&gt;
+  &lt;p&gt;I will be posting updates on the project here, so &lt;strong&gt;&lt;a href=&quot;/blog/#VeSPA&quot;&gt;watch this space&lt;/a&gt;&lt;/strong&gt;!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;project-background&quot;&gt;Project background&lt;/h2&gt;
+
+&lt;p&gt;With the growing number of sensitive tasks that we delegate to algorithms, the development of methods to certify their trustworthiness is of paramount importance. The VeSPA project is grounded in formal methods: the challenge is to certify correctness criteria with a mathematically rigorous—and, ideally, automatically produced—proof. Modern technology is characterised by a shift of paradigm: the view of computation as carried out by a single agent as a sequence of steps transforming some input into some output—aka sequential computation—is not a satisfactory model of real-world systems anymore. Instead, we are increasingly relying on software that is organised as a decentralised collection of interacting components: our mobile phones, web servers, even our watches. Computation/services carried out by a dynamic network of interacting components is what we call &lt;em&gt;concurrent&lt;/em&gt; computation. Our trust in these systems relies on a range of interdependent properties:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Safety:&lt;/strong&gt; nothing bad can ever happen. &lt;em&gt;Can the system crash?&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Progress:&lt;/strong&gt; something good eventually happens. &lt;em&gt;Will the system be reactive to requests?&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Security:&lt;/strong&gt; no secret is ever leaked. &lt;em&gt;Does the system protect sensitive information from intruders?&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Analysing these properties is vastly more complicated for concurrent software: the decentralised interaction between processes introduces much more subtle behaviour than what is found in sequential centralised computation. This superior complexity is reflected by the level of formal methods adoption by the industry. Success stories such as Facebook’s Infer and Microsoft SLAM typically focus on safety of essentially sequential programs. Concurrency-related aspects are either grossly over-approximated, ignored, or handled by informal arguments. The main reason for this disconnect is what I call the &lt;strong&gt;analysis scalability problem&lt;/strong&gt;. A proof certifying safety of a concurrent system needs to take into consideration all possible executions, sometimes in an open environment. The space of all possible interactions and interferences is so large and complex that we lack proper tools to reason about it, both manually and automatically. In other words, our understanding of concurrency does not scale, yet.&lt;/p&gt;
+
+&lt;h2 id=&quot;my-approach&quot;&gt;My approach&lt;/h2&gt;
+
+&lt;p&gt;Concurrent software is difficult: difficult to design, to understand, and to formally analyse.
+Software engineers have developed a number of patterns, strategies, practices to help &lt;em&gt;designing&lt;/em&gt; concurrent software.
+Two invaluable principles used to tame the complexity of design are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Locality &amp;amp; Composition&lt;/strong&gt;&lt;br /&gt;
+ Software should be the composition of loosely-coupled components interacting in a local way.
+ More concretely, a component should affect and be affected by a well-identified set of resources and processes; thus avoiding global effects, which give rise to unmanageable monolithic systems. 
+ The behaviour of a composite system should be a simple composition of the behaviour of the individual components.&lt;br /&gt;
+ I call this a &lt;em&gt;compositional&lt;/em&gt; design.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Abstraction&lt;/strong&gt;&lt;br /&gt;
+ Software is built on top of other software. The functionality of a component should be packaged into an external interface which hides the specific internal implementation choices.
+ The software component thus becomes reusable.&lt;br /&gt;
+ I call this a &lt;em&gt;modular&lt;/em&gt; design.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The VeSPA approach is to promote these principles from guides to the design, to strategies for proving correctness, of systems.
+Specifically, a proof for a software component should be as compositional as the design of the system. It should also be as reusable as the software component.
+By making proofs compositional and modular, we can solve the analysis scalability problem: proving a system correct has the same complexity as designing it.
+Proving the interaction of loosely-coupled components correct would be done by composing loosely-coupled proofs.
+Reusing a software component would allow its correctness proof to be reused.
+Thanks to abstraction, re-implementations of a software component which satisfy the same external interface would only require to re-prove correctness of the component, but not of the component that use its external interface.&lt;/p&gt;
+
+&lt;p&gt;To realise this vision, VeSPA attacks the analysis scalability problem for Progress and Security of concurrent software, from the point of view of Verified Specification. A specification is a formalisation of the intended behaviour of a software component. A specification is verified against a component, when there is formal proof that the component indeed has the behaviour described by the specification.
+The design of specifications is crucial in supporting Locality&amp;amp;Composition and Abstraction.
+Current specification formats for concurrent systems fundamentally lack these characteristics, especially if one considers Progress and Security.
+VeSPA’s line of attack is based on a synergy between insights gained in my previous work and Gardner’s.&lt;/p&gt;
+
+&lt;p&gt;For more on the project &lt;a href=&quot;/blog/#VeSPA&quot;&gt;&lt;strong&gt;watch this space&lt;/strong&gt;&lt;/a&gt;!&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 01 Sep 2018 00:00:00 +0100</pubDate>
+        <link>http://emanueledosualdo.com/blog/2018/announce-marie-curie-fellowship.html</link>
+        <guid isPermaLink="true">http://emanueledosualdo.com/blog/2018/announce-marie-curie-fellowship.html</guid>
+        
+        <category>projects</category>
+        
+        <category>VeSPA</category>
+        
+        
+      </item>
     
       <item>
         <title>Magritte, and the scientist's condition</title>
@@ -123,6 +193,8 @@ you are most welcome to leave a message in the &lt;a href=&quot;https://github.c
         <guid isPermaLink="true">http://emanueledosualdo.com/blog/2017/stargazer-release.html</guid>
         
         <category>picalculus</category>
+        
+        <category>fun</category>
         
         
       </item>
