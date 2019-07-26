@@ -127,7 +127,7 @@ So, to be able to convey the core concepts and ideas to fellow researchers and s
 <p><strong>Disclaimer:</strong> the current version grew out of an initial prototype that I enhanced at each presentation. It is now a bit of a Frankenstein monster inside, and could be made much more efficient. I planned a rewrite before releasing it, but it is clear now that this will never happen.
 So I decided to fight my perfectionist’s paralysis and just publish what I have got.</p>
 
-<h2 id="try-it-at-stargazeremanueledosualdocomstargazer">Try it at <a href="http://stargazer.emanueledosualdo.com">stargazer.emanueledosualdo.com</a></h2>
+<h2 id="try-it-at-stargazeremanueledosualdocom">Try it at <a href="http://stargazer.emanueledosualdo.com">stargazer.emanueledosualdo.com</a></h2>
 
 <p>You can try the simulator online, it runs entirely inside the browser.
 For best performance, use it with Chrome (although Firefox is also supported).</p>
@@ -149,7 +149,7 @@ This graph is commonly called the <em>communication topology</em> of the system.
 If you press “play”, the simulator picks at random enabled transitions and fires them.
 The transitions are specified by the program, which in the above example is the following:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>new s. (S[s] | E[s])
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>new s. (S[s] | E[s])
 
 S[s] := s(x).νd.( A[x,d] | S[s] )
 E[s] := τ.new m.(C[s, m] | E[s]) + τ.νs'.(S[s'] | E[s'] | E[s])
@@ -157,8 +157,7 @@ C[s, m] := τ.( Q[s,m] | C1[s,m])
 C1[s, m] := m(x).C[s, m]
 A[x,d] := x&lt;d&gt;
 Q[s,m] := s&lt;m&gt;
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>If you press “open” you will be able to play with the example in the full simulator. Open the “program” sidebar in <em>Stargazer</em> by pressing the <i class="fa fa-file-text"></i> button to see the program’s code which can be freely edited.</p>
 

@@ -5,9 +5,9 @@
     <description>My research, projects and blog</description>
     <link>http://emanueledosualdo.com/</link>
     <atom:link href="http://emanueledosualdo.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 21 Jun 2019 12:10:07 +0100</pubDate>
-    <lastBuildDate>Fri, 21 Jun 2019 12:10:07 +0100</lastBuildDate>
-    <generator>Jekyll v3.2.1</generator>
+    <pubDate>Fri, 26 Jul 2019 13:36:35 +0100</pubDate>
+    <lastBuildDate>Fri, 26 Jul 2019 13:36:35 +0100</lastBuildDate>
+    <generator>Jekyll v3.8.6</generator>
     
       <item>
         <title>Announcement: Marie-Curie Fellowship</title>
@@ -144,7 +144,7 @@ So, to be able to convey the core concepts and ideas to fellow researchers and s
 &lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; the current version grew out of an initial prototype that I enhanced at each presentation. It is now a bit of a Frankenstein monster inside, and could be made much more efficient. I planned a rewrite before releasing it, but it is clear now that this will never happen.
 So I decided to fight my perfectionist’s paralysis and just publish what I have got.&lt;/p&gt;
 
-&lt;h2 id=&quot;try-it-at-stargazeremanueledosualdocomstargazer&quot;&gt;Try it at &lt;a href=&quot;http://stargazer.emanueledosualdo.com&quot;&gt;stargazer.emanueledosualdo.com&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;try-it-at-stargazeremanueledosualdocom&quot;&gt;Try it at &lt;a href=&quot;http://stargazer.emanueledosualdo.com&quot;&gt;stargazer.emanueledosualdo.com&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;You can try the simulator online, it runs entirely inside the browser.
 For best performance, use it with Chrome (although Firefox is also supported).&lt;/p&gt;
@@ -166,7 +166,7 @@ This graph is commonly called the &lt;em&gt;communication topology&lt;/em&gt; of
 If you press “play”, the simulator picks at random enabled transitions and fires them.
 The transitions are specified by the program, which in the above example is the following:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;new s. (S[s] | E[s])
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;new s. (S[s] | E[s])
 
 S[s] := s(x).νd.( A[x,d] | S[s] )
 E[s] := τ.new m.(C[s, m] | E[s]) + τ.νs'.(S[s'] | E[s'] | E[s])
@@ -174,8 +174,7 @@ C[s, m] := τ.( Q[s,m] | C1[s,m])
 C1[s, m] := m(x).C[s, m]
 A[x,d] := x&amp;lt;d&amp;gt;
 Q[s,m] := s&amp;lt;m&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;If you press “open” you will be able to play with the example in the full simulator. Open the “program” sidebar in &lt;em&gt;Stargazer&lt;/em&gt; by pressing the &lt;i class=&quot;fa fa-file-text&quot;&gt;&lt;/i&gt; button to see the program’s code which can be freely edited.&lt;/p&gt;
 
@@ -273,13 +272,13 @@ Computer Science hits that sweet spot in between the two: it is the combination 
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:rackoff&quot;&gt;
-      &lt;p&gt;The answer is doubly-exponential in the size of the input, as proved in Rackoff’s lower-bound for Petri net coverability. &lt;a href=&quot;#fnref:rackoff&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;The answer is doubly-exponential in the size of the input, as proved in Rackoff’s lower-bound for Petri net coverability. &lt;a href=&quot;#fnref:rackoff&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:beh&quot;&gt;
-      &lt;p&gt;In the course we answer this question by introducing Bisimulations. The general question of “What is the meaning of a program” led to the development of the field of Semantics. &lt;a href=&quot;#fnref:beh&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;In the course we answer this question by introducing Bisimulations. The general question of “What is the meaning of a program” led to the development of the field of Semantics. &lt;a href=&quot;#fnref:beh&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:absint&quot;&gt;
-      &lt;p&gt;A compelling answer can be found in the Abstract Interpretation framework. &lt;a href=&quot;#fnref:absint&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;A compelling answer can be found in the Abstract Interpretation framework. &lt;a href=&quot;#fnref:absint&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
