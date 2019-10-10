@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/bordaigorl
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://emanueledosualdo.com
+  * I am bordaigorl (https://keybase.io/bordaigorl) on keybase.
+  * I have a public key ASDtlZxvILOjrLnR_qHyu_pi8vH79gfGnvWwzPms9ZtpLQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120ed959c6f20b3a3acb9d1fea1f2bbfa62f2f1fbf607c69ef5b0ccf9acf59b692d0a",
+      "host": "keybase.io",
+      "kid": "0120ed959c6f20b3a3acb9d1fea1f2bbfa62f2f1fbf607c69ef5b0ccf9acf59b692d0a",
+      "uid": "1883b9f3ec1a4269e2212a1120b08d19",
+      "username": "bordaigorl"
+    },
+    "merkle_root": {
+      "ctime": 1570744664,
+      "hash": "556fbe2eab07f3dd9af84f3b55168848a45da239d7d74c8df244a26d2f85671b766d4a38136199a228e9206bdee2319a89786edb9690fa1979aee514074cb5f7",
+      "hash_meta": "ac26c72d4aeca67869364c33df53c4984f56ac19389615e6b4033617116bd751",
+      "seqno": 7981778
+    },
+    "service": {
+      "entropy": "ibiuA7A5mjRGemO1oJE33jQh",
+      "hostname": "emanueledosualdo.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.6.0"
+  },
+  "ctime": 1570744677,
+  "expire_in": 504576000,
+  "prev": "c868d45e0d17acdff8957b68a38e6ea9b6790a3744e289ca112fbb8c7efabcae",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg7ZWcbyCzo6y50f6h8rv6YvLx+/YHxp71sMz5rPWbaS0Kp3BheWxvYWTESpcCBsQgyGjUXg0XrN/4lXtoo45uqbZ5CjdE4onKES+7jH76vK7EIG5Ae0aqIxXLykrKE9+eRm6mpZnvtwT9hXERYyQ8DigyAgHCo3NpZ8RA1/efkW6W8Wcu0oUj7CT1yUoPHxsjYngzBi0fAagwCQK9rTuOT38B5BghZZe9po85ZoY+36b48/vusNIgfZDcC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIOul1YMcMzLU7X5TvYD6PGnG/lgvXpv5m5XBR3Lw+iRZo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/bordaigorl
+
+==================================================================
