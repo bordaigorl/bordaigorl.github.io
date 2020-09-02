@@ -5,9 +5,9 @@
     <description>My research, projects and blog</description>
     <link>http://emanueledosualdo.com/</link>
     <atom:link href="http://emanueledosualdo.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 27 Oct 2019 00:24:51 +0100</pubDate>
-    <lastBuildDate>Sun, 27 Oct 2019 00:24:51 +0100</lastBuildDate>
-    <generator>Jekyll v3.8.6</generator>
+    <pubDate>Wed, 02 Sep 2020 22:13:46 +0100</pubDate>
+    <lastBuildDate>Wed, 02 Sep 2020 22:13:46 +0100</lastBuildDate>
+    <generator>Jekyll v4.1.1</generator>
     
       <item>
         <title>Announcement: Marie-Curie Fellowship</title>
@@ -166,7 +166,7 @@ This graph is commonly called the &lt;em&gt;communication topology&lt;/em&gt; of
 If you press “play”, the simulator picks at random enabled transitions and fires them.
 The transitions are specified by the program, which in the above example is the following:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;new s. (S[s] | E[s])
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;new s. (S[s] | E[s])
 
 S[s] := s(x).νd.( A[x,d] | S[s] )
 E[s] := τ.new m.(C[s, m] | E[s]) + τ.νs'.(S[s'] | E[s'] | E[s])
@@ -217,7 +217,7 @@ or trying to understand them,
 the mindset one adopts is what I call the &lt;strong&gt;problem solving mode&lt;/strong&gt;,
 that is, your attention is directed to details of the mechanics of a formally well-defined problem, a “puzzle”.
 An instance of a puzzle could be
-    “How long can the minimal covering paths in a Petri net be?”.&lt;sup id=&quot;fnref:rackoff&quot;&gt;&lt;a href=&quot;#fn:rackoff&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+    “How long can the minimal covering paths in a Petri net be?”.&lt;sup id=&quot;fnref:rackoff&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:rackoff&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;p&gt;This mode of thinking is the main one used in engineering work:
 you are presented with a complicated but circumscribed problem and apply some mathematical insight to provide a solution.
@@ -241,7 +241,7 @@ It heavily involves abstraction, formalisation and generalisation abilities.
 The outcome of the process is a set of basic assumptions and definitions that would form the basis for a &lt;em&gt;language&lt;/em&gt; to express facts and properties regarding the phenomenon under study.
 I would call conceptualisation the “Art of the Definition”.&lt;/p&gt;
 
-&lt;p&gt;Problems that are solved by employing the conceptual mindset are typically not well-defined and ambiguous. Examples could be “What is behaviour?”&lt;sup id=&quot;fnref:beh&quot;&gt;&lt;a href=&quot;#fn:beh&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; or “What does it mean for an analysis to be sound?”.&lt;sup id=&quot;fnref:absint&quot;&gt;&lt;a href=&quot;#fn:absint&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;Problems that are solved by employing the conceptual mindset are typically not well-defined and ambiguous. Examples could be “What is behaviour?”&lt;sup id=&quot;fnref:beh&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:beh&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; or “What does it mean for an analysis to be sound?”.&lt;sup id=&quot;fnref:absint&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:absint&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;p&gt;Big tech companies like Google or Facebook have interview processes set up to test the purely problem-solving abilities of candidates. Their reputation then does the rest: the problem solving aspect of CS is often over-emphasised and CS may be reduced to puzzle-solving from the perspective of an outsider.
 This makes sense if you consider that these companies are looking, most of the times, for Software Engineers. But in a University we aim at forming professionals that are prepared both technically &lt;em&gt;and&lt;/em&gt; culturally. Only a balance between the conceptual and problem solving aspects of our discipline can achieve this.&lt;/p&gt;
@@ -269,16 +269,16 @@ In fact this can be traced back to the beginning of CS as a discipline, which wa
 Pure conceptual mode is Philosophy.
 Computer Science hits that sweet spot in between the two: it is the combination of the two modes that gives the discipline the relevance and depth of a Science.&lt;/p&gt;
 
-&lt;div class=&quot;footnotes&quot;&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
-    &lt;li id=&quot;fn:rackoff&quot;&gt;
-      &lt;p&gt;The answer is doubly-exponential in the size of the input, as proved in Rackoff’s lower-bound for Petri net coverability. &lt;a href=&quot;#fnref:rackoff&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;li id=&quot;fn:rackoff&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;The answer is doubly-exponential in the size of the input, as proved in Rackoff’s lower-bound for Petri net coverability. &lt;a href=&quot;#fnref:rackoff&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
-    &lt;li id=&quot;fn:beh&quot;&gt;
-      &lt;p&gt;In the course we answer this question by introducing Bisimulations. The general question of “What is the meaning of a program” led to the development of the field of Semantics. &lt;a href=&quot;#fnref:beh&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;li id=&quot;fn:beh&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;In the course we answer this question by introducing Bisimulations. The general question of “What is the meaning of a program” led to the development of the field of Semantics. &lt;a href=&quot;#fnref:beh&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
-    &lt;li id=&quot;fn:absint&quot;&gt;
-      &lt;p&gt;A compelling answer can be found in the Abstract Interpretation framework. &lt;a href=&quot;#fnref:absint&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;li id=&quot;fn:absint&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;A compelling answer can be found in the Abstract Interpretation framework. &lt;a href=&quot;#fnref:absint&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
@@ -333,6 +333,7 @@ here is my name pronounced correctly:&lt;/p&gt;
   &lt;li&gt;&lt;strong&gt;Dosvlaudo&lt;/strong&gt; — or something like this where it is clear that the one who typed it simply gave up after three letters&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;d’Osualdo&lt;/strong&gt; or just &lt;strong&gt;Osualdo&lt;/strong&gt; — I get this a lot in Germany, where they seem to interpret the “D’” as an optional decoration. Main drawback: I may be listed under “O” in alphabetic order!&lt;/li&gt;
   &lt;li&gt;New entry: &lt;strong&gt;Dr. Oswaldo&lt;/strong&gt; — that’s how Germans tend to pronounce it.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;D’Oscualdo&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;the-apostrophe&quot;&gt;The apostrophe&lt;/h1&gt;

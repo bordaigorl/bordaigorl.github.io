@@ -149,7 +149,7 @@ This graph is commonly called the <em>communication topology</em> of the system.
 If you press “play”, the simulator picks at random enabled transitions and fires them.
 The transitions are specified by the program, which in the above example is the following:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>new s. (S[s] | E[s])
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>new s. (S[s] | E[s])
 
 S[s] := s(x).νd.( A[x,d] | S[s] )
 E[s] := τ.new m.(C[s, m] | E[s]) + τ.νs'.(S[s'] | E[s'] | E[s])

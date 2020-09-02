@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-<title>Automatic Verification of Erlang-Style Concurrency - Emanuele D&#39;Osualdo</title>
+<title>Decidable Inductive Invariants for Verification of Cryptographic Protocols with Unbounded Sessions - Emanuele D&#39;Osualdo</title>
 <meta name="description" content="Abstract">
 <meta name="author" content="Emanuele D'Osualdo">
 
@@ -11,8 +11,8 @@
 
 
 <meta property="og:type" content="website">
-<meta name="twitter:title" content="Emanuele D'Osualdo - Automatic Verification of Erlang-Style Concurrency">
-<meta property="og:title" content="Emanuele D'Osualdo - Automatic Verification of Erlang-Style Concurrency">
+<meta name="twitter:title" content="Emanuele D'Osualdo - Decidable Inductive Invariants for Verification of Cryptographic Protocols with Unbounded Sessions">
+<meta property="og:title" content="Emanuele D'Osualdo - Decidable Inductive Invariants for Verification of Cryptographic Protocols with Unbounded Sessions">
 
 <meta name="twitter:description" content="Abstract
 ">
@@ -23,14 +23,14 @@
   <meta name="twitter:image" content="http://emanueledosualdo.com/images/logo.png">
   <meta property="og:image" content="http://emanueledosualdo.com/images/logo.png">
 
-<meta property="og:url" content="http://emanueledosualdo.com/research/papers/2013/sas-soter.html">
+<meta property="og:url" content="http://emanueledosualdo.com/research/papers/2020/concur-ideal-completions.html">
 <meta property="og:site_name" content="Emanuele D'Osualdo">
 
   <meta name="twitter:site" content="@bordaigorl">
 
 
 
-<link rel="canonical" href="http://emanueledosualdo.com/research/papers/2013/sas-soter.html">
+<link rel="canonical" href="http://emanueledosualdo.com/research/papers/2020/concur-ideal-completions.html">
 
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600|Kreon:300,400|Roboto+Mono:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://use.fontawesome.com/cb833953a4.css">
@@ -105,8 +105,8 @@
 
       <header class="meta">
         
-        <div class="venue"><span title="Static Analysis">SAS</span> 2013</div>
-        <h1 class="title" itemprop="name headline">Automatic Verification of Erlang-Style Concurrency</h1>
+        <div class="venue"><span title="Concurrency Theory">CONCUR</span> 2020</div>
+        <h1 class="title" itemprop="name headline">Decidable Inductive Invariants for Verification of Cryptographic Protocols with Unbounded Sessions</h1>
         <ul class="authors">
         
           
@@ -117,31 +117,26 @@
           
           
             <li class="author">
-              <a href="#" title="Jonathan Kochems">J. Kochems</a>
-            </li>
-          
-        
-          
-          
-            <li class="author">
-              <a href="https://www.cs.ox.ac.uk/luke.ong/" title="C.-H. Luke Ong - University of Oxford, UK">C.-H. L. Ong</a>
+              <a href="https://www.mpi-sws.org/people/fstutz/" title="Felix Stutz - MPI-SWS, Saarbrücken, Germany">F. Stutz</a>
             </li>
           
         
         </ul>
         <div class="paper links">
           
-            <a href="http://mjolnir.cs.ox.ac.uk/soter/papers/sas13.pdf" class="button primary"><i class="fa fa-download"></i>Pdf</a>
+            <a href="https://arxiv.org/pdf/1911.05430.pdf" class="button primary"><i class="fa fa-download"></i>Pdf</a>
           
           
-            <a href="http://arxiv.org/abs/1303.2201" class="button"><i class="fa fa-file-text red"></i>ArXiv</a>
+            <a href="http://arxiv.org/abs/1911.0543" class="button"><i class="fa fa-file-text red"></i>ArXiv</a>
           
           
             
+              <a href="https://doi.org/10.4230/LIPIcs.CONCUR.2020.31" class="button"><i class="fa fa-file-text-o black"></i>doi</a>
+            
           
           
+            <a href="https://github.com/bordaigorl/lemma9/" class="button"><i class="fa fa-code purple"></i>Tool</a>
           
-            <a href="http://mjolnir.cs.ox.ac.uk/soter/" class="button"><i class="fa fa-rocket"></i>Demo</a>
           
           
         </div>
@@ -150,8 +145,8 @@
       <div class="content" itemprop="articleBody">
         <h1 id="abstract">Abstract</h1>
 
-<p>This paper presents an approach to verify safety properties of Erlang-style, higher-order concurrent programs automatically. Inspired by Core Erlang, we introduce λActor, a prototypical functional language with pattern-matching algebraic data types, augmented with process creation and asynchronous message-passing primitives. We formalise an abstract model of λActor programs called Actor Communicating System (ACS) which has a natural interpretation as a vector addition system, for which some verification problems are decidable. We give a parametric abstract interpretation framework for λActor and use it to build a polytime computable, flow-based, abstract semantics of λActor programs, which we then use to bootstrap the ACS construction, thus deriving a more accurate abstract model of the input program.
-We evaluate the method which we implemented in the prototype Soter. We find that in practice our abstraction technique is accurate enough to verify an interesting range of safety properties. Though the ACS coverability problem is Expspace-complete, Soter can analyse non-trivial programs in a matter of seconds.</p>
+<p>We develop a theory of decidable inductive invariants for an infinite-state variant of the Applied pi-calculus, with applications to automatic verification of stateful cryptographic protocols with unbounded sessions/nonces. Since the problem is undecidable in general, we introduce depth-bounded protocols, a strict generalisation of a class from the literature, for which our decidable analysis is sound and complete. Our core contribution is a procedure to check that an invariant is inductive, which implies that every reachable configuration satisfies it. Our invariants can capture security properties like secrecy, can be inferred automatically, and represent an independently checkable certificate of correctness.
+We provide a prototype implementation and we report on its performance on some textbook examples.</p>
 
       </div>
 
@@ -165,8 +160,8 @@ We evaluate the method which we implemented in the prototype Soter. We find that
     <div id="disqus_thread"></div>
 <script>
 var disqus_config = function () {
-    this.page.url = "http://emanueledosualdo.com/research/papers/2013/sas-soter.html";
-    this.page.identifier = "/research/papers/2013/sas-soter";
+    this.page.url = "http://emanueledosualdo.com/research/papers/2020/concur-ideal-completions.html";
+    this.page.identifier = "/research/papers/2020/concur-ideal-completions";
 };
 
 (function() {
@@ -190,15 +185,13 @@ var disqus_config = function () {
   <ul class="tags">
     
     
-      <li><a href="/research/papers/#erlang" class="tag">erlang</a></li>
+      <li><a href="/research/papers/#invariants" class="tag">invariants</a></li>
     
-      <li><a href="/research/papers/#static analysis" class="tag">static analysis</a></li>
+      <li><a href="/research/papers/#cryptographic protocol" class="tag">cryptographic protocol</a></li>
     
-      <li><a href="/research/papers/#verification" class="tag">verification</a></li>
+      <li><a href="/research/papers/#wsts" class="tag">wsts</a></li>
     
-      <li><a href="/research/papers/#petri nets" class="tag">petri nets</a></li>
-    
-      <li><a href="/research/papers/#concurrency" class="tag">concurrency</a></li>
+      <li><a href="/research/papers/#decidability" class="tag">decidability</a></li>
     
   </ul>
 </aside>
@@ -206,9 +199,9 @@ var disqus_config = function () {
     <h1>Share</h1>
     <div class="buttons">
         <a class="rss share button" href="/feed.xml" title="Subscribe via RSS" itemprop="RSS"><i class="fa fa-rss"></i></a>
-        <a class="share button" href="https://twitter.com/intent/tweet?hashtags=erlang,staticanalysis,verification,petrinets,concurrency&amp;text=Automatic%20Verification%20of%20Erlang-Style%20Concurrency&amp;url=http://emanueledosualdo.com/research/papers/2013/sas-soter.html" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i></a>
-        <a class="share button" href="https://www.facebook.com/sharer/sharer.php?u=http://emanueledosualdo.com/research/papers/2013/sas-soter.html" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i></a>
-        <a class="share button" href="https://plus.google.com/share?url=http://emanueledosualdo.com/research/papers/2013/sas-soter.html" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> </a>
+        <a class="share button" href="https://twitter.com/intent/tweet?hashtags=invariants,cryptographicprotocol,wsts,decidability&amp;text=Decidable%20Inductive%20Invariants%20for%20Verification%20of%20Cryptographic%20Protocols%20with%20Unbounded%20Sessions&amp;url=http://emanueledosualdo.com/research/papers/2020/concur-ideal-completions.html" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i></a>
+        <a class="share button" href="https://www.facebook.com/sharer/sharer.php?u=http://emanueledosualdo.com/research/papers/2020/concur-ideal-completions.html" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i></a>
+        <a class="share button" href="https://plus.google.com/share?url=http://emanueledosualdo.com/research/papers/2020/concur-ideal-completions.html" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> </a>
     </div>
 </aside>
       
@@ -218,7 +211,7 @@ var disqus_config = function () {
     
       
       
-      <li><a href="/research/papers/2015/phd-thesis.html">Verification of Message Passing Concurrent Systems</a></li>
+      <li><a href="/research/papers/2017/csf-decidable-secrecy.html">Deciding Secrecy of Security Protocols for an Unbounded Number of Sessions: The Case of Depth-bounded Processes</a></li>
     
   </ul>
 </aside>
