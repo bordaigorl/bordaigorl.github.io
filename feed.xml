@@ -5,8 +5,8 @@
     <description>My research, projects and blog</description>
     <link>http://emanueledosualdo.com/</link>
     <atom:link href="http://emanueledosualdo.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 27 Oct 2020 16:14:57 +0000</pubDate>
-    <lastBuildDate>Tue, 27 Oct 2020 16:14:57 +0000</lastBuildDate>
+    <pubDate>Tue, 27 Oct 2020 21:58:06 +0000</pubDate>
+    <lastBuildDate>Tue, 27 Oct 2020 21:58:06 +0000</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -16,7 +16,7 @@ My project “&lt;strong&gt;Ve&lt;/strong&gt;rification through &lt;strong&gt;S&
 I will be working with Philippa Gardner to explore new ways to effectively prove &lt;strong&gt;Progress&lt;/strong&gt; (aka liveness) and &lt;strong&gt;Security&lt;/strong&gt; (eg. secrecy) of concurrent programs.&lt;/p&gt;
 
 &lt;blockquote class=&quot;note&quot;&gt;
-  &lt;p&gt;I will be posting updates on the project here, so &lt;strong&gt;&lt;a href=&quot;/blog/#VeSPA&quot;&gt;watch this space&lt;/a&gt;&lt;/strong&gt;!&lt;/p&gt;
+  &lt;p&gt;I will be posting updates on the project here, so &lt;strong&gt;&lt;a href=&quot;/research/projects/VeSPA&quot;&gt;watch this space&lt;/a&gt;&lt;/strong&gt;!&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;project-background&quot;&gt;Project background&lt;/h2&gt;
@@ -65,7 +65,7 @@ The design of specifications is crucial in supporting Locality&amp;amp;Compositi
 Current specification formats for concurrent systems fundamentally lack these characteristics, especially if one considers Progress and Security.
 VeSPA’s line of attack is based on a synergy between insights gained in my previous work and Gardner’s.&lt;/p&gt;
 
-&lt;p&gt;For more on the project &lt;a href=&quot;/blog/#VeSPA&quot;&gt;&lt;strong&gt;watch this space&lt;/strong&gt;&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;For more on the project &lt;a href=&quot;/research/projects/VeSPA&quot;&gt;&lt;strong&gt;watch this space&lt;/strong&gt;&lt;/a&gt;!&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 01 Sep 2018 00:00:00 +0100</pubDate>
@@ -253,7 +253,7 @@ They are not competing but simply complementary.
 I find that making the switch between the two modes a conscious process,
 helps focusing on the important aspects of the problem and coming to a solution in a more enlightened way.&lt;/p&gt;
 
-&lt;p&gt;Conceptualisation provides direction and a strong relation with the phenomenon of study, producing puzzles that are not meaningless tricks.
+&lt;p&gt;Conceptualisation provides direction and a strong relation with the phenomenon under study, producing puzzles that are not meaningless tricks.
 Problem solving gives depth to conceptualisation, allowing non-obvious consequences to be drawn from the premises.&lt;/p&gt;
 
 &lt;p&gt;If I think of the state of mind when doing conceptual work, I am reminded of the very nice description of the process of shooting an arrow in the book “Zen in the art of archery”, by the philosopher Eugen Herrigel. Although the book has many limitations, I still appreciate the attempt of the author to communicate to a Western audience ideas grounded in assumptions so distant from ours. Anyway, the description of the state of mind when shooting an arrow resonates, I think, with what one frequently experiences when doing research. The almost obsessive search for the right shot done in the training, striving for a liberation from preconceived assumptions, or emotional attachments to a dead-end. Then the moment of enlightenment: The Definition flows finally in a shape that feels right. And lemmas start to fall into place.
