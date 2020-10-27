@@ -1,0 +1,38 @@
+<h1 id="vespa-verification-and-specification-through-progress-abstractions">VeSPA: Verification and Specification through Progress Abstractions</h1>
+
+<blockquote class="centered">
+  <p><img src="/images/posts/index/eu.jpg" /> 
+ This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 795218</p>
+</blockquote>
+
+<p>Concurrent computation, organised as a decentralised collection of interacting components, is now ubiquitous.
+Our society increasingly relies on such systems for sensitive and critical infrastructure.
+To make this safe and sustainable we need a formal approach to analyse and certify the correctness of concurrent software.
+Our trust in concurrent systems is based on three key properties:</p>
+
+<ol>
+  <li>Safety: can the system crash?</li>
+  <li>Progress: will the system be reactive to requests?</li>
+  <li>Security: no secret is ever leaked.</li>
+</ol>
+
+<p>Analysing these properties is vastly more complicated for concurrent
+software: the decentralised interaction between processes introduces
+much more subtle behaviour than what is found in sequential centralised
+computation.
+Proving such properties of concurrent systems must take into consideration all possible interactions, a space is so huge and complex that we lack proper tools to reason about it, both manually and automatically. This is called the analysis scalability problem. While the case of Safety has been extensively studied, Progress and Security still lack a scalable methodology for verification.</p>
+
+<p>VeSPA’s approach to solve the analysis scalability problem for Progress and Security is based on two strategies:</p>
+
+<ol>
+  <li>Devising modular specifications for concurrent components.</li>
+  <li>Developing automatic analysis techniques to offload parts of the analysis task to the computer.</li>
+</ol>
+
+<p>The first strategy aims at breaking up the task of a complex concurrent system into smaller, more manageable sub-tasks about its components. This is far from trivial because progress-related arguments are typically about the interaction between components rather than individual properties of components. One of VeSPA’s main results was an analysis framework to reason about concurrent programs which can express the progress properties of a component without having to talk about the whole system. This allows for proofs that are:</p>
+
+<p>• Scalable: large programs can be understood as a hierarchy of smaller sub-systems, and the analysis can focus on each sub-system individually, reducing the complexity of the proofs.
+• Reusable: once a component has been proven correct with respect to its abstract interface, any program that uses that component can reuse the proof as well. At the same time, modifications to a component that do not alter its behaviour can be done without having to re-prove the program that uses the component.</p>
+
+<p>The second strategy aims at automating as much as possible some parts of the correctness proofs. Ideally, the human should be able to focus on the high-level insightful aspects of a proof, and leave the tedious and very complicated reasoning for the computer to check.
+VeSPA advanced the state of art in automation, for proofs of correctness of cryptographic protocols. These are protocols that underpin every online activity requiring authentication, physical access control devices, e-voting systems and more. They aim at achieving secure communication in an insecure channel, through the use of cryptography. They are notoriously tricky to design and flaws are discovered every day in deployed protocols, causing huge societal and economic damages. VeSPA contributed a method and a prototype tool to automate complex steps in the verification of security properties of these protocols.</p>
