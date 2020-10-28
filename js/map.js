@@ -5,7 +5,7 @@ var map;
 
 function init() {
   var mapOptions = {
-    center: new google.maps.LatLng( 51.4987855, -0.1795678 ),
+    center: new google.maps.LatLng( 49.257698, 7.046240 ),
     // 51.4987855,-0.1795678,18.62
     zoom: 5,
     zoomControl: false,
@@ -147,8 +147,8 @@ function init() {
   var mapElement = document.getElementById( 'contact-map' );
   var map = new google.maps.Map( mapElement, mapOptions );
 
-  var contentString = '<strong>Imperial College London</strong>'+
-        '<p>Huxley Building<br />Office 433</p>';
+  var contentString = '<strong>Max Planck Institute for Software Systems</strong>'+
+        '<p>Campus E1 5, 66123 Saarbrücken<br />Office 236</p>';
 
 
   var infowindow = new google.maps.InfoWindow({
@@ -158,7 +158,7 @@ function init() {
 
   marker = new google.maps.Marker( {
     icon: '/images/pin.png',
-    position: new google.maps.LatLng( 51.4987855, -0.1795678 ),
+    position: new google.maps.LatLng( 49.257698, 7.046240 ),
     map: map
   } );
 
