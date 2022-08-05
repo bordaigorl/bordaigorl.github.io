@@ -3,34 +3,38 @@
 
 <head>
   <meta charset="utf-8">
-<title>Decidable Inductive Invariants for Verification of Cryptographic Protocols with Unbounded Sessions - Emanuele D&#39;Osualdo</title>
-<meta name="description" content="Abstract">
+<title>A Propositions-as-Sessions Interpretation of Bunched Implications in Channel-Based Concurrency - Emanuele D&#39;Osualdo</title>
+<meta name="description" content="  Conditionally accepted, preprint will be shared shortly">
 <meta name="author" content="Emanuele D'Osualdo">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 <meta property="og:type" content="website">
-<meta name="twitter:title" content="Emanuele D'Osualdo - Decidable Inductive Invariants for Verification of Cryptographic Protocols with Unbounded Sessions">
-<meta property="og:title" content="Emanuele D'Osualdo - Decidable Inductive Invariants for Verification of Cryptographic Protocols with Unbounded Sessions">
+<meta name="twitter:title" content="Emanuele D'Osualdo - A Propositions-as-Sessions Interpretation of Bunched Implications in Channel-Based Concurrency">
+<meta property="og:title" content="Emanuele D'Osualdo - A Propositions-as-Sessions Interpretation of Bunched Implications in Channel-Based Concurrency">
 
-<meta name="twitter:description" content="Abstract
+<meta name="twitter:description" content="
+  Conditionally accepted, preprint will be shared shortly
+
 ">
-<meta property="og:description" content="Abstract
+<meta property="og:description" content="
+  Conditionally accepted, preprint will be shared shortly
+
 ">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:image" content="http://localhost:4000/images/logo.png">
   <meta property="og:image" content="http://localhost:4000/images/logo.png">
 
-<meta property="og:url" content="http://localhost:4000/research/papers/2020/concur-ideal-completions.html">
+<meta property="og:url" content="http://localhost:4000/research/papers/2022/bunch-of-sessions.html">
 <meta property="og:site_name" content="Emanuele D'Osualdo">
 
   <meta name="twitter:site" content="@bordaigorl">
 
 
 
-<link rel="canonical" href="http://localhost:4000/research/papers/2020/concur-ideal-completions.html">
+<link rel="canonical" href="http://localhost:4000/research/papers/2022/bunch-of-sessions.html">
 
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600|Kreon:300,400|Roboto+Mono:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://use.fontawesome.com/cb833953a4.css">
@@ -104,9 +108,16 @@
 
       <header class="meta">
         
-        <div class="venue"><span title="Concurrency Theory">CONCUR</span> 2020</div>
-        <h1 class="title" itemprop="name headline">Decidable Inductive Invariants for Verification of Cryptographic Protocols with Unbounded Sessions</h1>
+        <div class="venue"><span title="ACM SIGPLAN International Conference on Object-Oriented Programming Systems, Languages, and Applications">OOPSLA</span> 2022</div>
+        <h1 class="title" itemprop="name headline">A Propositions-as-Sessions Interpretation of Bunched Implications in Channel-Based Concurrency</h1>
         <ul class="authors">
+        
+          
+          
+            <li class="author">
+              <a href="https://groupoid.moe/" title="Dan Frumin - University of Groningen, The Netherlands">D. Frumin</a>
+            </li>
+          
         
           
           
@@ -116,25 +127,24 @@
           
           
             <li class="author">
-              <a href="https://www.mpi-sws.org/people/fstutz/" title="Felix Stutz - MPI-SWS, Saarbrücken, Germany">F. Stutz</a>
+              <a href="https://basvdheuvel.github.io/" title="Bas van den Heuvel - University of Groningen, The Netherlands">B. v/d Heuvel</a>
+            </li>
+          
+        
+          
+          
+            <li class="author">
+              <a href="https://www.jperez.nl/" title="Jorge A. Pérez - University of Groningen, The Netherlands">J. A. Pérez</a>
             </li>
           
         
         </ul>
         <div class="paper links">
           
-            <a href="https://arxiv.org/pdf/1911.05430.pdf" class="button primary"><i class="fa fa-download"></i>Pdf</a>
-          
-          
-            <a href="http://arxiv.org/abs/1911.0543" class="button"><i class="fa fa-file-text red"></i>ArXiv</a>
           
           
             
-              <a href="https://doi.org/10.4230/LIPIcs.CONCUR.2020.31" class="button"><i class="fa fa-file-text-o black"></i>doi</a>
-            
           
-          
-            <a href="https://github.com/bordaigorl/lemma9/" class="button"><i class="fa fa-code purple"></i>Tool</a>
           
           
           
@@ -142,10 +152,15 @@
       </header>
 
       <div class="content" itemprop="articleBody">
-        <h1 id="abstract">Abstract</h1>
+        <blockquote class="note centered">
+  <p>Conditionally accepted, preprint will be shared shortly</p>
+</blockquote>
 
-<p>We develop a theory of decidable inductive invariants for an infinite-state variant of the Applied pi-calculus, with applications to automatic verification of stateful cryptographic protocols with unbounded sessions/nonces. Since the problem is undecidable in general, we introduce depth-bounded protocols, a strict generalisation of a class from the literature, for which our decidable analysis is sound and complete. Our core contribution is a procedure to check that an invariant is inductive, which implies that every reachable configuration satisfies it. Our invariants can capture security properties like secrecy, can be inferred automatically, and represent an independently checkable certificate of correctness.
-We provide a prototype implementation and we report on its performance on some textbook examples.</p>
+<h1 id="abstract">Abstract</h1>
+
+<p>The emergence of <em>propositions-as-sessions</em>, a Curry-Howard correspondence between propositions of Linear Logic and session types for concurrent processes, has settled the logical foundations of message-passing concurrency. Central to this approach is the <em>resource consumption</em> paradigm heralded by Linear Logic.</p>
+
+<p>In this paper, we investigate a new point in the design space of session type systems for message-passing concurrent programs. We identify O’Hearn and Pym’s <em>Logic of Bunched Implications</em> (BI) as a fruitful basis for an interpretation of the logic as a concurrent programming language. This leads to a treatment of <em>non-linear resources</em> that is radically different from existing approaches based on Linear Logic. We introduce a new π-calculus with sessions,  called πBI; its most salient feature is a construct called <em>spawn</em>, which  expresses new forms of sharing that are induced by structural principles in BI. We illustrate the expressiveness of πBI and lay out its fundamental theory: type preservation, deadlock-freedom, and weak normalization results for well-typed processes; an operationally sound and complete typed encoding of an affine λ-calculus; and a non-interference result for access of resources.</p>
 
       </div>
 
@@ -159,8 +174,8 @@ We provide a prototype implementation and we report on its performance on some t
     <div id="disqus_thread"></div>
 <script>
 var disqus_config = function () {
-    this.page.url = "http://localhost:4000/research/papers/2020/concur-ideal-completions.html";
-    this.page.identifier = "/research/papers/2020/concur-ideal-completions";
+    this.page.url = "http://localhost:4000/research/papers/2022/bunch-of-sessions.html";
+    this.page.identifier = "/research/papers/2022/bunch-of-sessions";
 };
 
 (function() {
@@ -184,15 +199,15 @@ var disqus_config = function () {
   <ul class="tags">
     
     
-      <li><a href="/research/papers/#invariants" class="tag">invariants</a></li>
+      <li><a href="/research/papers/#concurrency" class="tag">concurrency</a></li>
     
-      <li><a href="/research/papers/#cryptographic protocol" class="tag">cryptographic protocol</a></li>
+      <li><a href="/research/papers/#separation" class="tag">separation</a></li>
     
-      <li><a href="/research/papers/#wsts" class="tag">wsts</a></li>
+      <li><a href="/research/papers/#type systems" class="tag">type systems</a></li>
     
-      <li><a href="/research/papers/#decidability" class="tag">decidability</a></li>
+      <li><a href="/research/papers/#session types" class="tag">session types</a></li>
     
-      <li><a href="/research/papers/#VeSPA" class="tag">VeSPA</a></li>
+      <li><a href="/research/papers/#logics" class="tag">logics</a></li>
     
   </ul>
 </aside>
@@ -200,23 +215,12 @@ var disqus_config = function () {
     <h1>Share</h1>
     <div class="buttons">
         <a class="rss share button" href="/feed.xml" title="Subscribe via RSS" itemprop="RSS"><i class="fa fa-rss"></i></a>
-        <a class="share button" href="https://twitter.com/intent/tweet?hashtags=invariants,cryptographicprotocol,wsts,decidability,VeSPA&amp;text=Decidable%20Inductive%20Invariants%20for%20Verification%20of%20Cryptographic%20Protocols%20with%20Unbounded%20Sessions&amp;url=http://localhost:4000/research/papers/2020/concur-ideal-completions.html" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i></a>
-        <a class="share button" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/research/papers/2020/concur-ideal-completions.html" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i></a>
-        <a class="share button" href="https://plus.google.com/share?url=http://localhost:4000/research/papers/2020/concur-ideal-completions.html" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> </a>
+        <a class="share button" href="https://twitter.com/intent/tweet?hashtags=concurrency,separation,typesystems,sessiontypes,logics&amp;text=A%20Propositions-as-Sessions%20Interpretation%20of%20Bunched%20Implications%20in%20Channel-Based%20Concurrency&amp;url=http://localhost:4000/research/papers/2022/bunch-of-sessions.html" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i></a>
+        <a class="share button" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/research/papers/2022/bunch-of-sessions.html" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i></a>
+        <a class="share button" href="https://plus.google.com/share?url=http://localhost:4000/research/papers/2022/bunch-of-sessions.html" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> </a>
     </div>
 </aside>
       
-<aside class="related">
-  <h1>Related Papers</h1>
-  <ul class="post-links">
-    
-      
-      
-      <li><a href="/research/papers/2017/csf-decidable-secrecy.html">Deciding Secrecy of Security Protocols for an Unbounded Number of Sessions: The Case of Depth-bounded Processes</a></li>
-    
-  </ul>
-</aside>
-
   </div>
 </div>
 
