@@ -3,10 +3,10 @@
   <channel>
     <title>Emanuele D'Osualdo</title>
     <description>My research, projects and blog</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 19 Sep 2022 14:38:45 +0100</pubDate>
-    <lastBuildDate>Mon, 19 Sep 2022 14:38:45 +0100</lastBuildDate>
+    <link>http://emanueledosualdo.com/</link>
+    <atom:link href="http://emanueledosualdo.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 20 Sep 2022 10:31:07 +0100</pubDate>
+    <lastBuildDate>Tue, 20 Sep 2022 10:31:07 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -69,8 +69,8 @@ VeSPA’s line of attack is based on a synergy between insights gained in my pre
 
 </description>
         <pubDate>Sat, 01 Sep 2018 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/blog/2018/announce-marie-curie-fellowship.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2018/announce-marie-curie-fellowship.html</guid>
+        <link>http://emanueledosualdo.com/blog/2018/announce-marie-curie-fellowship.html</link>
+        <guid isPermaLink="true">http://emanueledosualdo.com/blog/2018/announce-marie-curie-fellowship.html</guid>
         
         <category>projects</category>
         
@@ -120,8 +120,8 @@ To the contrary, a scientist cannot ignore what the fire’s reflection is revea
 
 </description>
         <pubDate>Tue, 20 Feb 2018 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/blog/2018/the-scientists-condition.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2018/the-scientists-condition.html</guid>
+        <link>http://emanueledosualdo.com/blog/2018/the-scientists-condition.html</link>
+        <guid isPermaLink="true">http://emanueledosualdo.com/blog/2018/the-scientists-condition.html</guid>
         
         <category>science</category>
         
@@ -188,8 +188,8 @@ you are most welcome to leave a message in the &lt;a href=&quot;https://github.c
 
 </description>
         <pubDate>Tue, 31 Oct 2017 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/blog/2017/stargazer-release.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2017/stargazer-release.html</guid>
+        <link>http://emanueledosualdo.com/blog/2017/stargazer-release.html</link>
+        <guid isPermaLink="true">http://emanueledosualdo.com/blog/2017/stargazer-release.html</guid>
         
         <category>picalculus</category>
         
@@ -284,8 +284,8 @@ Computer Science hits that sweet spot in between the two: it is the combination 
 &lt;/div&gt;
 </description>
         <pubDate>Tue, 14 Feb 2017 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/blog/2017/why-computer-science-is-a-science.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2017/why-computer-science-is-a-science.html</guid>
+        <link>http://emanueledosualdo.com/blog/2017/why-computer-science-is-a-science.html</link>
+        <guid isPermaLink="true">http://emanueledosualdo.com/blog/2017/why-computer-science-is-a-science.html</guid>
         
         <category>science</category>
         
@@ -400,8 +400,8 @@ Feel free to use it! --&gt;
 
 </description>
         <pubDate>Wed, 02 Nov 2016 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/blog/2016/the-art-of-the-misspelling.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2016/the-art-of-the-misspelling.html</guid>
+        <link>http://emanueledosualdo.com/blog/2016/the-art-of-the-misspelling.html</link>
+        <guid isPermaLink="true">http://emanueledosualdo.com/blog/2016/the-art-of-the-misspelling.html</guid>
         
         <category>fun</category>
         
@@ -446,8 +446,8 @@ If you’d like to know more, watch this space for an upcoming write-up about th
 
 </description>
         <pubDate>Tue, 09 Aug 2016 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/explain-picalc.html</link>
-        <guid isPermaLink="true">http://localhost:4000/explain-picalc.html</guid>
+        <link>http://emanueledosualdo.com/explain-picalc.html</link>
+        <guid isPermaLink="true">http://emanueledosualdo.com/explain-picalc.html</guid>
         
         <category>picalculus</category>
         
