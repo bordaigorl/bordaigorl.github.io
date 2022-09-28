@@ -115,16 +115,12 @@
         
           
           
-            <li class="author">
-              <a href="#" title="Jonathan Kochems">J. Kochems</a>
-            </li>
+            <li class="author"><a href="#" title="Jonathan Kochems">J. Kochems</a></li>
           
         
           
           
-            <li class="author">
-              <a href="https://www.cs.ox.ac.uk/luke.ong/" title="C.-H. Luke Ong - University of Oxford, UK">C.-H. L. Ong</a>
-            </li>
+            <li class="author"><a href="https://www.cs.ox.ac.uk/luke.ong/" title="C.-H. Luke Ong - University of Oxford, UK">C.-H. L. Ong</a></li>
           
         
         </ul>
@@ -146,7 +142,9 @@
         </div>
       </header>
 
+
       <div class="content" itemprop="articleBody">
+        
         <h1 id="abstract">Abstract</h1>
 
 <p>This paper presents an approach to verify safety properties of Erlang-style, higher-order concurrent programs automatically. Inspired by Core Erlang, we introduce λActor, a prototypical functional language with pattern-matching algebraic data types, augmented with process creation and asynchronous message-passing primitives. We formalise an abstract model of λActor programs called Actor Communicating System (ACS) which has a natural interpretation as a vector addition system, for which some verification problems are decidable. We give a parametric abstract interpretation framework for λActor and use it to build a polytime computable, flow-based, abstract semantics of λActor programs, which we then use to bootstrap the ACS construction, thus deriving a more accurate abstract model of the input program.

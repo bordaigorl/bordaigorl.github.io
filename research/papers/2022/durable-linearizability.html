@@ -3,40 +3,34 @@
 
 <head>
   <meta charset="utf-8">
-<title>TaDA Live: Compositional Reasoning for Termination of Fine-grained Concurrent Programs - Emanuele D&#39;Osualdo</title>
-<meta name="description" content="  Published in TOPLAS, presented at POPL 2022.">
+<title>The Path to Durable Linearizability - Emanuele D&#39;Osualdo</title>
+<meta name="description" content="Abstract">
 <meta name="author" content="Emanuele D'Osualdo">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 <meta property="og:type" content="website">
-<meta name="twitter:title" content="Emanuele D'Osualdo - TaDA Live: Compositional Reasoning for Termination of Fine-grained Concurrent Programs">
-<meta property="og:title" content="Emanuele D'Osualdo - TaDA Live: Compositional Reasoning for Termination of Fine-grained Concurrent Programs">
+<meta name="twitter:title" content="Emanuele D'Osualdo - The Path to Durable Linearizability">
+<meta property="og:title" content="Emanuele D'Osualdo - The Path to Durable Linearizability">
 
-<meta name="twitter:description" content="
-  Published in TOPLAS, presented at POPL 2022.
-
-
+<meta name="twitter:description" content="Abstract
 ">
-<meta property="og:description" content="
-  Published in TOPLAS, presented at POPL 2022.
-
-
+<meta property="og:description" content="Abstract
 ">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:image" content="http://emanueledosualdo.com/images/logo.png">
   <meta property="og:image" content="http://emanueledosualdo.com/images/logo.png">
 
-<meta property="og:url" content="http://emanueledosualdo.com/research/papers/2021/tada-live.html">
+<meta property="og:url" content="http://emanueledosualdo.com/research/papers/2022/durable-linearizability.html">
 <meta property="og:site_name" content="Emanuele D'Osualdo">
 
   <meta name="twitter:site" content="@bordaigorl">
 
 
 
-<link rel="canonical" href="http://emanueledosualdo.com/research/papers/2021/tada-live.html">
+<link rel="canonical" href="http://emanueledosualdo.com/research/papers/2022/durable-linearizability.html">
 
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600|Kreon:300,400|Roboto+Mono:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://use.fontawesome.com/cb833953a4.css">
@@ -110,8 +104,8 @@
 
       <header class="meta">
         
-        <div class="venue"><span title="ACM Transactions on Programming Languages and Systems">TOPLAS</span> 2021</div>
-        <h1 class="title" itemprop="name headline">TaDA Live: Compositional Reasoning for Termination of Fine-grained Concurrent Programs</h1>
+        <div class="venue"><span title="ACM SIGPLAN Symposium on Principles of Programming Languages">POPL</span> 2023</div>
+        <h1 class="title" itemprop="name headline">The Path to Durable Linearizability</h1>
         <ul class="authors">
         
           
@@ -121,30 +115,19 @@
         
           
           
-            <li class="author"><a href="#" title="Julian Sutherland - Imperial College London, UK">J. Sutherland</a></li>
+            <li class="author"><a href="https://www.soundandcomplete.org/" title="Azalea Raad">A. Raad</a></li>
           
         
           
           
-            <li class="author"><a href="#" title="Azadeh Farzan - University of Toronto, Canada">A. Farzan</a></li>
-          
-        
-          
-          
-            <li class="author"><a href="#" title="Philippa Gardner - Imperial College London, UK">P. Gardner</a></li>
+            <li class="author"><a href="https://people.mpi-sws.org/~viktor/" title="Viktor Vafeiadis - MPI-SWS, Germany">V. Vafeiadis</a></li>
           
         
         </ul>
         <div class="paper links">
           
-            <a href="https://arxiv.org/pdf/1901.05750.pdf" class="button primary"><i class="fa fa-download"></i>Pdf</a>
           
           
-            <a href="http://arxiv.org/abs/1901.05750" class="button"><i class="fa fa-file-text red"></i>ArXiv</a>
-          
-          
-            
-              <a href="https://doi.org/10.1145/3477082" class="button"><i class="fa fa-file-text-o black"></i>doi</a>
             
           
           
@@ -156,13 +139,39 @@
 
       <div class="content" itemprop="articleBody">
         
-        <blockquote class="note centered">
-  <p>Published in <a href="https://doi.org/10.1145/3477082">TOPLAS</a>, presented at <a href="https://popl22.sigplan.org/details/POPL-2022-popl-research-papers/70/TaDA-Live-Compositional-Reasoning-for-Termination-of-Fine-grained-Concurrent-Program">POPL 2022</a>.</p>
-</blockquote>
+        <blockquote class="positive centered">
+          <i class="fa fa-leaf"></i>&nbsp;
+          <p>Conditionally accepted, preprint will be shared shortly</p>
+        </blockquote>
+        
+        <h1 id="abstract">Abstract</h1>
 
-<h1 id="abstract">Abstract</h1>
+<p>There is an increasing body of literature proposing new and efficient
+persistent versions of concurrent data structures ensuring that a consistent
+state can be recovered after a power failure or a crash.
+Their correctness is typically stated in terms of <em>durable linearizability</em> (DL),
+which requires that individual library operations appear to be executed
+atomically in a sequence consistent with the real-time order and, moreover,
+that recovering from a crash return a state corresponding to a prefix of that
+sequence.
+Sadly, however, there are hardly any formal DL proofs, and those that do exist
+cover the correctness of rather simple persistent algorithms on specific
+(simplified) persistency models.</p>
 
-<p>We present TaDA Live, a concurrent separation logic for reasoning compositionally about the termination of blocking fine-grained concurrent programs. The crucial challenge is how to deal with <em>abstract atomic blocking</em>: that is, abstract atomic operations that have blocking behaviour arising from busy-waiting patterns as found in, for example, fine-grained spin locks. Our fundamental innovation is with the design of abstract specifications that capture this blocking behaviour as liveness assumptions on the environment. We design a logic that can reason about the termination of clients that use such operations without breaking their abstraction boundaries, and the correctness of the implementations of the operations with respect to their abstract specifications. We introduce a novel semantic model using layered subjective obligations to express liveness invariants and a proof system that is sound with respect to the model. The subtlety of our specifications and reasoning is illustrated using several case studies.</p>
+<p>In response, we propose a general, powerful, modular, and incremental proof technique that
+can be used to guide the development and establish DL.
+Our technique is:</p>
+
+<ul>
+  <li><em>general</em>, in that it is not tied to a specific persistency and/or consistency model,</li>
+  <li><em>powerful</em>, in that it can handle the most advanced persistent algorithms in the literature,</li>
+  <li><em>modular</em>, in that it allows the reuse of an existing linearizability argument, and</li>
+  <li><em>incremental</em>, in that the additional requirements for establishing DL
+depend on the complexity of the algorithm to be verified.</li>
+</ul>
+
+<p>We illustrate this technique on various versions of a persistent set,
+leading to the link-free set of Zuriel et al.</p>
 
 
       </div>
@@ -186,21 +195,11 @@
   <ul class="tags">
     
     
-      <li><a href="/research/papers/#concurrency" class="tag">concurrency</a></li>
+      <li><a href="/research/papers/#linearizability" class="tag">linearizability</a></li>
     
-      <li><a href="/research/papers/#separation" class="tag">separation</a></li>
+      <li><a href="/research/papers/#persistency" class="tag">persistency</a></li>
     
-      <li><a href="/research/papers/#logics" class="tag">logics</a></li>
-    
-      <li><a href="/research/papers/#linearisability" class="tag">linearisability</a></li>
-    
-      <li><a href="/research/papers/#termination" class="tag">termination</a></li>
-    
-      <li><a href="/research/papers/#liveness" class="tag">liveness</a></li>
-    
-      <li><a href="/research/papers/#fine-grained" class="tag">fine-grained</a></li>
-    
-      <li><a href="/research/papers/#VeSPA" class="tag">VeSPA</a></li>
+      <li><a href="/research/papers/#weak memory" class="tag">weak memory</a></li>
     
   </ul>
 </aside>
@@ -208,8 +207,8 @@
     <h1>Share</h1>
     <div class="buttons">
         <a class="rss share button" href="/feed.xml" title="Subscribe via RSS" itemprop="RSS"><i class="fa fa-rss"></i></a>
-        <a class="share button" href="https://twitter.com/intent/tweet?hashtags=concurrency,separation,logics,linearisability,termination,liveness,fine-grained,VeSPA&amp;text=TaDA%20Live:%20Compositional%20Reasoning%20for%20Termination%20of%20Fine-grained%20Concurrent%20Programs&amp;url=http://emanueledosualdo.com/research/papers/2021/tada-live.html" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i></a>
-        <a class="share button" href="https://www.facebook.com/sharer/sharer.php?u=http://emanueledosualdo.com/research/papers/2021/tada-live.html" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i></a>
+        <a class="share button" href="https://twitter.com/intent/tweet?hashtags=linearizability,persistency,weakmemory&amp;text=The%20Path%20to%20Durable%20Linearizability&amp;url=http://emanueledosualdo.com/research/papers/2022/durable-linearizability.html" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i></a>
+        <a class="share button" href="https://www.facebook.com/sharer/sharer.php?u=http://emanueledosualdo.com/research/papers/2022/durable-linearizability.html" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i></a>
     </div>
 </aside>
       

@@ -115,16 +115,12 @@
         
           
           
-            <li class="author">
-              <a href="#" title="Jonathan Kochems">J. Kochems</a>
-            </li>
+            <li class="author"><a href="#" title="Jonathan Kochems">J. Kochems</a></li>
           
         
           
           
-            <li class="author">
-              <a href="https://www.cs.ox.ac.uk/luke.ong/" title="C.-H. Luke Ong - University of Oxford, UK">C.-H. L. Ong</a>
-            </li>
+            <li class="author"><a href="https://www.cs.ox.ac.uk/luke.ong/" title="C.-H. Luke Ong - University of Oxford, UK">C.-H. L. Ong</a></li>
           
         
         </ul>
@@ -142,7 +138,9 @@
         </div>
       </header>
 
+
       <div class="content" itemprop="articleBody">
+        
         <p>This paper presents Soter, a fully-automatic program analyser and verifier for Erlang modules. The fragment of Erlang accepted by Soter includes the higher-order functional constructs and all the key features of actor concurrency, namely, dynamic spawning of processes and asynchronous message passing. Soter uses a combination of static analysis and infinite-state model checking to verify safety properties specified by the user. Given an Erlang module and a set of properties, Soter first extracts an abstract (approximate, sound) model in the form of an actor communicating system (ACS), and then checks if the properties are satisfied using a Petri net coverability checker, BFC. To our knowledge, Soter is the first fully-automatic, infinite-state model checker for a large fragment of Erlang. We find that in practice our abstraction technique is accurate enough to verify an interesting range of safety properties such as mutual-exclusion or boundedness of mailboxes. Though the ACS coverability problem is Expspace-complete, Soter can analyse these problems surprisingly efficiently.</p>
 
       </div>
