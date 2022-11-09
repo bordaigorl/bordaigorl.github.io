@@ -5,8 +5,8 @@
     <description>My research, projects and blog</description>
     <link>http://emanueledosualdo.com/</link>
     <atom:link href="http://emanueledosualdo.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 01 Nov 2022 14:17:13 +0000</pubDate>
-    <lastBuildDate>Tue, 01 Nov 2022 14:17:13 +0000</lastBuildDate>
+    <pubDate>Wed, 09 Nov 2022 23:39:37 +0000</pubDate>
+    <lastBuildDate>Wed, 09 Nov 2022 23:39:37 +0000</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -14,10 +14,6 @@
         <description>&lt;p&gt;I am very happy to announce that from September 2018 I will be a &lt;strong&gt;Marie-Curie Fellow&lt;/strong&gt; at Imperial College.
 My project “&lt;strong&gt;Ve&lt;/strong&gt;rification through &lt;strong&gt;S&lt;/strong&gt;ecurity and &lt;strong&gt;P&lt;/strong&gt;rogress &lt;strong&gt;A&lt;/strong&gt;bstractions” (VeSPA) was awarded a &lt;a href=&quot;https://ec.europa.eu/research/mariecurieactions/actions/individual-fellowships_en&quot;&gt;Marie-Curie Individual Fellowship&lt;/a&gt; for 2 years.
 I will be working with Philippa Gardner to explore new ways to effectively prove &lt;strong&gt;Progress&lt;/strong&gt; (aka liveness) and &lt;strong&gt;Security&lt;/strong&gt; (eg. secrecy) of concurrent programs.&lt;/p&gt;
-
-&lt;blockquote class=&quot;note&quot;&gt;
-  &lt;p&gt;I will be posting updates on the project here, so &lt;strong&gt;&lt;a href=&quot;/research/projects/VeSPA&quot;&gt;watch this space&lt;/a&gt;&lt;/strong&gt;!&lt;/p&gt;
-&lt;/blockquote&gt;
 
 &lt;h2 id=&quot;project-background&quot;&gt;Project background&lt;/h2&gt;
 
@@ -422,7 +418,6 @@ the green boxes are messages to the server (dark) or to the clients (light).&lt;
 | new s. (S[s] | new m.C[s,m] | new m.C[s,m] | new m.C[s,m])
 
 S[s] := s(x).νd.( A[x,d] | S[s] )
-E := 0
 C[s, m] := τ.( Q[s,m] | C1[s,m])
 C1[s, m] := m(x).C[s, m]
 Q[s,m] := s&lt;m&gt;
