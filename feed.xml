@@ -3,11 +3,29 @@
   <channel>
     <title>Emanuele D'Osualdo</title>
     <description>My research, projects and blog</description>
-    <link>http://emanueledosualdo.com/</link>
-    <atom:link href="http://emanueledosualdo.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 09 Nov 2022 23:47:53 +0000</pubDate>
-    <lastBuildDate>Wed, 09 Nov 2022 23:47:53 +0000</lastBuildDate>
+    <link>http://0.0.0.0:4000/</link>
+    <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 08 Dec 2022 11:15:58 +0000</pubDate>
+    <lastBuildDate>Thu, 08 Dec 2022 11:15:58 +0000</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>I'm at SPLASH'22!</title>
+        <description>&lt;p&gt;I will be giving two talks at &lt;a href=&quot;https://2022.splashcon.org/&quot;&gt;OOPSLA&lt;/a&gt; which this year is in Auckland, New Zealand!&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://2022.splashcon.org/details/splash-2022-oopsla/55/A-Bunch-of-Sessions-A-Propositions-as-Sessions-Interpretation-of-Bunched-Implication&quot;&gt;first talk&lt;/a&gt; is about my work with Dan Frumin, Bas van den Heuvel and Jorge Perez, on a session typed π-calculus obtained through a correspondence with the Logic of Bunched Implication (the core of Separation Logic).&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://2022.splashcon.org/details/splash-2022-oopsla/35/Proving-Hypersafety-Compositionally&quot;&gt;second talk&lt;/a&gt; is about my work with Azadeh Farzan and Derek Dreyer, on bringing compositionality to relational proofs of hypersafety properties.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 05 Dec 2022 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/blog/2022/splash.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2022/splash.html</guid>
+        
+        <category>conference</category>
+        
+        
+      </item>
     
       <item>
         <title>Announcement: Marie-Curie Fellowship</title>
@@ -65,8 +83,8 @@ VeSPA’s line of attack is based on a synergy between insights gained in my pre
 
 </description>
         <pubDate>Sat, 01 Sep 2018 00:00:00 +0100</pubDate>
-        <link>http://emanueledosualdo.com/blog/2018/announce-marie-curie-fellowship.html</link>
-        <guid isPermaLink="true">http://emanueledosualdo.com/blog/2018/announce-marie-curie-fellowship.html</guid>
+        <link>http://0.0.0.0:4000/blog/2018/announce-marie-curie-fellowship.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2018/announce-marie-curie-fellowship.html</guid>
         
         <category>projects</category>
         
@@ -116,8 +134,8 @@ To the contrary, a scientist cannot ignore what the fire’s reflection is revea
 
 </description>
         <pubDate>Tue, 20 Feb 2018 00:00:00 +0000</pubDate>
-        <link>http://emanueledosualdo.com/blog/2018/the-scientists-condition.html</link>
-        <guid isPermaLink="true">http://emanueledosualdo.com/blog/2018/the-scientists-condition.html</guid>
+        <link>http://0.0.0.0:4000/blog/2018/the-scientists-condition.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2018/the-scientists-condition.html</guid>
         
         <category>science</category>
         
@@ -184,8 +202,8 @@ you are most welcome to leave a message in the &lt;a href=&quot;https://github.c
 
 </description>
         <pubDate>Tue, 31 Oct 2017 00:00:00 +0000</pubDate>
-        <link>http://emanueledosualdo.com/blog/2017/stargazer-release.html</link>
-        <guid isPermaLink="true">http://emanueledosualdo.com/blog/2017/stargazer-release.html</guid>
+        <link>http://0.0.0.0:4000/blog/2017/stargazer-release.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2017/stargazer-release.html</guid>
         
         <category>picalculus</category>
         
@@ -280,8 +298,8 @@ Computer Science hits that sweet spot in between the two: it is the combination 
 &lt;/div&gt;
 </description>
         <pubDate>Tue, 14 Feb 2017 00:00:00 +0000</pubDate>
-        <link>http://emanueledosualdo.com/blog/2017/why-computer-science-is-a-science.html</link>
-        <guid isPermaLink="true">http://emanueledosualdo.com/blog/2017/why-computer-science-is-a-science.html</guid>
+        <link>http://0.0.0.0:4000/blog/2017/why-computer-science-is-a-science.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2017/why-computer-science-is-a-science.html</guid>
         
         <category>science</category>
         
@@ -396,8 +414,8 @@ Feel free to use it! --&gt;
 
 </description>
         <pubDate>Wed, 02 Nov 2016 00:00:00 +0000</pubDate>
-        <link>http://emanueledosualdo.com/blog/2016/the-art-of-the-misspelling.html</link>
-        <guid isPermaLink="true">http://emanueledosualdo.com/blog/2016/the-art-of-the-misspelling.html</guid>
+        <link>http://0.0.0.0:4000/blog/2016/the-art-of-the-misspelling.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2016/the-art-of-the-misspelling.html</guid>
         
         <category>fun</category>
         
@@ -441,8 +459,8 @@ If you’d like to know more, watch this space for an upcoming write-up about th
 
 </description>
         <pubDate>Tue, 09 Aug 2016 00:00:00 +0100</pubDate>
-        <link>http://emanueledosualdo.com/explain-picalc.html</link>
-        <guid isPermaLink="true">http://emanueledosualdo.com/explain-picalc.html</guid>
+        <link>http://0.0.0.0:4000/explain-picalc.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/explain-picalc.html</guid>
         
         <category>picalculus</category>
         
