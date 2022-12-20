@@ -5,9 +5,150 @@
     <description>My research, projects and blog</description>
     <link>http://0.0.0.0:4000/</link>
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 08 Dec 2022 11:15:58 +0000</pubDate>
-    <lastBuildDate>Thu, 08 Dec 2022 11:15:58 +0000</lastBuildDate>
+    <pubDate>Tue, 20 Dec 2022 18:34:42 +0000</pubDate>
+    <lastBuildDate>Tue, 20 Dec 2022 18:34:42 +0000</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>I will be at POPL'23!</title>
+        <description>&lt;p&gt;I will be attending the &lt;a href=&quot;https://popl23.sigplan.org/&quot;&gt;50th POPL&lt;/a&gt; which this year is in Boston, like the very first POPL.
+I am an author of two of the accepted papers.&lt;/p&gt;
+
+&lt;p&gt;I will be presenting the first paper, written with Azalea Raad and Viktor Vafeiadis,
+which is on a proof technique to prove durable linearizability for advanced fine-grained persistent data structures.&lt;/p&gt;
+
+&lt;div class=&quot;paper-card&quot; id=&quot;popl2022&quot;&gt;
+    
+      &lt;div class=&quot;links&quot;&gt;
+        
+        &lt;a href=&quot;/research/papers/2022/durable-linearizability.html&quot; class=&quot;green button&quot;&gt;&lt;i class=&quot;fa fa-leaf&quot;&gt;&lt;/i&gt;
+        To appear
+        &lt;/a&gt;
+        
+        
+        
+        
+        
+        &lt;a href=&quot;http://arxiv.org/abs/2211.07631&quot; class=&quot;button&quot;&gt;&lt;i class=&quot;fa fa-file-text&quot;&gt;&lt;/i&gt;ArXiv&lt;/a&gt;
+        
+        
+        &lt;a href=&quot;https://arxiv.org/pdf/2211.07631.pdf&quot; class=&quot;button primary&quot;&gt;&lt;i class=&quot;fa fa-download&quot;&gt;&lt;/i&gt;Pdf&lt;/a&gt;
+        
+        
+      &lt;/div&gt;
+    
+      &lt;div class=&quot;venue&quot;&gt;
+        &lt;span class=&quot;venue&quot;&gt;POPL&lt;/span&gt;
+        &lt;span class=&quot;year&quot;&gt;2023&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;title&quot;&gt;
+        &lt;a href=&quot;/research/papers/2022/durable-linearizability.html&quot;&gt;The Path to Durable Linearizability&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;ul class=&quot;authors&quot;&gt;
+      
+        
+        
+          &lt;li class=&quot;author me&quot;&gt;E. D'Osualdo&lt;/li&gt;
+        
+      
+        
+        
+          &lt;li class=&quot;author&quot;&gt;
+            &lt;a href=&quot;https://www.soundandcomplete.org/&quot; title=&quot;Azalea Raad&quot;&gt;A. Raad&lt;/a&gt;
+          &lt;/li&gt;
+        
+      
+        
+        
+          &lt;li class=&quot;author&quot;&gt;
+            &lt;a href=&quot;https://people.mpi-sws.org/~viktor/&quot; title=&quot;Viktor Vafeiadis&quot;&gt;V. Vafeiadis&lt;/a&gt;
+          &lt;/li&gt;
+        
+      
+      &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The second paper is on a refinement-based framework for compositionally verifying programs composed of modules written in different languages (e.g. ASM and C).&lt;/p&gt;
+
+&lt;div class=&quot;paper-card&quot; id=&quot;popl2022&quot;&gt;
+    
+      &lt;div class=&quot;links&quot;&gt;
+        
+        &lt;a href=&quot;/research/papers/2022/dimsum.html&quot; class=&quot;green button&quot;&gt;&lt;i class=&quot;fa fa-leaf&quot;&gt;&lt;/i&gt;
+        To appear
+        &lt;/a&gt;
+        
+        
+      &lt;/div&gt;
+    
+      &lt;div class=&quot;venue&quot;&gt;
+        &lt;span class=&quot;venue&quot;&gt;POPL&lt;/span&gt;
+        &lt;span class=&quot;year&quot;&gt;2023&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;title&quot;&gt;
+        &lt;a href=&quot;/research/papers/2022/dimsum.html&quot;&gt;DimSum: A Decentralized Approach to Multi-language Semantics and Verification&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;ul class=&quot;authors&quot;&gt;
+      
+        
+        
+          &lt;li class=&quot;author&quot;&gt;
+            &lt;a href=&quot;https://people.mpi-sws.org/~msammler/&quot; title=&quot;Michael Sammler&quot;&gt;M. Sammler&lt;/a&gt;
+          &lt;/li&gt;
+        
+      
+        
+        
+          &lt;li class=&quot;author&quot;&gt;
+            &lt;a href=&quot;https://people.mpi-sws.org/~spies/&quot; title=&quot;Simon Spies&quot;&gt;S. Spies&lt;/a&gt;
+          &lt;/li&gt;
+        
+      
+        
+        
+          &lt;li class=&quot;author&quot;&gt;
+            &lt;a href=&quot;https://www.mpi-sws.org/people/youngju/&quot; title=&quot;Youngju Song&quot;&gt;Y. Song&lt;/a&gt;
+          &lt;/li&gt;
+        
+      
+        
+        
+          &lt;li class=&quot;author me&quot;&gt;E. D'Osualdo&lt;/li&gt;
+        
+      
+        
+        
+          &lt;li class=&quot;author&quot;&gt;
+            &lt;a href=&quot;https://robbertkrebbers.nl&quot; title=&quot;Robbert Krebbers&quot;&gt;R. Krebbers&lt;/a&gt;
+          &lt;/li&gt;
+        
+      
+        
+        
+          &lt;li class=&quot;author&quot;&gt;
+            &lt;a href=&quot;https://people.mpi-sws.org/~dg/&quot; title=&quot;Deepak Garg&quot;&gt;D. Garg&lt;/a&gt;
+          &lt;/li&gt;
+        
+      
+        
+        
+          &lt;li class=&quot;author&quot;&gt;
+            &lt;a href=&quot;https://people.mpi-sws.org/~dreyer/&quot; title=&quot;Derek Dreyer&quot;&gt;D. Dreyer&lt;/a&gt;
+          &lt;/li&gt;
+        
+      
+      &lt;/ul&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Tue, 20 Dec 2022 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/blog/2022/popl.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2022/popl.html</guid>
+        
+        <category>conference</category>
+        
+        
+      </item>
     
       <item>
         <title>I'm at SPLASH'22!</title>
@@ -15,7 +156,108 @@
 
 &lt;p&gt;The &lt;a href=&quot;https://2022.splashcon.org/details/splash-2022-oopsla/55/A-Bunch-of-Sessions-A-Propositions-as-Sessions-Interpretation-of-Bunched-Implication&quot;&gt;first talk&lt;/a&gt; is about my work with Dan Frumin, Bas van den Heuvel and Jorge Perez, on a session typed π-calculus obtained through a correspondence with the Logic of Bunched Implication (the core of Separation Logic).&lt;/p&gt;
 
+&lt;div class=&quot;paper-card&quot; id=&quot;oopsla2022&quot;&gt;
+    
+      &lt;div class=&quot;links&quot;&gt;
+        
+        
+        
+        
+        
+        &lt;a href=&quot;http://arxiv.org/abs/2209.05421&quot; class=&quot;button&quot;&gt;&lt;i class=&quot;fa fa-file-text&quot;&gt;&lt;/i&gt;ArXiv&lt;/a&gt;
+        
+        
+        &lt;a href=&quot;https://arxiv.org/pdf/2209.05421.pdf&quot; class=&quot;button primary&quot;&gt;&lt;i class=&quot;fa fa-download&quot;&gt;&lt;/i&gt;Pdf&lt;/a&gt;
+        
+        
+      &lt;/div&gt;
+    
+      &lt;div class=&quot;venue&quot;&gt;
+        &lt;span class=&quot;venue&quot;&gt;OOPSLA&lt;/span&gt;
+        &lt;span class=&quot;year&quot;&gt;2022&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;title&quot;&gt;
+        &lt;a href=&quot;/research/papers/2022/bunch-of-sessions.html&quot;&gt;A Bunch of Sessions: A Propositions-as-Sessions Interpretation of Bunched Implications in Channel-Based Concurrency&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;ul class=&quot;authors&quot;&gt;
+      
+        
+        
+          &lt;li class=&quot;author&quot;&gt;
+            &lt;a href=&quot;https://groupoid.moe/&quot; title=&quot;Dan Frumin&quot;&gt;D. Frumin&lt;/a&gt;
+          &lt;/li&gt;
+        
+      
+        
+        
+          &lt;li class=&quot;author me&quot;&gt;E. D'Osualdo&lt;/li&gt;
+        
+      
+        
+        
+          &lt;li class=&quot;author&quot;&gt;
+            &lt;a href=&quot;https://basvdheuvel.github.io/&quot; title=&quot;Bas van den Heuvel&quot;&gt;B. v/d Heuvel&lt;/a&gt;
+          &lt;/li&gt;
+        
+      
+        
+        
+          &lt;li class=&quot;author&quot;&gt;
+            &lt;a href=&quot;https://www.jperez.nl/&quot; title=&quot;Jorge A. Pérez&quot;&gt;J. A. Pérez&lt;/a&gt;
+          &lt;/li&gt;
+        
+      
+      &lt;/ul&gt;
+&lt;/div&gt;
+
 &lt;p&gt;The &lt;a href=&quot;https://2022.splashcon.org/details/splash-2022-oopsla/35/Proving-Hypersafety-Compositionally&quot;&gt;second talk&lt;/a&gt; is about my work with Azadeh Farzan and Derek Dreyer, on bringing compositionality to relational proofs of hypersafety properties.&lt;/p&gt;
+
+&lt;div class=&quot;paper-card&quot; id=&quot;oopsla2022&quot;&gt;
+    
+      &lt;div class=&quot;links&quot;&gt;
+        
+        
+        
+        
+        
+        &lt;a href=&quot;http://arxiv.org/abs/2209.07448&quot; class=&quot;button&quot;&gt;&lt;i class=&quot;fa fa-file-text&quot;&gt;&lt;/i&gt;ArXiv&lt;/a&gt;
+        
+        
+        &lt;a href=&quot;https://arxiv.org/pdf/2209.07448.pdf&quot; class=&quot;button primary&quot;&gt;&lt;i class=&quot;fa fa-download&quot;&gt;&lt;/i&gt;Pdf&lt;/a&gt;
+        
+        
+      &lt;/div&gt;
+    
+      &lt;div class=&quot;venue&quot;&gt;
+        &lt;span class=&quot;venue&quot;&gt;OOPSLA&lt;/span&gt;
+        &lt;span class=&quot;year&quot;&gt;2022&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;title&quot;&gt;
+        &lt;a href=&quot;/research/papers/2022/hypersafety.html&quot;&gt;Proving Hypersafety Compositionally&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;ul class=&quot;authors&quot;&gt;
+      
+        
+        
+          &lt;li class=&quot;author me&quot;&gt;E. D'Osualdo&lt;/li&gt;
+        
+      
+        
+        
+          &lt;li class=&quot;author&quot;&gt;
+            &lt;a href=&quot;#&quot; title=&quot;Azadeh Farzan&quot;&gt;A. Farzan&lt;/a&gt;
+          &lt;/li&gt;
+        
+      
+        
+        
+          &lt;li class=&quot;author&quot;&gt;
+            &lt;a href=&quot;https://people.mpi-sws.org/~dreyer/&quot; title=&quot;Derek Dreyer&quot;&gt;D. Dreyer&lt;/a&gt;
+          &lt;/li&gt;
+        
+      
+      &lt;/ul&gt;
+&lt;/div&gt;
 
 </description>
         <pubDate>Mon, 05 Dec 2022 00:00:00 +0000</pubDate>
