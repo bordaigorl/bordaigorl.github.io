@@ -5,8 +5,8 @@
     <description>My research, projects and blog</description>
     <link>http://emanueledosualdo.com/</link>
     <atom:link href="http://emanueledosualdo.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 13 Feb 2023 14:48:02 +0000</pubDate>
-    <lastBuildDate>Mon, 13 Feb 2023 14:48:02 +0000</lastBuildDate>
+    <pubDate>Fri, 03 Mar 2023 22:49:38 +0000</pubDate>
+    <lastBuildDate>Fri, 03 Mar 2023 22:49:38 +0000</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -25,10 +25,10 @@ which is on a proof technique to prove durable linearizability for advanced fine
         
         
         
-        &lt;a href=&quot;http://arxiv.org/abs/2211.07631&quot; class=&quot;button&quot;&gt;&lt;i class=&quot;fa fa-file-text&quot;&gt;&lt;/i&gt;ArXiv&lt;/a&gt;
+        &lt;a href=&quot;http://arxiv.org/abs/2211.07631&quot; class=&quot;button&quot;&gt;&lt;i class=&quot;fa-solid fa-file-lines&quot;&gt;&lt;/i&gt;ArXiv&lt;/a&gt;
         
         
-        &lt;a href=&quot;https://arxiv.org/pdf/2211.07631.pdf&quot; class=&quot;button primary&quot;&gt;&lt;i class=&quot;fa fa-download&quot;&gt;&lt;/i&gt;Pdf&lt;/a&gt;
+        &lt;a href=&quot;https://arxiv.org/pdf/2211.07631.pdf&quot; class=&quot;button primary&quot;&gt;&lt;i class=&quot;fa-solid fa-download&quot;&gt;&lt;/i&gt;Pdf&lt;/a&gt;
         
         
       &lt;/div&gt;
@@ -75,7 +75,7 @@ which is on a proof technique to prove durable linearizability for advanced fine
         
         
         
-        &lt;a href=&quot;https://plv.mpi-sws.org/dimsum/paper.pdf&quot; class=&quot;button primary&quot;&gt;&lt;i class=&quot;fa fa-download&quot;&gt;&lt;/i&gt;Pdf&lt;/a&gt;
+        &lt;a href=&quot;https://plv.mpi-sws.org/dimsum/paper.pdf&quot; class=&quot;button primary&quot;&gt;&lt;i class=&quot;fa-solid fa-download&quot;&gt;&lt;/i&gt;Pdf&lt;/a&gt;
         
         
       &lt;/div&gt;
@@ -163,10 +163,10 @@ which is on a proof technique to prove durable linearizability for advanced fine
         
         
         
-        &lt;a href=&quot;http://arxiv.org/abs/2209.05421&quot; class=&quot;button&quot;&gt;&lt;i class=&quot;fa fa-file-text&quot;&gt;&lt;/i&gt;ArXiv&lt;/a&gt;
+        &lt;a href=&quot;http://arxiv.org/abs/2209.05421&quot; class=&quot;button&quot;&gt;&lt;i class=&quot;fa-solid fa-file-lines&quot;&gt;&lt;/i&gt;ArXiv&lt;/a&gt;
         
         
-        &lt;a href=&quot;https://arxiv.org/pdf/2209.05421.pdf&quot; class=&quot;button primary&quot;&gt;&lt;i class=&quot;fa fa-download&quot;&gt;&lt;/i&gt;Pdf&lt;/a&gt;
+        &lt;a href=&quot;https://arxiv.org/pdf/2209.05421.pdf&quot; class=&quot;button primary&quot;&gt;&lt;i class=&quot;fa-solid fa-download&quot;&gt;&lt;/i&gt;Pdf&lt;/a&gt;
         
         
       &lt;/div&gt;
@@ -219,10 +219,10 @@ which is on a proof technique to prove durable linearizability for advanced fine
         
         
         
-        &lt;a href=&quot;http://arxiv.org/abs/2209.07448&quot; class=&quot;button&quot;&gt;&lt;i class=&quot;fa fa-file-text&quot;&gt;&lt;/i&gt;ArXiv&lt;/a&gt;
+        &lt;a href=&quot;http://arxiv.org/abs/2209.07448&quot; class=&quot;button&quot;&gt;&lt;i class=&quot;fa-solid fa-file-lines&quot;&gt;&lt;/i&gt;ArXiv&lt;/a&gt;
         
         
-        &lt;a href=&quot;https://arxiv.org/pdf/2209.07448.pdf&quot; class=&quot;button primary&quot;&gt;&lt;i class=&quot;fa fa-download&quot;&gt;&lt;/i&gt;Pdf&lt;/a&gt;
+        &lt;a href=&quot;https://arxiv.org/pdf/2209.07448.pdf&quot; class=&quot;button primary&quot;&gt;&lt;i class=&quot;fa-solid fa-download&quot;&gt;&lt;/i&gt;Pdf&lt;/a&gt;
         
         
       &lt;/div&gt;
@@ -404,7 +404,7 @@ So I decided to fight my perfectionist’s paralysis and just publish what I hav
 &lt;p&gt;You can try the simulator online, it runs entirely inside the browser.
 For best performance, use it with Chrome (although Firefox is also supported).&lt;/p&gt;
 
-&lt;p class=&quot;centered&quot;&gt;&lt;a href=&quot;http://stargazer.emanueledosualdo.com&quot; class=&quot;button primary&quot;&gt;&lt;i class=&quot;fa fa-rocket&quot;&gt;&lt;/i&gt; Try Stargazer&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;centered&quot;&gt;&lt;a href=&quot;http://stargazer.emanueledosualdo.com&quot; class=&quot;button primary&quot;&gt;&lt;i class=&quot;fa-solid fa-rocket&quot;&gt;&lt;/i&gt; Try Stargazer&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I will publish posts on the π-calculus with examples and explanations exploiting the simulator.
 For now let me briefly explain the basic concepts.&lt;/p&gt;
@@ -431,11 +431,11 @@ A[x,d] := x&amp;lt;d&amp;gt;
 Q[s,m] := s&amp;lt;m&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;If you press “open” you will be able to play with the example in the full simulator. Open the “program” sidebar in &lt;em&gt;Stargazer&lt;/em&gt; by pressing the &lt;i class=&quot;fa fa-file-text&quot;&gt;&lt;/i&gt; button to see the program’s code which can be freely edited.&lt;/p&gt;
+&lt;p&gt;If you press “open” you will be able to play with the example in the full simulator. Open the “program” sidebar in &lt;em&gt;Stargazer&lt;/em&gt; by pressing the &lt;i class=&quot;fa-solid fa-file-lines&quot;&gt;&lt;/i&gt; button to see the program’s code which can be freely edited.&lt;/p&gt;
 
 &lt;h2 id=&quot;help-issues-and-feedback&quot;&gt;Help, issues and feedback&lt;/h2&gt;
 
-&lt;p&gt;For help on how to use it click on the &lt;i class=&quot;fa fa-question&quot;&gt;&lt;/i&gt; button in &lt;em&gt;Stargazer&lt;/em&gt;, where you will find a brief summary of the syntax.
+&lt;p&gt;For help on how to use it click on the &lt;i class=&quot;fa-solid fa-question&quot;&gt;&lt;/i&gt; button in &lt;em&gt;Stargazer&lt;/em&gt;, where you will find a brief summary of the syntax.
 The project is hosted on &lt;a href=&quot;https://github.com/bordaigorl/stargazer&quot;&gt;GitHub&lt;/a&gt;.
 I am planning to put some basic information in the &lt;a href=&quot;https://github.com/bordaigorl/stargazer/wiki&quot;&gt;wiki&lt;/a&gt;.
 If you find bugs, have feature requests, ideas or comments
@@ -567,7 +567,7 @@ here is my name pronounced correctly:&lt;/p&gt;
 &lt;audio src=&quot;/doc/name.mp3&quot; controls=&quot;controls&quot;&gt;
   &lt;a href=&quot;/doc/name.mp3&quot; class=&quot;button&quot;&gt;
       Click here to play
-      &lt;i class=&quot;fa fa-play&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;fa-solid fa-play&quot;&gt;&lt;/i&gt;
   &lt;/a&gt;
 &lt;/audio&gt;
 
@@ -688,7 +688,7 @@ A[x,d] := x&lt;d&gt;
 
 &lt;p&gt;You can try the simulator and experiment with the π‑calculus by clicking here:&lt;/p&gt;
 
-&lt;p class=&quot;centered&quot;&gt;&lt;a href=&quot;http://stargazer.emanueledosualdo.com&quot; class=&quot;button primary&quot;&gt;&lt;i class=&quot;fa fa-rocket&quot;&gt;&lt;/i&gt;Stargazer&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;centered&quot;&gt;&lt;a href=&quot;http://stargazer.emanueledosualdo.com&quot; class=&quot;button primary&quot;&gt;&lt;i class=&quot;fa-solid fa-rocket&quot;&gt;&lt;/i&gt;Stargazer&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I wrote the simulator in JavaScript and &lt;a href=&quot;https://d3js.org/&quot;&gt;D3.js&lt;/a&gt; to support my presentation on the contents of &lt;a href=&quot;/research/#thesis&quot;&gt;my Ph.D. thesis&lt;/a&gt;. The code evolved from a simple prototype and I am in the process of rewriting it completely.
 I hope you will enjoy it even if it is unfinished!&lt;/p&gt;
