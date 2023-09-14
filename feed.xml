@@ -3,10 +3,10 @@
   <channel>
     <title>Emanuele D'Osualdo</title>
     <description>My research, projects and blog</description>
-    <link>http://emanueledosualdo.com/</link>
-    <atom:link href="http://emanueledosualdo.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 24 Apr 2023 10:31:43 +0100</pubDate>
-    <lastBuildDate>Mon, 24 Apr 2023 10:31:43 +0100</lastBuildDate>
+    <link>http://0.0.0.0:4000/</link>
+    <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 14 Sep 2023 19:08:43 +0100</pubDate>
+    <lastBuildDate>Thu, 14 Sep 2023 19:08:43 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -141,8 +141,8 @@ which is on a proof technique to prove durable linearizability for advanced fine
 
 </description>
         <pubDate>Tue, 20 Dec 2022 00:00:00 +0000</pubDate>
-        <link>http://emanueledosualdo.com/blog/2022/popl.html</link>
-        <guid isPermaLink="true">http://emanueledosualdo.com/blog/2022/popl.html</guid>
+        <link>http://0.0.0.0:4000/blog/2022/popl.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2022/popl.html</guid>
         
         <category>conference</category>
         
@@ -260,8 +260,8 @@ which is on a proof technique to prove durable linearizability for advanced fine
 
 </description>
         <pubDate>Mon, 05 Dec 2022 00:00:00 +0000</pubDate>
-        <link>http://emanueledosualdo.com/blog/2022/splash.html</link>
-        <guid isPermaLink="true">http://emanueledosualdo.com/blog/2022/splash.html</guid>
+        <link>http://0.0.0.0:4000/blog/2022/splash.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2022/splash.html</guid>
         
         <category>conference</category>
         
@@ -324,8 +324,8 @@ VeSPA’s line of attack is based on a synergy between insights gained in my pre
 
 </description>
         <pubDate>Sat, 01 Sep 2018 00:00:00 +0100</pubDate>
-        <link>http://emanueledosualdo.com/blog/2018/announce-marie-curie-fellowship.html</link>
-        <guid isPermaLink="true">http://emanueledosualdo.com/blog/2018/announce-marie-curie-fellowship.html</guid>
+        <link>http://0.0.0.0:4000/blog/2018/announce-marie-curie-fellowship.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2018/announce-marie-curie-fellowship.html</guid>
         
         <category>projects</category>
         
@@ -375,8 +375,8 @@ To the contrary, a scientist cannot ignore what the fire’s reflection is revea
 
 </description>
         <pubDate>Tue, 20 Feb 2018 00:00:00 +0000</pubDate>
-        <link>http://emanueledosualdo.com/blog/2018/the-scientists-condition.html</link>
-        <guid isPermaLink="true">http://emanueledosualdo.com/blog/2018/the-scientists-condition.html</guid>
+        <link>http://0.0.0.0:4000/blog/2018/the-scientists-condition.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2018/the-scientists-condition.html</guid>
         
         <category>science</category>
         
@@ -443,8 +443,8 @@ you are most welcome to leave a message in the &lt;a href=&quot;https://github.c
 
 </description>
         <pubDate>Tue, 31 Oct 2017 00:00:00 +0000</pubDate>
-        <link>http://emanueledosualdo.com/blog/2017/stargazer-release.html</link>
-        <guid isPermaLink="true">http://emanueledosualdo.com/blog/2017/stargazer-release.html</guid>
+        <link>http://0.0.0.0:4000/blog/2017/stargazer-release.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2017/stargazer-release.html</guid>
         
         <category>picalculus</category>
         
@@ -539,8 +539,8 @@ Computer Science hits that sweet spot in between the two: it is the combination 
 &lt;/div&gt;
 </description>
         <pubDate>Tue, 14 Feb 2017 00:00:00 +0000</pubDate>
-        <link>http://emanueledosualdo.com/blog/2017/why-computer-science-is-a-science.html</link>
-        <guid isPermaLink="true">http://emanueledosualdo.com/blog/2017/why-computer-science-is-a-science.html</guid>
+        <link>http://0.0.0.0:4000/blog/2017/why-computer-science-is-a-science.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2017/why-computer-science-is-a-science.html</guid>
         
         <category>science</category>
         
@@ -655,8 +655,8 @@ Feel free to use it! --&gt;
 
 </description>
         <pubDate>Wed, 02 Nov 2016 00:00:00 +0000</pubDate>
-        <link>http://emanueledosualdo.com/blog/2016/the-art-of-the-misspelling.html</link>
-        <guid isPermaLink="true">http://emanueledosualdo.com/blog/2016/the-art-of-the-misspelling.html</guid>
+        <link>http://0.0.0.0:4000/blog/2016/the-art-of-the-misspelling.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2016/the-art-of-the-misspelling.html</guid>
         
         <category>fun</category>
         
@@ -700,8 +700,8 @@ If you’d like to know more, watch this space for an upcoming write-up about th
 
 </description>
         <pubDate>Tue, 09 Aug 2016 00:00:00 +0100</pubDate>
-        <link>http://emanueledosualdo.com/explain-picalc.html</link>
-        <guid isPermaLink="true">http://emanueledosualdo.com/explain-picalc.html</guid>
+        <link>http://0.0.0.0:4000/explain-picalc.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/explain-picalc.html</guid>
         
         <category>picalculus</category>
         
