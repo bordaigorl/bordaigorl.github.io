@@ -39,6 +39,8 @@
 
 <link rel="stylesheet" href="/style/main.css">
 
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
 
 
 <link rel="icon" type="image/png" href="http://emanueledosualdo.com/images/favicon.png">
@@ -52,6 +54,8 @@
 <script data-goatcounter="https://emanueledosualdo.goatcounter.com/count"
         async src="/js/count.js"></script>
 
+
+<script type="text/javascript" src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
 
 </head>
@@ -197,13 +201,17 @@
   <div class="left light side">
     <div class="text content column">
     <h2 class="content-heading">Contact</h2>
-    <strong>Email</strong> <span class="eml gm" onclick="window.open('mailto:' + (['', 'manu', 'l', '.dos'].join('e')) + 'ualdo\x40gm' + (['com','ail'].reverse().join('.')))">emanuele.dosualdo</span><br/>
+    <div style="border: 1px solid gray;border-radius: 5px;padding: .5em;text-align: center;margin-bottom: 1em;">
+    <strong>Email:</strong> <span class="eml gm" onclick="window.open('mailto:' + (['', 'manu', 'l', '.dos'].join('e')) + 'ualdo\x40gm' + (['com','ail'].reverse().join('.')))">emanuele.dosualdo</span><br/>
+    </div>
+    <strong>Office:</strong> Z&nbsp;918<br/>
+    <strong>Tel:</strong> +49 7531 88-5165<br/>
     <address>
-      Max Planck Institute for Software Systems<br/>
-      Campus E1.5<br/>
-      66123 Saarbrücken, Germany
+      University of Konstanz<br/>
+      Department of Computer and Information Science<br/>
+      78457 Konstanz, Germany
     </address>
-    <a class="on-small" href="https://goo.gl/maps/GVzgaU1qaxq" title="Map">Map</a>
+    <a class="on-small" href="https://osm.org/go/0C3RhXP9?m=" title="Map">Map</a>
       <p>
       You can find me on:
       <div class="centered">
@@ -229,7 +237,7 @@
       </p>
     </div>
     <div class="remaining one-half column">
-      <div class="fluid map" id="contact-map" style="height:150px">
+      <div class="fluid map" id="contact-map" style="height:150px; font-size:inherit;">
       </div>
     </div>
   </div>
