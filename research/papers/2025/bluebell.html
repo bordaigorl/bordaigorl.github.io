@@ -3,40 +3,34 @@
 
 <head>
   <meta charset="utf-8">
-<title>DimSum: A Decentralized Approach to Multi-language Semantics and Verification - Emanuele D&#39;Osualdo</title>
-<meta name="description" content="   Distinguished paper award at POPL’23">
+<title>Bluebell: An Alliance of Relational Lifting and Independence For Probabilistic Reasoning - Emanuele D&#39;Osualdo</title>
+<meta name="description" content="Abstract">
 <meta name="author" content="Emanuele D'Osualdo">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 <meta property="og:type" content="website">
-<meta name="twitter:title" content="Emanuele D'Osualdo - DimSum: A Decentralized Approach to Multi-language Semantics and Verification">
-<meta property="og:title" content="Emanuele D'Osualdo - DimSum: A Decentralized Approach to Multi-language Semantics and Verification">
+<meta name="twitter:title" content="Emanuele D'Osualdo - Bluebell: An Alliance of Relational Lifting and Independence For Probabilistic Reasoning">
+<meta property="og:title" content="Emanuele D'Osualdo - Bluebell: An Alliance of Relational Lifting and Independence For Probabilistic Reasoning">
 
-<meta name="twitter:description" content="
-  
- Distinguished paper award at POPL’23
-
+<meta name="twitter:description" content="Abstract
 ">
-<meta property="og:description" content="
-  
- Distinguished paper award at POPL’23
-
+<meta property="og:description" content="Abstract
 ">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:image" content="http://emanueledosualdo.com/images/logo.png">
   <meta property="og:image" content="http://emanueledosualdo.com/images/logo.png">
 
-<meta property="og:url" content="http://emanueledosualdo.com/research/papers/2022/dimsum.html">
+<meta property="og:url" content="http://emanueledosualdo.com/research/papers/2025/bluebell.html">
 <meta property="og:site_name" content="Emanuele D'Osualdo">
 
   <meta name="twitter:site" content="@bordaigorl">
 
 
 
-<link rel="canonical" href="http://emanueledosualdo.com/research/papers/2022/dimsum.html">
+<link rel="canonical" href="http://emanueledosualdo.com/research/papers/2025/bluebell.html">
 
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600|Kreon:300,400|Roboto+Mono:400,700' rel='stylesheet' type='text/css'>
 
@@ -112,23 +106,13 @@
 
       <header class="meta">
         
-        <div class="venue"><span title="ACM SIGPLAN Symposium on Principles of Programming Languages">POPL</span> 2023</div>
-        <h1 class="title" itemprop="name headline">DimSum: A Decentralized Approach to Multi-language Semantics and Verification</h1>
+        <div class="venue"><span title="ACM SIGPLAN Symposium on Principles of Programming Languages">POPL</span> 2025</div>
+        <h1 class="title" itemprop="name headline">Bluebell: An Alliance of Relational Lifting and Independence For Probabilistic Reasoning</h1>
         <ul class="authors">
         
           
           
-            <li class="author"><a href="https://people.mpi-sws.org/~msammler/" title="Michael Sammler - MPI-SWS, Germany">M. Sammler</a></li>
-          
-        
-          
-          
-            <li class="author"><a href="https://people.mpi-sws.org/~spies/" title="Simon Spies - MPI-SWS, Germany">S. Spies</a></li>
-          
-        
-          
-          
-            <li class="author"><a href="https://www.mpi-sws.org/people/youngju/" title="Youngju Song - MPI-SWS, Germany">Y. Song</a></li>
+            <li class="author"><a href="#" title="Jialu Bao - Cornell University, USA">J. Bao</a></li>
           
         
           
@@ -138,38 +122,24 @@
         
           
           
-            <li class="author"><a href="https://robbertkrebbers.nl" title="Robbert Krebbers - Radboud University Nijmegen, The Netherlands">R. Krebbers</a></li>
-          
-        
-          
-          
-            <li class="author"><a href="https://people.mpi-sws.org/~dg/" title="Deepak Garg - MPI-SWS, Germany">D. Garg</a></li>
-          
-        
-          
-          
-            <li class="author"><a href="https://people.mpi-sws.org/~dreyer/" title="Derek Dreyer - MPI-SWS, Germany">D. Dreyer</a></li>
+            <li class="author"><a href="#" title="Azadeh Farzan - University of Toronto, Canada">A. Farzan</a></li>
           
         
         </ul>
         <div class="paper links">
           
-            <a href="https://plv.mpi-sws.org/dimsum/paper.pdf" class="button primary"><i class="fa fa-download"></i>Pdf</a>
+            <a href="https://arxiv.org/pdf/2402.18708" class="button primary"><i class="fa fa-download"></i>Pdf</a>
           
           
-          
-            
-              <a href="https://doi.org/10.1145/3571220" class="button"><i class="fa-solid fa-file-lines black"></i>doi</a>
-            
-          
-          
+            <a href="http://arxiv.org/abs/2402.18708" class="button"><i class="fa-solid fa-file-lines red"></i>ArXiv</a>
           
           
             
-              <a href="https://zenodo.org/record/7306312" class="button"><i class="fa-solid fa-rocket brown"></i>Artifact</a>
+              <a href="https://doi.org/10.1145/3704894" class="button"><i class="fa-solid fa-file-lines black"></i>doi</a>
             
-              <a href="https://plv.mpi-sws.org/dimsum/" class="button"><i class="fa-solid fa-link"></i>Project Page</a>
-            
+          
+          
+          
           
         </div>
       </header>
@@ -177,24 +147,9 @@
 
       <div class="content" itemprop="articleBody">
         
-        <blockquote class="award centered">
-  <p><i class="fa-solid golden fa-trophy fa-big"></i>
- Distinguished paper award at POPL’23</p>
-</blockquote>
+        <h1 id="abstract">Abstract</h1>
 
-<h1 id="abstract">Abstract</h1>
-
-<p>Prior work on multi-language program verification has achieved impressive results, including the compositional verification of complex compilers.
-But the existing approaches to this problem impose a variety of restrictions on the overall structure of multi-language programs (e.g. fixing the source language, fixing the set of involved languages, fixing the memory model, or fixing the semantics of interoperation).
-In this paper, we explore the problem of how to avoid such global restrictions.</p>
-
-<p>Concretely, we present DimSum: a new, <em>decentralized</em> approach to multi-language semantics and verification, which we have implemented in the Coq proof assistant.
-Decentralization means that we can define and reason about languages independently from each other (as independent <em>modules</em> communicating via events), but also combine and translate between them when necessary (via a library of combinators).</p>
-
-<p>We apply DimSum to a high-level imperative language REC (with an abstract memory model and function calls), a low-level assembly language ASM (with a concrete memory model, arbitrary jumps, and syscalls), and a mathematical specification language SPEC.
-We evaluate DimSum on two case studies: an ASM library extending REC with support for pointer comparison, and a coroutine library for REC written in ASM.
-In both cases, we show how DimSum allows the ASM libraries to be abstracted to REC-level specifications, despite the behavior of the ASM libraries not being syntactically expressible in REC itself.
-We also verify an optimizing multi-pass compiler from REC to ASM, showing that it is compatible with these ASM libraries.</p>
+<p>We present Bluebell, a program logic for reasoning about probabilistic programs where unary and relational styles of reasoning come together to create new reasoning tools. Unary-style reasoning is very expressive and is powered by foundational mechanisms to reason about probabilistic behaviour like independence and conditioning. The relational style of reasoning, on the other hand, naturally shines when the properties of interest compare the behaviour of similar programs (e.g. when proving differential privacy) managing to avoid having to characterize the output distributions of the individual programs. So far, the two styles of reasoning have largely remained separate in the many program logics designed for the deductive verification of probabilistic programs. In Bluebell, we unify these styles of reasoning through the introduction of a new modality called “joint conditioning” that can encode and illuminate the rich interaction between conditional independence and relational liftings; the two powerhouses from the two styles of reasoning.</p>
 
       </div>
 
@@ -217,7 +172,11 @@ We also verify an optimizing multi-pass compiler from REC to ASM, showing that i
   <ul class="tags">
     
     
-      <li><a href="/research/papers/#refinement" class="tag">refinement</a></li>
+      <li><a href="/research/papers/#probabilistic" class="tag">probabilistic</a></li>
+    
+      <li><a href="/research/papers/#logics" class="tag">logics</a></li>
+    
+      <li><a href="/research/papers/#separation" class="tag">separation</a></li>
     
   </ul>
 </aside>
@@ -225,8 +184,8 @@ We also verify an optimizing multi-pass compiler from REC to ASM, showing that i
     <h1>Share</h1>
     <div class="buttons">
         <a class="rss share button" href="/feed.xml" title="Subscribe via RSS" itemprop="RSS"><i class="fa-solid fa-rss"></i></a>
-        <a class="share button" href="https://twitter.com/intent/tweet?hashtags=refinement&amp;text=DimSum:%20A%20Decentralized%20Approach%20to%20Multi-language%20Semantics%20and%20Verification&amp;url=http://emanueledosualdo.com/research/papers/2022/dimsum.html" title="Share on Twitter" itemprop="Twitter"><i class="fa-brands fa-twitter"></i></a>
-        <a class="share button" href="https://www.facebook.com/sharer/sharer.php?u=http://emanueledosualdo.com/research/papers/2022/dimsum.html" title="Share on Facebook" itemprop="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+        <a class="share button" href="https://twitter.com/intent/tweet?hashtags=probabilistic,logics,separation&amp;text=Bluebell:%20An%20Alliance%20of%20Relational%20Lifting%20and%20Independence%20For%20Probabilistic%20Reasoning&amp;url=http://emanueledosualdo.com/research/papers/2025/bluebell.html" title="Share on Twitter" itemprop="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a class="share button" href="https://www.facebook.com/sharer/sharer.php?u=http://emanueledosualdo.com/research/papers/2025/bluebell.html" title="Share on Facebook" itemprop="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
     </div>
 </aside>
       

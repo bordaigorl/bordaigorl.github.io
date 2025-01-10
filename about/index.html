@@ -18,8 +18,8 @@
 <meta property="og:description" content="My research, projects and blog">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:image" content="http://emanueledosualdo.com/images/portrait-small.jpg">
-  <meta property="og:image" content="http://emanueledosualdo.com/images/portrait-small.jpg">
+  <meta name="twitter:image" content="http://emanueledosualdo.com/images/logo.png">
+  <meta property="og:image" content="http://emanueledosualdo.com/images/logo.png">
 
 <meta property="og:url" content="http://emanueledosualdo.com/about/">
 <meta property="og:site_name" content="Emanuele D'Osualdo">
@@ -39,6 +39,8 @@
 
 <link rel="stylesheet" href="/style/main.css">
 
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
 
 
 <link rel="icon" type="image/png" href="http://emanueledosualdo.com/images/favicon.png">
@@ -52,6 +54,8 @@
 <script data-goatcounter="https://emanueledosualdo.goatcounter.com/count"
         async src="/js/count.js"></script>
 
+
+<script type="text/javascript" src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
 
 </head>
@@ -80,9 +84,9 @@
       
         <span class="nav-item"><a href="/research/">Research</a></span>
       
-        <span class="nav-item"><a href="/projects/">Software</a></span>
+        <span class="nav-item"><a href="/software/">Software</a></span>
       
-        <span class="nav-item"><a href="/contact/">About</a></span>
+        <span class="nav-item"><a href="/about/" class="active">About</a></span>
       
     </nav>
   </div>
@@ -97,62 +101,174 @@
 </header>
 
 
- <div id="about" class="content row">
-  <div class="main column">
-    <div id="portrait">
-      <div id="portrait-img" class="img">
-        <a href="/images/portrait-full.jpg">
-          <img class="portrait" src="/images/portrait.jpg">
-        </a>
-      </div>
-      <a class="full-width button primary" href="/doc/cv.pdf">
-        <i class="fa-solid fa-file-contract fa-2xl" aria-hidden="true"></i>
-        <span class="inessential">Download</span> full CV
+ <div class="content row">
+<div class="justified text content column">
+  <h2 class="content-heading">Short Bio</h2>
+    <div  class="portrait image float right">
+      <a href="/images/portrait.jpg" title="Portrait">
+        <picture>
+          <source media="(max-width: 549px)" srcset="/images/portrait-square.jpg" />
+          <source media="(min-width: 550px)" srcset="/images/portrait-small.jpg" />
+          <img class="framed full-width" src="/images/portrait-small.jpg" alt="Emanuele D'Osualdo" />
+        </picture>
       </a>
-    </div>
-
-    <div id="bio">
-      <div class="tight float right">
-      <a class="button primary" href="/doc/cv.pdf">
+      <a class="full-width button primary" href="/doc/cv.pdf">
         <i class="fa-solid fa-file-contract fa-2xl" aria-hidden="true"></i>
         Curriculum Vitae
       </a>
-      </div>
-
-      <h4>Short Bio</h4>
-      <p>
-        I am a <strong>Tenure-Track Professor</strong>
-        of Formal Methods for Software Engineering
-        at the <a href="https://www.informatik.uni-konstanz.de/">University of Konstanz</a>.
-      </p>
-      <p>
-        Until April 2024, I was a Postdoctoral Researcher at Max Planck Institute for Software Systems (MPI-SWS) in Saarbrücken,
-        working on verification of concurrent software with <a href="https://people.mpi-sws.org/~dreyer/research.html" title="Derek's Website">Derek Dreyer</a>.
-      </p>
-      <p>
-        Until September 2020 I was a <strong>Marie Curie Fellow</strong> at Imperial College London,
-        working on verification of concurrent software with <a href="https://www.doc.ic.ac.uk/~pg/">Prof. P. Gardner</a>.
-      </p>
-      <p>
-        From 2015 to 2017 I was a PostDoc in the <a href="http://concurrency.cs.uni-kl.de">Concurrency Theory Group</a> at the University of Kaiserslautern, working with Prof. <a href="http://concurrency.cs.uni-kl.de/group/meyer/home.html">Roland Meyer</a>.
-      </p>
-      <p>
-        In 2015 I received a PhD (DPhil) in Computer Science from the University of Oxford. My supervisor was Prof. <a href="https://www.cs.ox.ac.uk/luke.ong/">C.-H. Luke Ong</a>.
-        My <a href="/research/#thesis">dissertation</a> won the <a href="http://academy.bcs.org/content/distinguished-dissertations-2016">2016 CPHC/BCS Distinguished Dissertation award</a>.
-      </p>
-      <p>
-        Previously, I did my undergraduate and master's studies at the University of Udine, Italy, graduating with honors.
-        My studies were supported by the <a href="http://scuolasuperiore.uniud.it">Scuola Superiore</a> scholarship.
-      </p>
-      <p>
-        Chances are that if you made it this far you may be wondering
-        "How on earth is his name pronounced?"
-        <a href="/doc/name.mp3" target="_blank">Click here to hear it pronounced out loud</a>!
-      </p>
     </div>
-  </div>
+  <p>
+    I am a <strong>Tenure-Track Professor</strong>
+    of Formal Methods for Software Engineering
+    at the <a href="https://www.informatik.uni-konstanz.de/">University of Konstanz</a>.
+  </p>
+  <p>
+    Until April 2024, I was a Postdoctoral Researcher at Max Planck Institute for Software Systems (MPI-SWS) in Saarbrücken,
+    working on verification of concurrent software with <a href="https://people.mpi-sws.org/~dreyer/research.html" title="Derek's Website">Derek Dreyer</a>.
+  </p>
+  <p>
+    Until September 2020 I was a <strong>Marie Curie Fellow</strong> at Imperial College London,
+    working on verification of concurrent software with <a href="https://www.doc.ic.ac.uk/~pg/">Prof. P. Gardner</a>.
+  </p>
+  <p>
+    From 2015 to 2017 I was a PostDoc in the <a href="http://concurrency.cs.uni-kl.de">Concurrency Theory Group</a> at the University of Kaiserslautern, working with Prof. <a href="http://concurrency.cs.uni-kl.de/group/meyer/home.html">Roland Meyer</a>.
+  </p>
+  <p>
+    In 2015 I received a PhD (DPhil) in Computer Science from the University of Oxford. My supervisor was Prof. <a href="https://www.cs.ox.ac.uk/luke.ong/">C.-H. Luke Ong</a>.
+    My <a href="/research/#thesis">dissertation</a> won the <a href="http://academy.bcs.org/content/distinguished-dissertations-2016">2016 CPHC/BCS Distinguished Dissertation award</a>.
+  </p>
+  <p>
+    Previously, I did my undergraduate and master's studies at the University of Udine, Italy, graduating with honors.
+    My studies were supported by the <a href="http://scuolasuperiore.uniud.it">Scuola Superiore</a> scholarship.
+  </p>
+  <p>
+    Chances are that if you made it this far you may be wondering
+    "How on earth is his name pronounced?"
+    <a href="/doc/name.mp3" target="_blank">Click here to hear it pronounced out loud</a>!
+  </p>
+</div>
 </div>
 
+<!--
+<div id="about" class="spaced row">
+  <div class="side-by-side">
+    <div class="right dark side">
+      <div class="left light side">
+        <div class="text content column">
+          <div class="tight float right">
+          <a class="button primary" href="/doc/cv.pdf">
+            <i class="fa-solid fa-file-contract fa-2xl" aria-hidden="true"></i>
+            Curriculum Vitae
+          </a>
+          </div>
+          <h2 class="content-heading">Short Bio</h2>
+          <p>
+            I am a Postdoctoral Researcher at Max Planck Institute for Software Systems (MPI-SWS) in Saarbrücken,
+            working on verification of concurrent software with <a href="https://people.mpi-sws.org/~dreyer/research.html" title="Derek's Website">Derek Dreyer</a>.
+          </p>
+          <p>
+            Until September 2020 I was a <strong>Marie Curie Fellow</strong> at Imperial College London,
+            working on verification of concurrent software with <a href="https://www.doc.ic.ac.uk/~pg/">Prof. P. Gardner</a>.
+          </p>
+          <p>
+            From 2015 to 2017 I was a PostDoc in the <a href="http://concurrency.cs.uni-kl.de">Concurrency Theory Group</a> at the University of Kaiserslautern, working with Prof. <a href="http://concurrency.cs.uni-kl.de/group/meyer/home.html">Roland Meyer</a>.
+          </p>
+          <p>
+            In 2015 I received a PhD (DPhil) in Computer Science from the University of Oxford. My supervisor was Prof. <a href="https://www.cs.ox.ac.uk/luke.ong/">C.-H. Luke Ong</a>.
+            My <a href="/research/#thesis">dissertation</a> won the <a href="http://academy.bcs.org/content/distinguished-dissertations-2016">2016 CPHC/BCS Distinguished Dissertation award</a>.
+          </p>
+          <p>
+            Previously, I did my undergraduate and master's studies at the University of Udine, Italy, graduating with honors.
+            My studies were supported by the <a href="http://scuolasuperiore.uniud.it">Scuola Superiore</a> scholarship.
+          </p>
+          <p>
+            Chances are that if you made it this far you may be wondering
+            "How on earth is his name pronounced?"
+            <a href="/doc/name.mp3" target="_blank">Click here to hear it pronounced out loud</a>!
+          </p>
+        </div>
+        <div class="one-half inessential image remaining column">
+          <img class="fitting" src="/images/formal.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div id="contact" class="spaced row">
+<div class="side-by-side">
+  <div class="right dark side">
+  <div class="left light side">
+    <div class="text content column">
+    <h2 class="content-heading">Contact</h2>
+    <div style="border: 1px solid gray;border-radius: 5px;padding: .5em;text-align: center;margin-bottom: 1em;">
+    <strong>Personal:</strong> <span class="eml gm" onclick="window.open('mailto:' + (['', 'manu', 'l', '.dos'].join('e')) + 'ualdo\x40gm' + (['com','ail'].reverse().join('.')))">emanuele.dosualdo</span><br/>
+    <strong>Official:</strong> <span class="eml kn" onclick="window.open('mailto:' + (['', 'manu', 'l', '.dos'].join('e')) + 'ualdo\x40uni-k' + (['de','onstanz'].reverse().join('.')))">emanuele.dosualdo</span>
+    </div>
+    <strong>Office:</strong> Z&nbsp;918<br/>
+    <strong>Tel:</strong> +49 7531 88-5165<br/>
+    <address>
+      University of Konstanz<br/>
+      Department of Computer and Information Science<br/>
+      78457 Konstanz, Germany
+    </address>
+    <a class="on-small" href="https://osm.org/go/0C3RhXP9?m=" title="Map">Map</a>
+      <p>
+      You can find me on:
+      <div class="centered">
+        <div>
+        <a class="social long icon button" title="Google Scholar" href="https://scholar.google.com/citations?hl=en&user=xH4XRWIAAAAJ">
+          <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Scholar</a>
+        <a class="social long icon button" title="DBLP" href="http://dblp.uni-trier.de/pers/hd/d/D=Osualdo:Emanuele">
+          <img src="/images/dblp.png" /> DBLP</a>
+        </div>
+        <div>
+        
+        <a class="social long icon button" title="Orcid" href="https://orcid.org/0000-0002-9179-5827">
+          <img src="/images/orcid.png" /> Orcid</a>
+        <a class="social long icon button" title="LinkedIn" href="http://www.linkedin.com/in/bordaigorl">
+          <i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+        </div>
+        <div>
+        <a class="social long icon button" title="GitHub" href="https://github.com/bordaigorl">
+          <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+        <a class="social long icon button" title="TeX StackExchange" href="http://tex.stackexchange.com/users/36686/bordaigorl">
+          <img src="/images/tex-sx.png" /> TeX-SX</a>
+        </div>
+      </div>
+      </p>
+    </div>
+    <div class="remaining one-half column">
+      <div class="fluid map" id="contact-map" style="height:150px; font-size:inherit;">
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+
+<div id="colophon" class="spaced row">
+<div class="side-by-side">
+  <div class="right light side">
+  <div class="left dark side">
+    <div class="text content column">
+      <h2 class="content-heading">About this website</h2>
+      <p>
+        This website has been created using
+        <a href="http://getskeleton.com/">Skeleton</a>, <a href="https://jekyllrb.com/">Jekyll</a> and hosted by <a href="https://pages.github.com/">GitHub</a>.
+      </p>
+      <p>
+        Opinions expressed are solely my own and do not express the views or opinions of my employer.
+      </p>
+      <p>This website uses cookies, see our <a href="/policy.html">policy</a>.</p>
+    </div>
+    <div class="one-half inessential image remaining column">
+      <img class="fitting" src="/images/webdesign.jpg">
+    </div>
+  </div>
+  </div>
+</div>
+</div>
 
 
  <footer class="row">
@@ -191,6 +307,8 @@ $nav.on("click", function() {
 });
   </script>
 
+  
+  <script type="text/javascript" src="/js/map.js"></script>
   
 
 </body>
