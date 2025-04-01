@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Emanuele D'Osualdo</title>
+    <title>Emanuele D&apos;Osualdo</title>
     <description>My research, projects and blog</description>
     <link>http://emanueledosualdo.com/</link>
     <atom:link href="http://emanueledosualdo.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 12 Feb 2025 14:12:31 +0000</pubDate>
-    <lastBuildDate>Wed, 12 Feb 2025 14:12:31 +0000</lastBuildDate>
-    <generator>Jekyll v4.1.1</generator>
+    <pubDate>Tue, 01 Apr 2025 11:15:57 +0100</pubDate>
+    <lastBuildDate>Tue, 01 Apr 2025 11:15:57 +0100</lastBuildDate>
+    <generator>Jekyll v4.4.1</generator>
     
       <item>
-        <title>I will be at POPL'23!</title>
+        <title>I will be at POPL&apos;23!</title>
         <description>&lt;p&gt;I will be attending the &lt;a href=&quot;https://popl23.sigplan.org/&quot;&gt;50th POPL&lt;/a&gt; which this year is in Boston, like the very first POPL.
 I am an author of two of the accepted papers.&lt;/p&gt;
 
@@ -44,7 +44,7 @@ which is on a proof technique to prove durable linearizability for advanced fine
       
         
         
-          &lt;li class=&quot;author me&quot;&gt;E. D'Osualdo&lt;/li&gt;
+          &lt;li class=&quot;author me&quot;&gt;E. D&apos;Osualdo&lt;/li&gt;
         
       
         
@@ -112,7 +112,7 @@ which is on a proof technique to prove durable linearizability for advanced fine
       
         
         
-          &lt;li class=&quot;author me&quot;&gt;E. D'Osualdo&lt;/li&gt;
+          &lt;li class=&quot;author me&quot;&gt;E. D&apos;Osualdo&lt;/li&gt;
         
       
         
@@ -150,7 +150,7 @@ which is on a proof technique to prove durable linearizability for advanced fine
       </item>
     
       <item>
-        <title>I'm at SPLASH'22!</title>
+        <title>I&apos;m at SPLASH&apos;22!</title>
         <description>&lt;p&gt;I will be giving two talks at &lt;a href=&quot;https://2022.splashcon.org/&quot;&gt;OOPSLA&lt;/a&gt; which this year is in Auckland, New Zealand!&lt;/p&gt;
 
 &lt;p&gt;The &lt;a href=&quot;https://2022.splashcon.org/details/splash-2022-oopsla/55/A-Bunch-of-Sessions-A-Propositions-as-Sessions-Interpretation-of-Bunched-Implication&quot;&gt;first talk&lt;/a&gt; is about my work with Dan Frumin, Bas van den Heuvel and Jorge Perez, on a session typed π-calculus obtained through a correspondence with the Logic of Bunched Implication (the core of Separation Logic).&lt;/p&gt;
@@ -189,7 +189,7 @@ which is on a proof technique to prove durable linearizability for advanced fine
       
         
         
-          &lt;li class=&quot;author me&quot;&gt;E. D'Osualdo&lt;/li&gt;
+          &lt;li class=&quot;author me&quot;&gt;E. D&apos;Osualdo&lt;/li&gt;
         
       
         
@@ -238,7 +238,7 @@ which is on a proof technique to prove durable linearizability for advanced fine
       
         
         
-          &lt;li class=&quot;author me&quot;&gt;E. D'Osualdo&lt;/li&gt;
+          &lt;li class=&quot;author me&quot;&gt;E. D&apos;Osualdo&lt;/li&gt;
         
       
         
@@ -335,7 +335,7 @@ VeSPA’s line of attack is based on a synergy between insights gained in my pre
       </item>
     
       <item>
-        <title>Magritte, and the scientist's condition</title>
+        <title>Magritte, and the scientist&apos;s condition</title>
         <description>&lt;p&gt;I always liked Magritte, his witty enigmas on frame, the hard fundamental questions he explores with such clarity.
 I particularly resonate with the questions about language and meaning: these fundamental questions motivate both my interests in Computer Science and in Music.&lt;/p&gt;
 
@@ -424,7 +424,7 @@ The transitions are specified by the program, which in the above example is the 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;new s. (S[s] | E[s])
 
 S[s] := s(x).νd.( A[x,d] | S[s] )
-E[s] := τ.new m.(C[s, m] | E[s]) + τ.νs'.(S[s'] | E[s'] | E[s])
+E[s] := τ.new m.(C[s, m] | E[s]) + τ.νs&apos;.(S[s&apos;] | E[s&apos;] | E[s])
 C[s, m] := τ.( Q[s,m] | C1[s,m])
 C1[s, m] := m(x).C[s, m]
 A[x,d] := x&amp;lt;d&amp;gt;
@@ -472,7 +472,7 @@ or trying to understand them,
 the mindset one adopts is what I call the &lt;strong&gt;problem solving mode&lt;/strong&gt;,
 that is, your attention is directed to details of the mechanics of a formally well-defined problem, a “puzzle”.
 An instance of a puzzle could be
-    “How long can the minimal covering paths in a Petri net be?”.&lt;sup id=&quot;fnref:rackoff&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:rackoff&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+    “How long can the minimal covering paths in a Petri net be?”.&lt;sup id=&quot;fnref:rackoff&quot;&gt;&lt;a href=&quot;#fn:rackoff&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot; role=&quot;doc-noteref&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;p&gt;This mode of thinking is the main one used in engineering work:
 you are presented with a complicated but circumscribed problem and apply some mathematical insight to provide a solution.
@@ -496,7 +496,7 @@ It heavily involves abstraction, formalisation and generalisation abilities.
 The outcome of the process is a set of basic assumptions and definitions that would form the basis for a &lt;em&gt;language&lt;/em&gt; to express facts and properties regarding the phenomenon under study.
 I would call conceptualisation the “Art of the Definition”.&lt;/p&gt;
 
-&lt;p&gt;Problems that are solved by employing the conceptual mindset are typically not well-defined and ambiguous. Examples could be “What is behaviour?”&lt;sup id=&quot;fnref:beh&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:beh&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; or “What does it mean for an analysis to be sound?”.&lt;sup id=&quot;fnref:absint&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:absint&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;Problems that are solved by employing the conceptual mindset are typically not well-defined and ambiguous. Examples could be “What is behaviour?”&lt;sup id=&quot;fnref:beh&quot;&gt;&lt;a href=&quot;#fn:beh&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot; role=&quot;doc-noteref&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; or “What does it mean for an analysis to be sound?”.&lt;sup id=&quot;fnref:absint&quot;&gt;&lt;a href=&quot;#fn:absint&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot; role=&quot;doc-noteref&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;p&gt;Big tech companies like Google or Facebook have interview processes set up to test the purely problem-solving abilities of candidates. Their reputation then does the rest: the problem solving aspect of CS is often over-emphasised and CS may be reduced to puzzle-solving from the perspective of an outsider.
 This makes sense if you consider that these companies are looking, most of the times, for Software Engineers. But in a University we aim at forming professionals that are prepared both technically &lt;em&gt;and&lt;/em&gt; culturally. Only a balance between the conceptual and problem solving aspects of our discipline can achieve this.&lt;/p&gt;
@@ -526,13 +526,13 @@ Computer Science hits that sweet spot in between the two: it is the combination 
 
 &lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
-    &lt;li id=&quot;fn:rackoff&quot; role=&quot;doc-endnote&quot;&gt;
+    &lt;li id=&quot;fn:rackoff&quot;&gt;
       &lt;p&gt;The answer is doubly-exponential in the size of the input, as proved in Rackoff’s lower-bound for Petri net coverability. &lt;a href=&quot;#fnref:rackoff&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
-    &lt;li id=&quot;fn:beh&quot; role=&quot;doc-endnote&quot;&gt;
+    &lt;li id=&quot;fn:beh&quot;&gt;
       &lt;p&gt;In the course we answer this question by introducing Bisimulations. The general question of “What is the meaning of a program” led to the development of the field of Semantics. &lt;a href=&quot;#fnref:beh&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
-    &lt;li id=&quot;fn:absint&quot; role=&quot;doc-endnote&quot;&gt;
+    &lt;li id=&quot;fn:absint&quot;&gt;
       &lt;p&gt;A compelling answer can be found in the Abstract Interpretation framework. &lt;a href=&quot;#fnref:absint&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
