@@ -3,34 +3,32 @@
 
 <head>
   <meta charset="utf-8">
-<title>An Automata-theoretic Basis for Specification and Type Checking of Multiparty Protocols - Emanuele D&#39;Osualdo</title>
-<meta name="description" content="Abstract">
+<title>Research Positions - Emanuele D&#39;Osualdo</title>
+<meta name="description" content="My research, projects and blog">
 <meta name="author" content="Emanuele D'Osualdo">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 <meta property="og:type" content="website">
-<meta name="twitter:title" content="Emanuele D'Osualdo - An Automata-theoretic Basis for Specification and Type Checking of Multiparty Protocols">
-<meta property="og:title" content="Emanuele D'Osualdo - An Automata-theoretic Basis for Specification and Type Checking of Multiparty Protocols">
+<meta name="twitter:title" content="Emanuele D'Osualdo - Research Positions">
+<meta property="og:title" content="Emanuele D'Osualdo - Research Positions">
 
-<meta name="twitter:description" content="Abstract
-">
-<meta property="og:description" content="Abstract
-">
+<meta name="twitter:description" content="My research, projects and blog">
+<meta property="og:description" content="My research, projects and blog">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:image" content="http://emanueledosualdo.com/images/logo.png">
   <meta property="og:image" content="http://emanueledosualdo.com/images/logo.png">
 
-<meta property="og:url" content="http://emanueledosualdo.com/research/papers/2025/amp.html">
+<meta property="og:url" content="http://emanueledosualdo.com/software/soter">
 <meta property="og:site_name" content="Emanuele D'Osualdo">
 
   <meta name="twitter:site" content="@bordaigorl">
 
 
 
-<link rel="canonical" href="http://emanueledosualdo.com/research/papers/2025/amp.html">
+<link rel="canonical" href="http://emanueledosualdo.com/software/soter">
 
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600|Kreon:300,400|Roboto+Mono:400,700' rel='stylesheet' type='text/css'>
 
@@ -71,7 +69,7 @@
     <h2>Researcher in Computer Science</h2>
     <nav>
       <div class="menu head">
-        Research
+        Software
         <i class="fa-solid fa-bars fa-lg fa-pull-right"></i>
       </div>
       
@@ -80,9 +78,9 @@
       
         <span class="nav-item"><a href="/blog/">Blog</a></span>
       
-        <span class="nav-item"><a href="/research/" class="active">Research</a></span>
+        <span class="nav-item"><a href="/research/">Research</a></span>
       
-        <span class="nav-item"><a href="/software/">Software</a></span>
+        <span class="nav-item"><a href="/software/" class="active">Software</a></span>
       
         <span class="nav-item"><a href="/about/">About</a></span>
       
@@ -99,100 +97,158 @@
 </header>
 
 
- <div class="spaced content row">
-  <div class="two-thirds main column post-content">
+ <div class="main content row">
+  <div class="column">
+    <article>
+      <div class="content">
+      <h1 id="soter">Soter</h1>
 
-    <article class="post">
+<p>The Soter tool is an experimental static analyzer for Erlang programs.
+It supports higher-order, spawning and message passing,
+but only a small subset of Erlang’s built-in types/functions.</p>
 
-      <header class="meta">
+<p>Soter’s original source code succumbed to bitrot;
+we are making some progress towards a complete rewrite.
+There used to be an easy-to-use web interface for trying out the program,
+but it is under maintenance, please be patient.
+There exists an archived VirtualBox image that can be used to reproduce
+the claims of the Soter papers (it used to be hosted at the Static Analysis symposium website, but not anymore). We will find a way to re-share it for long-term archival.</p>
+
+<p>If you would like more information on the current state of development/access
+of Soter, send an email to <a href="mailto:emanuele.dosualdo@gmail.com">emanuele.dosualdo@gmail.com</a>.</p>
+
+<p>To know more about Soter and the theory underpinning it, see the following papers:</p>
+
+<div class="paper-card" id="phd thesis2015">
+    
+      <div class="links">
         
         
-        <div class="venue"><span title="European Symposium on Programming">ESOP</span> 2025</div>
-        <h1 class="title" itemprop="name headline">An Automata-theoretic Basis for Specification and Type Checking of Multiparty Protocols</h1>
-        <ul class="authors">
         
-          
-          
-            <li class="author"><a href="https://festutz.github.io/" title="Felix Stutz - University of Luxembourg, Luxembourg">F. Stutz</a></li>
-          
         
-          
-          
-            <li class="author me">E. D'Osualdo</li>
-          
         
-        </ul>
-        <div class="paper links">
-          
-            <a href="https://arxiv.org/pdf/2501.16977" class="button primary"><i class="fa fa-download"></i>Pdf</a>
-          
-          
-            <a href="http://arxiv.org/abs/2501.16977" class="button"><i class="fa-solid fa-file-lines red"></i>ArXiv</a>
-          
-          
-            
-              <a href="https://doi.org/10.1007/978-3-031-91121-7_13" class="button"><i class="fa-solid fa-file-lines black"></i>doi</a>
-            
-          
-          
-          
-          
-          
-        </div>
-      </header>
-
-
-      <div class="content" itemprop="articleBody">
         
-        <h1 id="abstract">Abstract</h1>
-
-<p>We propose the Automata-based Multiparty Protocols framework (AMP) for top-down protocol development. The framework features a new very general formalism for global protocol specifications called Protocol State Machines (PSMs), Communicating State Machines (CSMs) as specifications for local participants, and a type system to check a π-calculus with session interleaving and delegation against the CSM specification. Moreover, we define a large class of PSMs, called “tame”, for which we provide a sound and complete PSPACE projection operation that computes a CSM describing the same protocol as a given PSM if one exists. We propose these components as a backwards-compatible new backend for frameworks in the style of Multiparty Session Types. In comparison to the latter, AMP offers a considerable improvement in expressivity, decoupling of the various components (e.g. projection and typing), and robustness (thanks to the complete projection).</p>
-
+        <a href="/doc/thesis.pdf" class="button primary"><i class="fa-solid fa-download"></i>Pdf</a>
+        
+        
       </div>
-
-      
-      
-      
-      
-
-
-    </article>
-
-  </div>
-  <div class="one-third column post-sidebar">
-      <div class="navigation">
-        <a class="full-width secondary button" href="/research/papers/">
-          &lt; Back to all Papers</a>
+    
+      <div class="venue">
+        <span class="venue">PhD Thesis</span>
+        <span class="year">2015</span>
       </div>
-      <aside class="tags">
-  <h1>Tags</h1>
-  <ul class="tags">
-    
-    
-      <li><a href="/research/papers/#session types" class="tag">session types</a></li>
-    
-      <li><a href="/research/papers/#picalculus" class="tag">picalculus</a></li>
-    
-      <li><a href="/research/papers/#concurrency" class="tag">concurrency</a></li>
-    
-      <li><a href="/research/papers/#type systems" class="tag">type systems</a></li>
-    
-      <li><a href="/research/papers/#automata" class="tag">automata</a></li>
-    
-  </ul>
-</aside>
-      <aside class="share">
-    <h1>Share</h1>
-    <div class="buttons">
-        <a class="rss share button" href="/feed.xml" title="Subscribe via RSS" itemprop="RSS"><i class="fa-solid fa-rss"></i></a>
-        <a class="share button" href="https://twitter.com/intent/tweet?hashtags=sessiontypes,picalculus,concurrency,typesystems,automata&amp;text=An%20Automata-theoretic%20Basis%20for%20Specification%20and%20Type%20Checking%20of%20Multiparty%20Protocols&amp;url=http://emanueledosualdo.com/research/papers/2025/amp.html" title="Share on Twitter" itemprop="Twitter"><i class="fa-brands fa-twitter"></i></a>
-        <a class="share button" href="https://www.facebook.com/sharer/sharer.php?u=http://emanueledosualdo.com/research/papers/2025/amp.html" title="Share on Facebook" itemprop="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
-    </div>
-</aside>
+      <div class="title">
+        <a href="/research/papers/2015/phd-thesis.html">Verification of Message Passing Concurrent Systems</a>
+      </div>
+      <ul class="authors">
       
-  </div>
+        
+        
+          <li class="author me">E. D'Osualdo</li>
+        
+      
+      </ul>
 </div>
 
+<div class="paper-card" id="sas2013">
+    
+      <div class="links">
+        
+        
+        
+        <a href="http://soter.emanueledosualdo.com" class="button"><i class="fa-solid fa-rocket"></i>Demo</a>
+        
+        
+        
+        <a href="http://arxiv.org/abs/1303.2201" class="button"><i class="fa-solid fa-file-lines"></i>ArXiv</a>
+        
+        
+        <a href="/doc/papers/sas13-soter.pdf" class="button primary"><i class="fa-solid fa-download"></i>Pdf</a>
+        
+        
+      </div>
+    
+      <div class="venue">
+        <span class="venue">SAS</span>
+        <span class="year">2013</span>
+      </div>
+      <div class="title">
+        <a href="/research/papers/2013/sas-soter.html">Automatic Verification of Erlang-Style Concurrency</a>
+      </div>
+      <ul class="authors">
+      
+        
+        
+          <li class="author me">E. D'Osualdo</li>
+        
+      
+        
+        
+          <li class="author">
+            <a href="#" title="Jonathan Kochems">J. Kochems</a>
+          </li>
+        
+      
+        
+        
+          <li class="author">
+            <a href="https://www.cs.ox.ac.uk/luke.ong/" title="C.-H. Luke Ong">C.-H. L. Ong</a>
+          </li>
+        
+      
+      </ul>
+</div>
+
+<div class="paper-card" id="agere2012">
+    
+      <div class="links">
+        
+        
+        
+        
+        
+        
+        <a href="/doc/papers/agere12-soter.pdf" class="button primary"><i class="fa-solid fa-download"></i>Pdf</a>
+        
+        
+      </div>
+    
+      <div class="venue">
+        <span class="venue">AGERE</span>
+        <span class="year">2012</span>
+      </div>
+      <div class="title">
+        <a href="/research/papers/2012/agere-soter.html">Soter: An Automatic Safety Verifier for Erlang</a>
+      </div>
+      <ul class="authors">
+      
+        
+        
+          <li class="author me">E. D'Osualdo</li>
+        
+      
+        
+        
+          <li class="author">
+            <a href="#" title="Jonathan Kochems">J. Kochems</a>
+          </li>
+        
+      
+        
+        
+          <li class="author">
+            <a href="https://www.cs.ox.ac.uk/luke.ong/" title="C.-H. Luke Ong">C.-H. L. Ong</a>
+          </li>
+        
+      
+      </ul>
+</div>
+
+
+      </div>
+    </article>
+  </div>
+</div>
 
  <footer class="row">
   <div class="column">
