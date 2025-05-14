@@ -5,9 +5,44 @@
     <description>My research, projects and blog</description>
     <link>http://emanueledosualdo.com/</link>
     <atom:link href="http://emanueledosualdo.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 05 May 2025 14:56:35 +0100</pubDate>
-    <lastBuildDate>Mon, 05 May 2025 14:56:35 +0100</lastBuildDate>
+    <pubDate>Wed, 14 May 2025 22:26:22 +0100</pubDate>
+    <lastBuildDate>Wed, 14 May 2025 22:26:22 +0100</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Inaugural Lecture</title>
+        <description>
+&lt;p&gt;&lt;img src=&quot;/images/posts/2025-04-30-inaugural-lecture/title-slide.png&quot; class=&quot;framed fitting&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally,
+after a year at Uni Konstanz,
+I gave my &lt;a href=&quot;https://streaming.uni-konstanz.de/index.php?id=164108&quot;&gt;Inaugural Lecture&lt;/a&gt;
+as a new Tenure-track Professor
+of the &lt;a href=&quot;https://www.informatik.uni-konstanz.de/fachbereich/personen/professorinnen-und-professoren/&quot;&gt;Department of Information and Computer Science&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you missed it and would like to see a recording of the presentation,
+it is available at the link below.&lt;/p&gt;
+
+&lt;div class=&quot;wide-image&quot;&gt;&lt;a class=&quot;plain&quot; href=&quot;https://streaming.uni-konstanz.de/index.php?id=164108&quot;&gt;
+    &lt;img src=&quot;/images/posts/2025-04-30-inaugural-lecture/vibe.jpg&quot; class=&quot;framed fitting&quot; /&gt;&lt;/a&gt;
+    &lt;div class=&quot;credits&quot;&gt;
+     Credits: Michele De Marchi
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;p class=&quot;centered&quot;&gt;&lt;a href=&quot;https://streaming.uni-konstanz.de/index.php?id=164108&quot; class=&quot;button primary&quot;&gt;&lt;i class=&quot;fa-solid fa-film&quot;&gt;&lt;/i&gt; Presentation Recording&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The lecture has been an awesome opportunity to share my enthusiasm for my research topic, and to say thank you to everybody who helped me in my
+path to here.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 30 Apr 2025 00:00:00 +0100</pubDate>
+        <link>http://emanueledosualdo.com/blog/2025/inaugural-lecture.html</link>
+        <guid isPermaLink="true">http://emanueledosualdo.com/blog/2025/inaugural-lecture.html</guid>
+        
+        <category>konstanz</category>
+        
+        
+      </item>
     
       <item>
         <title>I will be at POPL&apos;23!</title>
@@ -346,8 +381,10 @@ Among many notable works, two of them suggested to me a metaphor that I want to 
 
 &lt;p&gt;&lt;em&gt;La condition humaine&lt;/em&gt; plays with perception, representation, the concept of reality.&lt;/p&gt;
 
-&lt;figure&gt; &lt;img src=&quot;/images/posts/2018-02-20-the-scientists-condition/magritte-the-human-condition.jpg&quot; /&gt; &lt;figcaption&gt;&lt;p&gt;&lt;strong&gt;René Magritte&lt;/strong&gt;, &lt;em&gt;La condition humaine&lt;/em&gt; (1935)&lt;/p&gt;
-&lt;/figcaption&gt; &lt;/figure&gt;
+&lt;figure&gt;
+    &lt;img src=&quot;/images/posts/2018-02-20-the-scientists-condition/magritte-the-human-condition.jpg&quot; /&gt;&lt;figcaption&gt;&lt;p&gt;&lt;strong&gt;René Magritte&lt;/strong&gt;, &lt;em&gt;La condition humaine&lt;/em&gt; (1935)&lt;/p&gt;
+&lt;/figcaption&gt;
+  &lt;/figure&gt;
 
 &lt;p&gt;The theme of the painting frame containing an image indistinguishable from the background is reinterpreted with a strong reference to Plato’s &lt;em&gt;allegory of the cave&lt;/em&gt;.
 The viewer is in the cavern, as all humanity, forced to look outside facing the dilemma of believing one’s own perception.
@@ -357,8 +394,10 @@ The enigma is so poignantly expressed, the question underlined by the title so p
 &lt;p&gt;Not far from it, another painting resonated with the first: &lt;em&gt;La belle captive&lt;/em&gt;.
 This time the setting is a beach, another frame mocking the background in front of us.&lt;/p&gt;
 
-&lt;figure&gt; &lt;img src=&quot;/images/posts/2018-02-20-the-scientists-condition/magritte-la-belle-captive.jpg&quot; /&gt; &lt;figcaption&gt;&lt;p&gt;&lt;strong&gt;René Magritte&lt;/strong&gt;, &lt;em&gt;La belle captive&lt;/em&gt; (1950)&lt;/p&gt;
-&lt;/figcaption&gt; &lt;/figure&gt;
+&lt;figure&gt;
+    &lt;img src=&quot;/images/posts/2018-02-20-the-scientists-condition/magritte-la-belle-captive.jpg&quot; /&gt;&lt;figcaption&gt;&lt;p&gt;&lt;strong&gt;René Magritte&lt;/strong&gt;, &lt;em&gt;La belle captive&lt;/em&gt; (1950)&lt;/p&gt;
+&lt;/figcaption&gt;
+  &lt;/figure&gt;
 
 &lt;p&gt;There is a crucial detail in this painting that, I think, really sets it apart from the first: the reflection of the fire on the frame.
 It is this detail that made me think: the perfect title for this would be &lt;strong&gt;“The scientist’s condition”&lt;/strong&gt;.
@@ -599,8 +638,9 @@ we are in 2016 and still computer systems systematically stumble when dealing wi
 The apostrophe is to an online form
 what a mouse is to an elephant.&lt;/p&gt;
 
-&lt;p class=&quot;centered&quot;&gt;&lt;img src=&quot;/images/posts/2016-11-02-the-art-of-the-misspelling/cyberman.gif&quot; /&gt; 
-  &lt;img src=&quot;/images/posts/2016-11-02-the-art-of-the-misspelling/apostrophe.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/2016-11-02-the-art-of-the-misspelling/cyberman.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;centered&quot;&gt;&lt;img src=&quot;/images/posts/2016-11-02-the-art-of-the-misspelling/apostrophe.png&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Sometimes it is simply rejected, sometimes the apostrophe gets removed with arbitrary fixes such as replacing it with a space or removing the character altogether.
 And these are the good cases. In others it simply makes the system fail because of improper handling of user-provided data.
