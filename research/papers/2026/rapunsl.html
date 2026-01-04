@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+  <meta charset="utf-8">
+<title>RapunSL: Untangling Quantum Computing with Separation, Linear Combination and Mixing - Emanuele D&#39;Osualdo</title>
+<meta name="description" content="Abstract">
+<meta name="author" content="Emanuele D'Osualdo">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta property="og:type" content="website">
+<meta name="twitter:title" content="Emanuele D'Osualdo - RapunSL: Untangling Quantum Computing with Separation, Linear Combination and Mixing">
+<meta property="og:title" content="Emanuele D'Osualdo - RapunSL: Untangling Quantum Computing with Separation, Linear Combination and Mixing">
+
+<meta name="twitter:description" content="Abstract
+">
+<meta property="og:description" content="Abstract
+">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="http://emanueledosualdo.com/images/logo.png">
+  <meta property="og:image" content="http://emanueledosualdo.com/images/logo.png">
+
+<meta property="og:url" content="http://emanueledosualdo.com/research/papers/2026/rapunsl.html">
+<meta property="og:site_name" content="Emanuele D'Osualdo">
+
+  <meta name="twitter:site" content="@bordaigorl">
+
+
+
+<link rel="canonical" href="http://emanueledosualdo.com/research/papers/2026/rapunsl.html">
+
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600|Kreon:300,400|Roboto+Mono:400,700' rel='stylesheet' type='text/css'>
+
+<link href="/style/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
+<link href="/style/fontawesome/css/brands.min.css" rel="stylesheet" />
+<link href="/style/fontawesome/css/solid.min.css" rel="stylesheet" />
+<!-- <link href="/style/fontawesome/css/regular.min.css" rel="stylesheet" /> -->
+
+<link rel="stylesheet" href="/style/main.css">
+
+
+
+<link rel="icon" type="image/png" href="http://emanueledosualdo.com/images/favicon.png">
+
+<link rel="alternate" type="application/rss+xml" title="Emanuele D'Osualdo" href="http://emanueledosualdo.com/feed.xml">
+
+
+
+<script type="text/javascript" src="/lib/jquery.js"></script>
+
+<script data-goatcounter="https://emanueledosualdo.goatcounter.com/count"
+        async src="/js/count.js"></script>
+
+
+
+</head>
+
+<body>
+
+   <div class="container">
+
+ 
+
+
+<header class="row">
+  <div class="name column">
+    <h1><a href="/" title="Home">Emanuele D'Osualdo</a></h1>
+    <h2>Researcher in Computer Science</h2>
+    <nav>
+      <div class="menu head">
+        Research
+        <i class="fa-solid fa-bars fa-lg fa-pull-right"></i>
+      </div>
+      
+        <span class="nav-home"><a href="/">Home</a></span>
+      
+      
+        <span class="nav-item"><a href="/blog/">Blog</a></span>
+      
+        <span class="nav-item"><a href="/research/" class="active">Research</a></span>
+      
+        <span class="nav-item"><a href="/software/">Software</a></span>
+      
+        <span class="nav-item"><a href="/about/">About</a></span>
+      
+    </nav>
+  </div>
+  
+  <div class="logo column">
+    <a href="/" title="Go to home">
+    <svg class="logo" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 177.34 188.17" version="1.1"> <g stroke="#999" stroke-width="2"> <line y2="117.28" x2="72.081" y1="90.295" x1="115.04"/> <line y2="117.28" x2="72.081" y1="142.8" x1="121.65"/> <line y2="153.39" x2="171.74" y1="142.8" x1="121.65"/> <line y2="117.28" x2="72.081" y1="57.893" x1="75.387"/> <line y2="5.6" x2="79.838" y1="57.893" x1="75.387"/> <line y2="117.28" x2="72.081" y1="85.156" x1="31.827"/> <line y2="117.28" x2="72.081" y1="137.49" x1="20.961"/> <line y2="182.57" x2="5.6" y1="137.49" x1="20.961"/> <line y2="117.28" x2="72.081" y1="168.14" x1="52.729"/> <line y2="182.57" x2="5.6" y1="168.14" x1="52.729"/> </g> <g stroke="#fff" stroke-width="1.2px" fill="#5b7a8c"> <circle cy="117.28" cx="72.081" r="5"></circle> <circle cy="153.39" cx="171.74" r="5"></circle> <circle cy="5.6" cx="79.838" r="5"></circle> <circle cy="182.57" cx="5.6" r="5"></circle> </g> <rect transform="scale(-1,1)" height="12" width="18" y="136.8" x="-130.65" fill="#ff7f0e"></rect> <rect transform="scale(-1,1)" height="12" width="18" y="51.893" x="-84.387" fill="#ff7f0e"></rect> <rect transform="scale(-1,1)" height="12" width="18" y="84.295" x="-124.04" fill="#1f77b4"></rect> <rect transform="scale(-1,1)" height="12" width="18" y="79.156" x="-40.827" fill="#aec7e8"></rect> <rect transform="scale(-1,1)" height="12" width="18" y="131.49" x="-29.961" fill="#ffbb78"></rect> <rect transform="scale(-1,1)" height="12" width="18" y="162.14" x="-61.729" fill="#2ca02c"></rect> </svg>
+
+    </a>
+  </div>
+  
+</header>
+
+
+ <div class="spaced content row">
+  <div class="two-thirds main column post-content">
+
+    <article class="post">
+
+      <header class="meta">
+        
+        
+        <div class="venue"><span title="ACM SIGPLAN Symposium on Principles of Programming Languages">POPL</span> 2026</div>
+        <h1 class="title" itemprop="name headline">RapunSL: Untangling Quantum Computing with Separation, Linear Combination and Mixing</h1>
+        <ul class="authors">
+        
+          
+          
+            <li class="author"><a href="https://shiatsumat.github.io/" title="Yusuke Matsushita - Kyoto University, Japan">Y. Matsushita</a></li>
+          
+        
+          
+          
+            <li class="author"><a href="https://kengohirata.github.io/khirata/" title="Kengo Hirata - University of Edinburgh, UK">K. Hirata</a></li>
+          
+        
+          
+          
+            <li class="author"><a href="#" title="Ryo Wakizaka - Kyoto University, Japan">R. Wakizaka</a></li>
+          
+        
+          
+          
+            <li class="author me">E. D'Osualdo</li>
+          
+        
+        </ul>
+        <div class="paper links">
+          
+            <a href="https://arxiv.org/pdf/2511.23472" class="button primary"><i class="fa fa-download"></i>Pdf</a>
+          
+          
+            <a href="http://arxiv.org/abs/2511.23472" class="button"><i class="fa-solid fa-file-lines red"></i>ArXiv</a>
+          
+          
+            
+              <a href="https://doi.org/10.1145/3776648" class="button"><i class="fa-solid fa-file-lines black"></i>doi</a>
+            
+          
+          
+          
+          
+          
+        </div>
+      </header>
+
+
+      <div class="content" itemprop="articleBody">
+        
+        <h1 id="abstract">Abstract</h1>
+
+<p>Quantum Separation Logic (QSL) has been proposed as an effective tool to improve the scalability of deductive reasoning for quantum programs. In QSL, separation is interpreted as disentanglement, and the frame rule brings a notion of entanglement-local specification (one that only talks about the qubits entangled with those acted upon by the program). In this paper, we identify two notions of locality unique to the quantum domain, and we construct a novel quantum separation logic, RapunSL, which is able to soundly reduce reasoning about superposition states to reasoning about pure states (basis-locality), and reasoning about mixed states arising from measurement to reasoning about pure states (outcome-locality). To do so, we introduce two connectives, linear combination and mixing, which together with separation provide a dramatic improvement in the scalability of reasoning, as we demonstrate on a series of challenging case studies.</p>
+
+      </div>
+
+      
+      
+      
+      
+
+
+    </article>
+
+  </div>
+  <div class="one-third column post-sidebar">
+      <div class="navigation">
+        <a class="full-width secondary button" href="/research/papers/">
+          &lt; Back to all Papers</a>
+      </div>
+      <aside class="tags">
+  <h1>Tags</h1>
+  <ul class="tags">
+    
+    
+      <li><a href="/research/papers/#separation" class="tag">separation</a></li>
+    
+      <li><a href="/research/papers/#logics" class="tag">logics</a></li>
+    
+      <li><a href="/research/papers/#quantum" class="tag">quantum</a></li>
+    
+      <li><a href="/research/papers/#probabilistic" class="tag">probabilistic</a></li>
+    
+  </ul>
+</aside>
+      <aside class="share">
+    <h1>Share</h1>
+    <div class="buttons">
+        <a class="rss share button" href="/feed.xml" title="Subscribe via RSS" itemprop="RSS"><i class="fa-solid fa-rss"></i></a>
+        <a class="share button" href="https://twitter.com/intent/tweet?hashtags=separation,logics,quantum,probabilistic&amp;text=RapunSL:%20Untangling%20Quantum%20Computing%20with%20Separation,%20Linear%20Combination%20and%20Mixing&amp;url=http://emanueledosualdo.com/research/papers/2026/rapunsl.html" title="Share on Twitter" itemprop="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a class="share button" href="https://www.facebook.com/sharer/sharer.php?u=http://emanueledosualdo.com/research/papers/2026/rapunsl.html" title="Share on Facebook" itemprop="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+    </div>
+</aside>
+      
+<aside class="related">
+  <h1>Related Papers</h1>
+  <ul class="post-links">
+    
+      
+      
+      <li><a href="/research/papers/2025/bluebell.html">Bluebell: An Alliance of Relational Lifting and Independence For Probabilistic Reasoning</a></li>
+    
+  </ul>
+</aside>
+
+  </div>
+</div>
+
+
+ <footer class="row">
+  <div class="column">
+    Copyright &copy; Emanuele D'Osualdo
+  </div>
+  <div class="column">
+    <span>
+      <a class="social icon button" title="GitHub" href="https://github.com/bordaigorl">
+        <i class="fa-brands fa-github" aria-hidden="true"></i></a>
+      <a class="social icon button" title="Twitter" href="https://twitter.com/bordaigorl">
+        <i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+      <a class="social icon button" title="LinkedIn" href="http://www.linkedin.com/in/edosualdo">
+        <i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+      <a class="social icon button" title="DBLP" href="http://dblp.org/pid/127/6548">
+        <img src="/images/dblp.png"></a>
+    </span>
+  </div>
+  <div class="column">
+    <a href="/policy.html">Privacy</a>
+    &bull;
+    <a href="/contact/">Contact</a>
+  </div>
+</footer>
+
+</div>
+
+  <script type="text/javascript">
+    var $nav = $("nav");
+$nav.on("click", function() {
+  $nav.toggleClass("open");
+}).on("focusin", function() {
+    $nav.addClass("open");
+}).on("focusout", function() {
+    $nav.removeClass("open");
+});
+  </script>
+
+  
+
+</body>
+</html>
